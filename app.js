@@ -267,6 +267,13 @@ const NAV_MAP = {
     fluxo:     'nav-fluxo',
 };
 
+const MOB_NAV_MAP = {
+    dashboard: 'mob-nav-dashboard',
+    history:   'mob-nav-historico',
+    reports:   'mob-nav-reports',
+    fluxo:     'mob-nav-fluxo',
+};
+
 const SECTION_VISIBILITY = {
     dashboard: { show: ['history'],  hide: ['reports', 'fluxo'] },
     history:   { show: ['history'],  hide: ['reports', 'fluxo'] },
@@ -293,6 +300,21 @@ function showSection(sectionId) {
     if (activeEl) {
         activeEl.classList.add('bg-eleve-teal/10', 'text-eleve-teal-dark', 'font-semibold');
         activeEl.classList.remove('text-eleve-gray', 'font-medium');
+    }
+
+    // Atualiza bottom nav mobile
+    Object.values(MOB_NAV_MAP).forEach(navId => {
+        const el = document.getElementById(navId);
+        if (!el) return;
+        el.classList.remove('text-eleve-teal-dark');
+        el.classList.add('text-eleve-gray');
+        el.querySelector('span').className = 'text-[10px] font-medium';
+    });
+    const activeMobEl = document.getElementById(MOB_NAV_MAP[sectionId]);
+    if (activeMobEl) {
+        activeMobEl.classList.add('text-eleve-teal-dark');
+        activeMobEl.classList.remove('text-eleve-gray');
+        activeMobEl.querySelector('span').className = 'text-[10px] font-semibold';
     }
 
     if (sectionId === 'fluxo') renderFluxo();

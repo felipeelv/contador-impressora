@@ -73,10 +73,21 @@
 </head>
 <body class="bg-eleve-light text-eleve-gray font-sans antialiased selection:bg-eleve-orange/20 selection:text-eleve-orange-dark">
 
+    <!-- Mobile Top Bar -->
+    <header class="md:hidden fixed top-0 left-0 right-0 bg-white border-b border-eleve-gray-light z-30 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="showSection('dashboard')">
+            <img src="LOGOS_DOCS/logo.png" alt="Colégio Eleve" class="w-7 object-contain flex-shrink-0">
+            <span class="text-sm font-bold text-eleve-dark">Colégio Eleve</span>
+        </div>
+        <button onclick="openModal()" class="bg-eleve-orange text-white text-xs font-semibold py-2 px-4 rounded-full flex items-center gap-1.5 shadow-btn">
+            <i data-feather="plus" class="w-3.5 h-3.5"></i> Lançar
+        </button>
+    </header>
+
     <div class="flex h-screen overflow-hidden">
 
         <!-- Sidebar -->
-        <aside class="w-[240px] bg-white border-r border-eleve-gray-light flex flex-col z-10 relative flex-shrink-0">
+        <aside class="hidden md:flex w-[240px] bg-white border-r border-eleve-gray-light flex-col z-10 relative flex-shrink-0">
             <!-- Brand -->
             <div class="px-4 py-5 border-b border-eleve-gray-light flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity" onclick="showSection('dashboard')">
                 <img src="LOGOS_DOCS/logo.png" alt="Colégio Eleve" class="w-8 object-contain flex-shrink-0">
@@ -112,23 +123,23 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="flex-1 overflow-y-auto bg-eleve-light">
-            <div class="p-8 max-w-7xl mx-auto">
+        <main class="flex-1 overflow-y-auto bg-eleve-light pt-16 md:pt-0 pb-20 md:pb-0">
+            <div class="p-4 md:p-8 max-w-7xl mx-auto">
 
                 <!-- Page Header -->
-                <header class="mb-8">
+                <header class="mb-6 md:mb-8">
                     <div class="flex justify-between items-start">
                         <div>
                             <h1 id="page-title" class="text-3xl font-bold text-eleve-dark tracking-tight">Dashboard</h1>
                             <p id="page-subtitle" class="text-base text-eleve-gray mt-1">Acompanhe os gastos em materiais didáticos</p>
                         </div>
-                        <button class="bg-eleve-orange text-white font-semibold py-2.5 px-6 rounded-full shadow-btn hover:bg-eleve-orange-dark hover:scale-105 transition-all duration-300 flex items-center gap-2 text-sm" onclick="openModal()">
+                        <button class="hidden md:flex bg-eleve-orange text-white font-semibold py-2.5 px-6 rounded-full shadow-btn hover:bg-eleve-orange-dark hover:scale-105 transition-all duration-300 items-center gap-2 text-sm" onclick="openModal()">
                             <i data-feather="plus" class="w-4 h-4"></i> Lançar Impressão
                         </button>
                     </div>
 
                     <!-- Filters -->
-                    <div class="flex items-center gap-6 mt-5">
+                    <div class="flex flex-wrap items-center gap-3 mt-4 md:mt-5">
                         <div class="flex items-center gap-2">
                             <label class="text-xs font-semibold text-eleve-gray uppercase tracking-wide">Bimestre</label>
                             <select id="filter-bimestre" onchange="applyFilters()" class="text-sm text-eleve-dark font-medium bg-white border border-eleve-gray-light rounded-eleve px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-eleve-teal/40 focus:border-eleve-teal transition-all appearance-none cursor-pointer pr-7 relative">
@@ -406,11 +417,11 @@
 
                 <!-- History Table -->
                 <section id="history" class="bg-white rounded-eleve-lg shadow-card overflow-hidden">
-                    <div class="px-6 py-4 border-b border-eleve-gray-light flex justify-between items-center">
+                    <div class="px-4 md:px-6 py-4 border-b border-eleve-gray-light flex flex-col md:flex-row md:justify-between md:items-center gap-3">
                         <h3 class="text-lg font-semibold text-eleve-dark">Últimos Lançamentos</h3>
                         <div class="relative">
                             <i data-feather="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-eleve-gray"></i>
-                            <input type="text" id="search-input" placeholder="Buscar disciplina ou turma..." class="pl-9 pr-4 py-2 rounded-full border border-eleve-gray-light bg-eleve-light text-sm focus:outline-none focus:ring-2 focus:ring-eleve-teal/50 focus:border-eleve-teal transition-all min-w-[240px]" onkeyup="renderTable()">
+                            <input type="text" id="search-input" placeholder="Buscar disciplina ou turma..." class="w-full pl-9 pr-4 py-2 rounded-full border border-eleve-gray-light bg-eleve-light text-sm focus:outline-none focus:ring-2 focus:ring-eleve-teal/50 focus:border-eleve-teal transition-all" onkeyup="renderTable()">
                         </div>
                     </div>
                     <div class="w-full overflow-x-auto">
@@ -437,8 +448,8 @@
     </div>
 
     <!-- Modal Form -->
-    <div id="entry-modal" class="fixed inset-0 bg-eleve-dark/40 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50">
-        <div class="bg-white w-full max-w-xl rounded-eleve-lg shadow-card-hover transform translate-y-8 transition-transform duration-300 relative">
+    <div id="entry-modal" class="fixed inset-0 bg-eleve-dark/40 backdrop-blur-sm flex items-end md:items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+        <div class="bg-white w-full md:max-w-xl md:rounded-eleve-lg rounded-t-eleve-lg shadow-card-hover transform translate-y-8 transition-transform duration-300 relative max-h-[90vh] overflow-y-auto">
             <div class="px-6 py-5 border-b border-eleve-gray-light flex justify-between items-center">
                 <h2 class="text-base font-semibold text-eleve-dark">Registrar Impressão</h2>
                 <button class="w-8 h-8 flex items-center justify-center rounded-full text-eleve-gray hover:bg-eleve-gray-light hover:text-eleve-orange transition-colors" onclick="closeModal()">
@@ -482,7 +493,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-3 gap-5 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
                     <div>
                         <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Tipo</label>
                         <select id="tipo" required class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark appearance-none bg-white text-sm">
@@ -520,6 +531,26 @@
             </form>
         </div>
     </div>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-eleve-gray-light z-30 flex">
+        <a id="mob-nav-dashboard" onclick="showSection('dashboard')" class="flex-1 flex flex-col items-center py-3 gap-0.5 cursor-pointer text-eleve-teal-dark">
+            <i data-feather="grid" class="w-5 h-5"></i>
+            <span class="text-[10px] font-semibold">Dashboard</span>
+        </a>
+        <a id="mob-nav-historico" onclick="showSection('history')" class="flex-1 flex flex-col items-center py-3 gap-0.5 cursor-pointer text-eleve-gray">
+            <i data-feather="clock" class="w-5 h-5"></i>
+            <span class="text-[10px] font-medium">Histórico</span>
+        </a>
+        <a id="mob-nav-reports" onclick="showSection('reports')" class="flex-1 flex flex-col items-center py-3 gap-0.5 cursor-pointer text-eleve-gray">
+            <i data-feather="pie-chart" class="w-5 h-5"></i>
+            <span class="text-[10px] font-medium">Unidades</span>
+        </a>
+        <a id="mob-nav-fluxo" onclick="showSection('fluxo')" class="flex-1 flex flex-col items-center py-3 gap-0.5 cursor-pointer text-eleve-gray">
+            <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+            <span class="text-[10px] font-medium">Fluxo</span>
+        </a>
+    </nav>
 
     <script src="app.js"></script>
     <script>
