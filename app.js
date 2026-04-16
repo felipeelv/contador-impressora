@@ -126,6 +126,8 @@ async function loadExtratos() {
         paginas:      row.paginas,
         totalPaginas: row.total_paginas,
         folhas:       row.folhas,
+        userEmail:    row.user_email,
+        userName:     row.user_name,
     }));
 }
 
@@ -677,6 +679,14 @@ function renderTable() {
                 <div class="font-bold text-eleve-orange">${parseInt(item.totalPaginas || item.folhas || 0).toLocaleString('pt-BR')} págs</div>
                 <div class="text-[10px] text-eleve-gray font-normal">(${parseInt(item.folhas || 0).toLocaleString('pt-BR')} folhas)</div>
             </td>
+            <td class="py-3.5 px-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-6 h-6 rounded-full bg-eleve-teal/10 flex items-center justify-center flex-shrink-0">
+                        <i data-feather="user" class="w-3 h-3 text-eleve-teal-dark"></i>
+                    </div>
+                    <span class="text-xs text-eleve-gray-dark font-medium">${item.userName || item.userEmail?.split('@')[0] || '—'}</span>
+                </div>
+            </td>
             <td class="py-3.5 px-6 text-right">
                 <button class="w-8 h-8 inline-flex items-center justify-center rounded-full text-eleve-gray hover:bg-red-50 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100" onclick="deleteEntry('${item.id}')" title="Excluir Registro">
                     <i data-feather="trash-2" class="w-4 h-4"></i>
@@ -717,6 +727,9 @@ async function handleFormSubmit(event) {
     const serieDerivada = getSerieFromTurma(disc, turma) || turma;
     const dataEscolhida = document.getElementById('data-lancamento').value;
 
+    const { data: { session } } = await db.auth.getSession();
+    const currentUser = session?.user;
+
     const novoRegistro = {
         data:          dataEscolhida ? new Date(dataEscolhida + 'T12:00:00').toISOString() : new Date().toISOString(),
         disciplina:    disc,
@@ -729,6 +742,8 @@ async function handleFormSubmit(event) {
         paginas:       inputPaginas.value,
         total_paginas: totalPaginas,
         folhas:        totalFolhas,
+        user_email:    currentUser?.email || null,
+        user_name:     currentUser?.user_metadata?.full_name || currentUser?.email?.split('@')[0] || null,
     };
 
     const { data, error } = await db
@@ -757,6 +772,8 @@ async function handleFormSubmit(event) {
         paginas:      data.paginas,
         totalPaginas: data.total_paginas,
         folhas:       data.folhas,
+        userEmail:    data.user_email,
+        userName:     data.user_name,
     });
 
     populateTurmaFilter();
