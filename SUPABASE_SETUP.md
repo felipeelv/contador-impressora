@@ -35,26 +35,31 @@ NEXT_PUBLIC_ALLOWED_DOMAIN=colegioeleve.com.br
 
 ---
 
-## 2. Tabelas existentes no banco
+## 2. Criando as tabelas do novo projeto
 
-A única tabela atualmente usada é **`impressoes`**:
+Como você vai usar o mesmo projeto Supabase para um **sistema diferente**, basta criar as tabelas do novo projeto direto no [Table Editor](https://supabase.com/dashboard/project/kmnosfjpxpsmtjqgwoih/editor) ou via SQL no [SQL Editor](https://supabase.com/dashboard/project/kmnosfjpxpsmtjqgwoih/sql).
 
-| Coluna          | Tipo        | Descrição                                |
-|-----------------|-------------|------------------------------------------|
-| `id`            | bigint (PK) | Gerado automaticamente                   |
-| `data`          | timestamptz | Data do lançamento                       |
-| `disciplina`    | text        | Nome da disciplina                       |
-| `serie`         | text        | Série derivada da turma                  |
-| `turma`         | text        | Código da turma                          |
-| `bimestre`      | text        | Bimestre (1,2,3,4)                       |
-| `unidade`       | text        | Unidade/conteúdo                         |
-| `tipo`          | text        | Tipo de impressão                        |
-| `impressora`    | text        | Impressora usada                         |
-| `paginas`       | int         | Páginas por aluno                        |
-| `total_paginas` | int         | Total de páginas                         |
-| `folhas`        | int         | Total de folhas                          |
-| `user_email`    | text        | Email do usuário que lançou              |
-| `user_name`     | text        | Nome do usuário que lançou               |
+> 💡 **Dica:** use um **prefixo** nos nomes das tabelas do novo projeto (ex: `novoapp_usuarios`, `novoapp_pedidos`) para não conflitar com as tabelas do projeto atual (`impressoes`). Alternativamente, crie um **schema** separado no Postgres (`create schema novoapp;`) — nesse caso lembre de expô-lo em **Settings → API → Exposed schemas**.
+
+Exemplo de criação de tabela via SQL Editor:
+
+```sql
+create table public.novoapp_exemplo (
+  id         bigint generated always as identity primary key,
+  created_at timestamptz default now(),
+  user_id    uuid references auth.users(id),
+  titulo     text not null
+);
+
+-- Habilita Row Level Security
+alter table public.novoapp_exemplo enable row level security;
+
+-- Policy: usuário só vê/edita os próprios registros
+create policy "owner_can_all" on public.novoapp_exemplo
+  for all using (auth.uid() = user_id);
+```
+
+> ⚠️ **Importante:** sempre habilite **RLS** em tabelas novas, porque a `anon key` é pública. Sem RLS, qualquer um com a chave consegue ler/escrever tudo.
 
 ---
 
@@ -301,32 +306,36 @@ export default function App() {
 
 ---
 
-## 8. Consultando dados (exemplos)
+## 8. Consultando dados (exemplos genéricos)
+
+Substitua `sua_tabela` pelo nome da tabela que você criar no novo projeto.
 
 ```js
-// Buscar todas as impressões
+// Buscar registros
 const { data, error } = await db
-  .from('impressoes')
+  .from('sua_tabela')
   .select('*')
-  .order('data', { ascending: false });
+  .order('created_at', { ascending: false });
 
 // Inserir novo registro
+const { data: { session } } = await db.auth.getSession();
 const { data, error } = await db
-  .from('impressoes')
+  .from('sua_tabela')
   .insert({
-    data: new Date().toISOString(),
-    disciplina: 'Matemática',
-    turma: '9A',
-    bimestre: '1',
-    folhas: 30,
-    user_email: session.user.email,
-    user_name:  session.user.user_metadata?.full_name,
+    titulo: 'Exemplo',
+    user_id: session.user.id, // vínculo com auth.users
   })
   .select()
   .single();
 
+// Atualizar
+const { error } = await db
+  .from('sua_tabela')
+  .update({ titulo: 'Novo título' })
+  .eq('id', 123);
+
 // Deletar
-const { error } = await db.from('impressoes').delete().eq('id', 123);
+const { error } = await db.from('sua_tabela').delete().eq('id', 123);
 ```
 
 ---
@@ -335,10 +344,12 @@ const { error } = await db.from('impressoes').delete().eq('id', 123);
 
 - [ ] Instalar/importar `@supabase/supabase-js@2`
 - [ ] Configurar `.env` com `SUPABASE_URL` e `SUPABASE_ANON_KEY`
+- [ ] Criar as tabelas do novo projeto no Supabase (com prefixo ou schema próprio)
+- [ ] Habilitar **RLS** e criar policies em todas as tabelas novas
 - [ ] Adicionar a URL do novo projeto em **Supabase → Auth → URL Configuration → Redirect URLs**
 - [ ] Adicionar a URL do novo projeto em **Google Cloud → OAuth Client → Authorized JavaScript origins**
 - [ ] Implementar `signInWithGoogle`, `signOut` e `onAuthStateChange`
-- [ ] Aplicar a regra de domínio (`@colegioeleve.com.br`) no `onAuthStateChange`
+- [ ] Aplicar a regra de domínio (`@colegioeleve.com.br`) no `onAuthStateChange` (se for o caso)
 - [ ] Testar em `localhost` e em produção
 
 ---
