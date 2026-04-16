@@ -12,9 +12,29 @@ let appInitialized = false;
 
 // ─── Auth ─────────────────────────────────────────────────────────────────────
 
-function showLoginScreen(showError = false) {
+function showLoginScreen(errorMsg = null) {
     document.getElementById('login-screen').classList.remove('hidden');
-    document.getElementById('login-error').classList.toggle('hidden', !showError);
+    const errorEl = document.getElementById('login-error');
+    if (errorMsg) {
+        errorEl.textContent = errorMsg;
+        errorEl.classList.remove('hidden');
+    } else {
+        errorEl.classList.add('hidden');
+    }
+}
+
+async function buscarPerfil(email) {
+    try {
+        const { data } = await db
+            .from('usuarios_permitidos')
+            .select('perfil, ativo')
+            .eq('email', email)
+            .single();
+        if (!data || !data.ativo) return null;
+        return data.perfil;
+    } catch {
+        return null;
+    }
 }
 
 function hideLoginScreen(user) {
@@ -64,7 +84,13 @@ db.auth.onAuthStateChange(async (event, session) => {
         const email = session.user.email || '';
         if (!email.endsWith('@' + ALLOWED_DOMAIN)) {
             await db.auth.signOut();
-            showLoginScreen(true);
+            showLoginScreen('Acesso restrito ao domínio @colegioeleve.com.br');
+            return;
+        }
+        const perfil = await buscarPerfil(email);
+        if (!perfil) {
+            await db.auth.signOut();
+            showLoginScreen('Acesso não autorizado. Entre em contato com o administrador.');
             return;
         }
         hideLoginScreen(session.user);
