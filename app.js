@@ -157,7 +157,12 @@ async function loadExtratos() {
         folhas:       row.folhas,
         userEmail:    row.user_email,
         userName:     row.user_name,
+        solicitante:  row.solicitante,
     }));
+}
+
+function isAvulsaItem(item) {
+    return item.unidade === 'Avulsa' || !!item.solicitante;
 }
 
 async function loadTurmas() {
@@ -211,14 +216,56 @@ function getSerieFromTurma(disc, turmaName) {
     return null;
 }
 
+function isAvulsaMode() {
+    const cb = document.getElementById('is-avulsa');
+    return !!(cb && cb.checked);
+}
+
+function toggleAvulsa() {
+    const avulsa = isAvulsaMode();
+    const solicitanteGroup = document.getElementById('solicitante-group');
+    const solicitanteInput = document.getElementById('solicitante');
+    const unidadeGroup = document.getElementById('unidade-group');
+
+    if (avulsa) {
+        solicitanteGroup.classList.remove('hidden');
+        solicitanteInput.setAttribute('required', 'required');
+        unidadeGroup.classList.add('hidden');
+        selectUnidade.removeAttribute('required');
+        selectUnidade.innerHTML = '<option value="Avulsa" selected>Avulsa</option>';
+    } else {
+        solicitanteGroup.classList.add('hidden');
+        solicitanteInput.removeAttribute('required');
+        solicitanteInput.value = '';
+        unidadeGroup.classList.remove('hidden');
+        selectUnidade.setAttribute('required', 'required');
+    }
+
+    populateTurmas();
+}
+
 function populateTurmas() {
     const disc = selectDisciplina.value;
+    const avulsa = isAvulsaMode();
     selectTurma.innerHTML = '<option value="">Selecione a Turma</option>';
     selectBimestre.innerHTML = '<option value="">Selecione o Bimestre</option>';
-    selectUnidade.innerHTML = '<option value="">Selecione a Unidade</option>';
+    if (!avulsa) selectUnidade.innerHTML = '<option value="">Selecione a Unidade</option>';
     calculateTotal();
 
-    if (!disc || !conteudosDB[disc]) return;
+    if (!disc) return;
+
+    if (avulsa) {
+        turmasDB.forEach(t => {
+            const opt = document.createElement('option');
+            opt.value = t.turma;
+            opt.dataset.alunos = t.alunos;
+            opt.textContent = `${t.turma} (${t.alunos} alunos)`;
+            selectTurma.appendChild(opt);
+        });
+        return;
+    }
+
+    if (!conteudosDB[disc]) return;
 
     turmasDB.forEach(t => {
         if (getSerieFromTurma(disc, t.turma)) {
@@ -247,8 +294,19 @@ function calculateTotal() {
 function populateBimestres() {
     const disc = selectDisciplina.value;
     const turma = selectTurma.value;
+    const avulsa = isAvulsaMode();
     selectBimestre.innerHTML = '<option value="">Selecione o Bimestre</option>';
-    selectUnidade.innerHTML = '<option value="">Selecione a Unidade</option>';
+    if (!avulsa) selectUnidade.innerHTML = '<option value="">Selecione a Unidade</option>';
+
+    if (avulsa) {
+        ['1', '2', '3', '4'].forEach(bim => {
+            const opt = document.createElement('option');
+            opt.value = bim;
+            opt.textContent = bim + 'º Bimestre';
+            selectBimestre.appendChild(opt);
+        });
+        return;
+    }
 
     const serie = getSerieFromTurma(disc, turma);
     if (!disc || !serie || !conteudosDB[disc][serie]) return;
@@ -262,6 +320,8 @@ function populateBimestres() {
 }
 
 function populateUnidades() {
+    if (isAvulsaMode()) return;
+
     const disc = selectDisciplina.value;
     const turma = selectTurma.value;
     const bim = selectBimestre.value;
@@ -300,11 +360,16 @@ function renderReports() {
 
     const agrupado = {};
     data.forEach(item => {
-        const key = `${item.disciplina} | ${item.unidade}`;
+        const avulsa = isAvulsaItem(item);
+        const key = avulsa
+            ? `${item.disciplina} | Avulsa | ${item.solicitante || '—'}`
+            : `${item.disciplina} | ${item.unidade}`;
         if (!agrupado[key]) {
             agrupado[key] = {
                 disciplina: item.disciplina,
-                unidade: item.unidade,
+                unidade: avulsa ? 'Avulsa' : item.unidade,
+                solicitante: avulsa ? (item.solicitante || '—') : null,
+                avulsa,
                 paginas: 0,
                 folhas: 0
             };
@@ -313,7 +378,11 @@ function renderReports() {
         agrupado[key].folhas += parseInt(item.folhas || 0);
     });
 
-    const chavesOrdenadas = Object.keys(agrupado).sort();
+    const chavesOrdenadas = Object.keys(agrupado).sort((a, b) => {
+        const ga = agrupado[a], gb = agrupado[b];
+        if (ga.avulsa !== gb.avulsa) return ga.avulsa ? 1 : -1;
+        return a.localeCompare(b);
+    });
 
     container.innerHTML = '';
 
@@ -327,11 +396,24 @@ function renderReports() {
     chavesOrdenadas.forEach(key => {
         const grupo = agrupado[key];
         const card = document.createElement('div');
-        card.className = "relative group border border-eleve-gray-light rounded-lg p-4 bg-eleve-light/30 hover:bg-white hover:shadow-card transition-all";
+        const cardBase = "relative group rounded-lg p-4 transition-all";
+        card.className = grupo.avulsa
+            ? `${cardBase} border-2 border-eleve-orange/40 bg-eleve-orange/5 hover:bg-eleve-orange/10 hover:shadow-card`
+            : `${cardBase} border border-eleve-gray-light bg-eleve-light/30 hover:bg-white hover:shadow-card`;
+
+        const header = grupo.avulsa
+            ? `<div class="flex items-center gap-2 mb-1 pr-8">
+                   <p class="text-xs font-semibold text-eleve-orange uppercase tracking-wide">${grupo.disciplina}</p>
+                   <span class="text-[9px] font-bold uppercase tracking-wider bg-eleve-orange text-white px-1.5 py-0.5 rounded">Avulsa</span>
+               </div>
+               <h4 class="text-sm font-bold text-eleve-dark mb-0.5 pr-8">Solicitado por</h4>
+               <p class="text-sm font-semibold text-eleve-orange-dark mb-3 truncate pr-8" title="${grupo.solicitante}">${grupo.solicitante}</p>`
+            : `<p class="text-xs font-semibold text-eleve-orange mb-1 uppercase tracking-wide pr-8">${grupo.disciplina}</p>
+               <h4 class="text-sm font-bold text-eleve-dark mb-3 truncate pr-8" title="${grupo.unidade}">${grupo.unidade}</h4>`;
+
         card.innerHTML = `
-            <p class="text-xs font-semibold text-eleve-orange mb-1 uppercase tracking-wide pr-8">${grupo.disciplina}</p>
-            <h4 class="text-sm font-bold text-eleve-dark mb-3 truncate pr-8" title="${grupo.unidade}">${grupo.unidade}</h4>
-            <div class="flex justify-between items-end border-t border-eleve-gray-light pt-3">
+            ${header}
+            <div class="flex justify-between items-end border-t ${grupo.avulsa ? 'border-eleve-orange/20' : 'border-eleve-gray-light'} pt-3">
                 <div>
                     <p class="text-[10px] text-eleve-gray uppercase tracking-wider mb-0.5 font-semibold">Total Páginas</p>
                     <p class="text-lg font-bold text-eleve-teal-dark">${grupo.paginas.toLocaleString('pt-BR')}</p>
@@ -346,9 +428,11 @@ function renderReports() {
         if (isAdmin) {
             const btn = document.createElement('button');
             btn.className = 'absolute top-2 right-2 w-7 h-7 inline-flex items-center justify-center rounded-full text-eleve-gray hover:bg-red-50 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100';
-            btn.title = 'Excluir todos os lançamentos desta unidade';
+            btn.title = grupo.avulsa
+                ? 'Excluir todos os lançamentos avulsos deste solicitante'
+                : 'Excluir todos os lançamentos desta unidade';
             btn.innerHTML = '<i data-feather="trash-2" class="w-3.5 h-3.5"></i>';
-            btn.addEventListener('click', () => deleteUnidadeGroup(grupo.disciplina, grupo.unidade));
+            btn.addEventListener('click', () => deleteUnidadeGroup(grupo.disciplina, grupo.unidade, grupo.solicitante));
             card.appendChild(btn);
         }
 
@@ -358,7 +442,7 @@ function renderReports() {
     if (window.feather) feather.replace();
 }
 
-async function deleteUnidadeGroup(disciplina, unidade) {
+async function deleteUnidadeGroup(disciplina, unidade, solicitante) {
     if (userProfile !== 'admin') {
         alert('Apenas administradores podem excluir registros em lote.');
         return;
@@ -370,6 +454,7 @@ async function deleteUnidadeGroup(disciplina, unidade) {
     const alvos = extratos.filter(item =>
         item.disciplina === disciplina &&
         item.unidade === unidade &&
+        (!solicitante || (item.solicitante || '—') === solicitante) &&
         (!bimestre || item.bimestre === bimestre) &&
         (!turma    || item.turma === turma)
     );
@@ -384,7 +469,11 @@ async function deleteUnidadeGroup(disciplina, unidade) {
         turma    ? `turma ${turma}`         : null,
     ].filter(Boolean).join(', ');
 
-    const msg = `Excluir ${alvos.length} lançamento(s) de "${disciplina} — ${unidade}"` +
+    const rotulo = solicitante
+        ? `${disciplina} — Avulsa (${solicitante})`
+        : `${disciplina} — ${unidade}`;
+
+    const msg = `Excluir ${alvos.length} lançamento(s) de "${rotulo}"` +
                 (filtrosTxt ? ` (${filtrosTxt})` : '') +
                 '?\n\nEsta ação não pode ser desfeita.';
 
@@ -752,6 +841,11 @@ function renderTable() {
         tr.className    = "border-b border-eleve-gray-light/60 hover:bg-eleve-light/50 transition-colors group";
         const dateObj   = new Date(item.data);
         const dateFmt   = dateObj.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        const avulsa    = isAvulsaItem(item);
+        const corteBadge = avulsa
+            ? `<span class="bg-eleve-orange/10 text-eleve-orange-dark text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">${item.bimestre}º Bim · Avulsa</span>
+               ${item.solicitante ? `<div class="text-[10px] text-eleve-gray mt-1">Solicitado por: <span class="font-semibold text-eleve-dark">${item.solicitante}</span></div>` : ''}`
+            : `<span class="bg-eleve-teal/10 text-eleve-teal-dark text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">${item.bimestre}º Bim · ${item.unidade}</span>`;
 
         tr.innerHTML = `
             <td class="py-3.5 px-6 text-sm text-eleve-gray">${dateFmt}</td>
@@ -766,9 +860,7 @@ function renderTable() {
                 ${item.turma || item.serie}
             </td>
             <td class="py-3.5 px-6">
-                <span class="bg-eleve-teal/10 text-eleve-teal-dark text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">
-                    ${item.bimestre}º Bim · ${item.unidade}
-                </span>
+                ${corteBadge}
             </td>
             <td class="py-3.5 px-6">
                 <div class="font-bold text-eleve-orange">${parseInt(item.totalPaginas || item.folhas || 0).toLocaleString('pt-BR')} págs</div>
@@ -803,6 +895,9 @@ function openModal() {
 function closeModal() {
     modal.classList.remove('active');
     entryForm.reset();
+    const avulsaCb = document.getElementById('is-avulsa');
+    if (avulsaCb) avulsaCb.checked = false;
+    toggleAvulsa();
     calculateTotal();
 }
 
@@ -814,6 +909,14 @@ async function handleFormSubmit(event) {
 
     if (totalFolhas <= 0) {
         alert("Preencha a turma e as páginas corretamente para calcular o total de folhas.");
+        return;
+    }
+
+    const avulsa = isAvulsaMode();
+    const solicitanteVal = document.getElementById('solicitante').value.trim();
+
+    if (avulsa && !solicitanteVal) {
+        alert('Informe quem solicitou a impressão avulsa.');
         return;
     }
 
@@ -831,7 +934,7 @@ async function handleFormSubmit(event) {
         serie:         serieDerivada,
         turma:         turma,
         bimestre:      selectBimestre.value,
-        unidade:       selectUnidade.value.trim(),
+        unidade:       avulsa ? 'Avulsa' : selectUnidade.value.trim(),
         tipo:          selectTipo.value,
         impressora:    selectImpressora.value,
         paginas:       inputPaginas.value,
@@ -839,6 +942,7 @@ async function handleFormSubmit(event) {
         folhas:        totalFolhas,
         user_email:    currentUser?.email || null,
         user_name:     currentUser?.user_metadata?.full_name || currentUser?.email?.split('@')[0] || null,
+        solicitante:   avulsa ? solicitanteVal : null,
     };
 
     const { data, error } = await db
@@ -869,6 +973,7 @@ async function handleFormSubmit(event) {
         folhas:       data.folhas,
         userEmail:    data.user_email,
         userName:     data.user_name,
+        solicitante:  data.solicitante,
     });
 
     populateTurmaFilter();
