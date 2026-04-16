@@ -6,6 +6,59 @@ Este documento contém **todas as credenciais** e o **passo a passo** para reuti
 
 ---
 
+## 🤖 Instruções para o Claude Code
+
+> **Leia esta seção primeiro antes de qualquer coisa.**
+
+Quando o usuário pedir para **"integrar o Supabase"**, **"adicionar login com Google"** ou **"conectar ao banco"** em um novo projeto, siga esta ordem:
+
+### Passo 0 — Detecte o stack do projeto atual
+
+Antes de gerar qualquer código, verifique:
+
+1. Existe `package.json`? Se sim, veja `dependencies` para identificar o framework:
+   - Tem `next` → use seção **7 (React/Next)** + `.env.local` com prefixo `NEXT_PUBLIC_`
+   - Tem `vite` + `react` → use seção **7 (React/Vite)** + `.env` com prefixo `VITE_`
+   - Só HTML/JS puro (sem `package.json` ou só dependências simples) → use seção **6 (HTML)**
+2. Se não ficar claro, **pergunte ao usuário** qual stack usar antes de prosseguir.
+
+### Passo 1 — O que VOCÊ (Claude Code) pode fazer sozinho
+
+- [x] Criar o arquivo `.env` (ou `.env.local`) com as credenciais da **seção 1**
+- [x] Adicionar `.env*` ao `.gitignore`
+- [x] Instalar `@supabase/supabase-js@2` via `npm install` (se for projeto NPM)
+- [x] Criar `lib/supabase.js` (ou equivalente) seguindo a **seção 4**
+- [x] Implementar `signInWithGoogle`, `signOut` e `onAuthStateChange` conforme **seção 5.3 / 5.4**
+- [x] Aplicar a restrição de domínio `colegioeleve.com.br` (se o usuário confirmar que é o mesmo colégio)
+- [x] Gerar SQL de criação de tabelas quando o usuário descrever o modelo de dados, seguindo o padrão da **seção 2** (com prefixo `novoapp_` + RLS habilitado)
+- [x] Criar o componente/página de login baseado na **seção 6** (HTML) ou **seção 7** (React)
+
+### Passo 2 — O que SÓ o usuário pode fazer (peça explicitamente no final)
+
+Ao terminar a implementação, **sempre** informe ao usuário que ele precisa fazer manualmente:
+
+1. **Supabase Dashboard** → `Auth → URL Configuration → Redirect URLs`: adicionar a URL do novo projeto (ex: `http://localhost:3000/**` e URL de produção)
+2. **Google Cloud Console** → `OAuth Client → Authorized JavaScript origins`: adicionar a mesma URL
+3. **Supabase → SQL Editor**: rodar o SQL das tabelas novas (gerado por você)
+4. Reiniciar o servidor de dev depois de criar o `.env`
+
+### Passo 3 — Regras importantes
+
+- **NÃO** invente nomes de tabela — use sempre `novoapp_*` ou pergunte ao usuário qual prefixo/schema usar
+- **NÃO** use a chave `service_role` — só existe a `anon` neste documento e é o que deve ir ao frontend
+- **SEMPRE** habilite RLS (`enable row level security`) em tabelas novas + crie pelo menos uma policy
+- **NÃO** tente acessar o Dashboard Supabase nem o Google Cloud Console — são ações do usuário
+- Se o usuário quiser restringir a um domínio diferente de `colegioeleve.com.br`, pergunte qual antes de codar
+
+### Passo 4 — Teste final
+
+Depois de tudo pronto, rode (quando possível):
+- `npm run dev` (ou equivalente) e verifique se o servidor sobe sem erros
+- Abra a página de login no navegador e confirme que o botão "Entrar com Google" aparece
+- Reporte ao usuário a URL local + lembre-o dos **Passos 2** do dashboard
+
+---
+
 ## 1. Credenciais do Projeto Supabase
 
 ```env
