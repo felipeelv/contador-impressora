@@ -9,6 +9,7 @@ let extratos = [];
 let conteudosDB = {};
 let turmasDB = [];
 let appInitialized = false;
+let userProfile = null;
 
 // ─── Auth ─────────────────────────────────────────────────────────────────────
 
@@ -93,10 +94,12 @@ db.auth.onAuthStateChange(async (event, session) => {
             showLoginScreen('Acesso não autorizado. Entre em contato com o administrador.');
             return;
         }
+        userProfile = perfil;
         hideLoginScreen(session.user);
         await initApp();
     } else if (event === 'SIGNED_OUT') {
         appInitialized = false;
+        userProfile = null;
         showLoginScreen();
     }
 });
@@ -319,13 +322,15 @@ function renderReports() {
         return;
     }
 
+    const isAdmin = userProfile === 'admin';
+
     chavesOrdenadas.forEach(key => {
         const grupo = agrupado[key];
         const card = document.createElement('div');
-        card.className = "border border-eleve-gray-light rounded-lg p-4 bg-eleve-light/30 hover:bg-white hover:shadow-card transition-all";
+        card.className = "relative group border border-eleve-gray-light rounded-lg p-4 bg-eleve-light/30 hover:bg-white hover:shadow-card transition-all";
         card.innerHTML = `
-            <p class="text-xs font-semibold text-eleve-orange mb-1 uppercase tracking-wide">${grupo.disciplina}</p>
-            <h4 class="text-sm font-bold text-eleve-dark mb-3 truncate" title="${grupo.unidade}">${grupo.unidade}</h4>
+            <p class="text-xs font-semibold text-eleve-orange mb-1 uppercase tracking-wide pr-8">${grupo.disciplina}</p>
+            <h4 class="text-sm font-bold text-eleve-dark mb-3 truncate pr-8" title="${grupo.unidade}">${grupo.unidade}</h4>
             <div class="flex justify-between items-end border-t border-eleve-gray-light pt-3">
                 <div>
                     <p class="text-[10px] text-eleve-gray uppercase tracking-wider mb-0.5 font-semibold">Total Páginas</p>
@@ -337,8 +342,72 @@ function renderReports() {
                 </div>
             </div>
         `;
+
+        if (isAdmin) {
+            const btn = document.createElement('button');
+            btn.className = 'absolute top-2 right-2 w-7 h-7 inline-flex items-center justify-center rounded-full text-eleve-gray hover:bg-red-50 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100';
+            btn.title = 'Excluir todos os lançamentos desta unidade';
+            btn.innerHTML = '<i data-feather="trash-2" class="w-3.5 h-3.5"></i>';
+            btn.addEventListener('click', () => deleteUnidadeGroup(grupo.disciplina, grupo.unidade));
+            card.appendChild(btn);
+        }
+
         container.appendChild(card);
     });
+
+    if (window.feather) feather.replace();
+}
+
+async function deleteUnidadeGroup(disciplina, unidade) {
+    if (userProfile !== 'admin') {
+        alert('Apenas administradores podem excluir registros em lote.');
+        return;
+    }
+
+    const bimestre = filterBimestre.value;
+    const turma    = filterTurma.value;
+
+    const alvos = extratos.filter(item =>
+        item.disciplina === disciplina &&
+        item.unidade === unidade &&
+        (!bimestre || item.bimestre === bimestre) &&
+        (!turma    || item.turma === turma)
+    );
+
+    if (alvos.length === 0) {
+        alert('Nenhum registro encontrado para excluir.');
+        return;
+    }
+
+    const filtrosTxt = [
+        bimestre ? `${bimestre}º bimestre` : null,
+        turma    ? `turma ${turma}`         : null,
+    ].filter(Boolean).join(', ');
+
+    const msg = `Excluir ${alvos.length} lançamento(s) de "${disciplina} — ${unidade}"` +
+                (filtrosTxt ? ` (${filtrosTxt})` : '') +
+                '?\n\nEsta ação não pode ser desfeita.';
+
+    if (!confirm(msg)) return;
+
+    const ids = alvos.map(a => a.id);
+    const { error } = await db
+        .from('impressoes')
+        .delete()
+        .in('id', ids);
+
+    if (error) {
+        console.error('Erro ao excluir em lote:', error);
+        alert('Erro ao excluir os registros. Tente novamente.');
+        return;
+    }
+
+    const idSet = new Set(ids);
+    extratos = extratos.filter(item => !idSet.has(item.id));
+    populateTurmaFilter();
+    updateDashboard();
+    renderTable();
+    renderReports();
 }
 
 const PAGE_META = {
