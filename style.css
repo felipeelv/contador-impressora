@@ -24,6 +24,12 @@
     background-clip: text;
 }
 
+/* Título da página — mantém tamanho original sem o escalonamento global */
+#page-title {
+    font-size: 1.875rem !important;
+    line-height: 1.2 !important;
+}
+
 /* Modal activation classes */
 #entry-modal.active {
     opacity: 1;
