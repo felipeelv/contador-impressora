@@ -1,5 +1,6 @@
 const SUPABASE_URL  = 'https://kmnosfjpxpsmtjqgwoih.supabase.co';
 const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imttbm9zZmpweHBzbXRqcWd3b2loIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMxNzEzNDYsImV4cCI6MjA4ODc0NzM0Nn0.qiB-divCLL4sTWO_XJacQXLBFHVOrt39AU_5s7a7b7w';
+const ALLOWED_DOMAIN = 'colegioeleve.com.br';
 
 const { createClient } = supabase;
 const db = createClient(SUPABASE_URL, SUPABASE_KEY);
@@ -7,6 +8,72 @@ const db = createClient(SUPABASE_URL, SUPABASE_KEY);
 let extratos = [];
 let conteudosDB = {};
 let turmasDB = [];
+let appInitialized = false;
+
+// ─── Auth ─────────────────────────────────────────────────────────────────────
+
+function showLoginScreen(showError = false) {
+    document.getElementById('login-screen').classList.remove('hidden');
+    document.getElementById('login-error').classList.toggle('hidden', !showError);
+}
+
+function hideLoginScreen(user) {
+    document.getElementById('login-screen').classList.add('hidden');
+    const name = user.user_metadata?.full_name || user.email.split('@')[0];
+    const avatar = user.user_metadata?.avatar_url;
+    document.getElementById('user-name').textContent = name;
+    if (avatar) {
+        document.getElementById('user-avatar').src = avatar;
+        document.getElementById('user-avatar').classList.remove('hidden');
+        document.getElementById('user-avatar-placeholder').classList.add('hidden');
+    }
+}
+
+async function signInWithGoogle() {
+    await db.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+            redirectTo: window.location.href,
+            queryParams: { hd: ALLOWED_DOMAIN },
+        },
+    });
+}
+
+async function signOut() {
+    await db.auth.signOut();
+    showLoginScreen();
+}
+
+async function initApp() {
+    if (appInitialized) return;
+    appInitialized = true;
+    await loadConteudos();
+    await loadTurmas();
+    await loadExtratos();
+    populateTurmaFilter();
+    updateDashboard();
+    renderTable();
+    renderReports();
+    if (window.feather) feather.replace();
+}
+
+// Escuta mudanças de auth (inclui retorno do OAuth redirect)
+db.auth.onAuthStateChange(async (event, session) => {
+    if (event === 'SIGNED_IN' || event === 'INITIAL_SESSION') {
+        if (!session) { showLoginScreen(); return; }
+        const email = session.user.email || '';
+        if (!email.endsWith('@' + ALLOWED_DOMAIN)) {
+            await db.auth.signOut();
+            showLoginScreen(true);
+            return;
+        }
+        hideLoginScreen(session.user);
+        await initApp();
+    } else if (event === 'SIGNED_OUT') {
+        appInitialized = false;
+        showLoginScreen();
+    }
+});
 
 const kpiTotalFolhas      = document.getElementById('kpi-total-folhas');
 const kpiTopDisciplina    = document.getElementById('kpi-top-disciplina');
@@ -30,14 +97,8 @@ const inputPaginas        = document.getElementById('paginas_por_aluno');
 const inputFolhasCalc     = document.getElementById('folhas_calculadas');
 const displayTotalFolhas  = document.getElementById('total-folhas-calc');
 
-document.addEventListener('DOMContentLoaded', async () => {
-    await loadConteudos();
-    await loadTurmas();
-    await loadExtratos();
-    populateTurmaFilter();
-    updateDashboard();
-    renderTable();
-    renderReports();
+document.addEventListener('DOMContentLoaded', () => {
+    // A inicialização ocorre via onAuthStateChange após verificação de auth
 });
 
 async function loadExtratos() {
