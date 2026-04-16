@@ -1,6 +1,10 @@
-const STORAGE_KEY = 'impressao_dados_v2_eleve';
+const SUPABASE_URL  = 'https://kmnosfjpxpsmtjqgwoih.supabase.co';
+const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imttbm9zZmpweHBzbXRqcWd3b2loIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMxNzEzNDYsImV4cCI6MjA4ODc0NzM0Nn0.qiB-divCLL4sTWO_XJacQXLBFHVOrt39AU_5s7a7b7w';
 
-let extratos = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+const { createClient } = supabase;
+const db = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+let extratos = [];
 let conteudosDB = {};
 let turmasDB = [];
 
@@ -29,11 +33,40 @@ const displayTotalFolhas  = document.getElementById('total-folhas-calc');
 document.addEventListener('DOMContentLoaded', async () => {
     await loadConteudos();
     await loadTurmas();
+    await loadExtratos();
     populateTurmaFilter();
     updateDashboard();
     renderTable();
     renderReports();
 });
+
+async function loadExtratos() {
+    const { data, error } = await db
+        .from('impressoes')
+        .select('*')
+        .order('data', { ascending: false });
+
+    if (error) {
+        console.error('Erro ao carregar impressões:', error);
+        return;
+    }
+
+    // Normaliza os campos do banco para o formato usado no frontend
+    extratos = (data || []).map(row => ({
+        id:           row.id,
+        data:         row.data,
+        disciplina:   row.disciplina,
+        serie:        row.serie,
+        turma:        row.turma,
+        bimestre:     row.bimestre,
+        unidade:      row.unidade,
+        tipo:         row.tipo,
+        impressora:   row.impressora,
+        paginas:      row.paginas,
+        totalPaginas: row.total_paginas,
+        folhas:       row.folhas,
+    }));
+}
 
 async function loadTurmas() {
     try {
@@ -49,7 +82,7 @@ async function loadConteudos() {
     try {
         const response = await fetch('conteudos.json');
         conteudosDB = await response.json();
-        
+
         // Popular disciplinas para o modal
         selectDisciplina.innerHTML = '<option value="">Selecione a Disciplina</option>';
         Object.keys(conteudosDB).sort().forEach(disc => {
@@ -79,7 +112,6 @@ function getSerieFromTurma(disc, turmaName) {
     const normalizedTurma = turmaName.toLowerCase().replace(/º/g, '').replace(/ª/g, '').replace(/°/g, '').trim();
     for (let serie of Object.keys(conteudosDB[disc])) {
         const normalizedSerie = serie.toLowerCase().replace(/º/g, '').replace(/ª/g, '').replace(/°/g, '').trim();
-        // Check if the first word/number of the serie is in the turma name
         if (normalizedTurma.includes(normalizedSerie)) {
             return serie;
         }
@@ -96,7 +128,6 @@ function populateTurmas() {
 
     if (!disc || !conteudosDB[disc]) return;
 
-    // Only add turmas that match a 'série' in the selected discipline's contents
     turmasDB.forEach(t => {
         if (getSerieFromTurma(disc, t.turma)) {
             const opt = document.createElement('option');
@@ -112,14 +143,11 @@ function calculateTotal() {
     const option = selectTurma.options[selectTurma.selectedIndex];
     const alunos = option && option.dataset.alunos ? parseInt(option.dataset.alunos) : 0;
     const paginas = parseInt(inputPaginas.value) || 0;
-    
-    // Calculamos o total de páginas (alunos * páginas por aluno)
+
     const totalPaginas = alunos * paginas;
-    
-    // Cada folha tem 2 páginas. Calculamos quantas folhas 1 aluno precisa, depois multiplicamos pelo total de alunos.
     const folhasPorAluno = Math.ceil(paginas / 2);
     const totalFolhas = alunos * folhasPorAluno;
-    
+
     document.getElementById('paginas_calculadas').value = totalPaginas;
     inputFolhasCalc.value = totalFolhas;
 }
@@ -178,7 +206,6 @@ function renderReports() {
 
     const data = filterDisc ? baseData.filter(item => item.disciplina === filterDisc) : baseData;
 
-    // Agrupar por Disciplina -> Unidade
     const agrupado = {};
     data.forEach(item => {
         const key = `${item.disciplina} | ${item.unidade}`;
@@ -240,7 +267,6 @@ const NAV_MAP = {
     fluxo:     'nav-fluxo',
 };
 
-// Seções visíveis por contexto de navegação
 const SECTION_VISIBILITY = {
     dashboard: { show: ['history'],  hide: ['reports', 'fluxo'] },
     history:   { show: ['history'],  hide: ['reports', 'fluxo'] },
@@ -257,7 +283,6 @@ function showSection(sectionId) {
     vis.show.forEach(id => { const el = document.getElementById(id); el && el.classList.remove('hidden'); });
     vis.hide.forEach(id => { const el = document.getElementById(id); el && el.classList.add('hidden'); });
 
-    // Atualiza estado ativo no menu
     Object.values(NAV_MAP).forEach(navId => {
         const el = document.getElementById(navId);
         if (!el) return;
@@ -270,7 +295,6 @@ function showSection(sectionId) {
         activeEl.classList.remove('text-eleve-gray', 'font-medium');
     }
 
-    // Renderiza a seção quando acessada
     if (sectionId === 'fluxo') renderFluxo();
 }
 
@@ -300,12 +324,11 @@ function renderFluxo() {
 
     const ano = parseInt(document.getElementById('fluxo-filter-ano')?.value || new Date().getFullYear());
 
-    // Agrupa por mês
     const meses = {};
     extratos.forEach(item => {
         const d = new Date(item.data);
         if (d.getFullYear() !== ano) return;
-        const m = d.getMonth(); // 0-11
+        const m = d.getMonth();
         if (!meses[m]) meses[m] = { colorA: 0, colorB: 0, pb: 0, totalPags: 0, totalFolhas: 0 };
         const pags   = parseInt(item.totalPaginas || item.folhas || 0);
         const folhas = parseInt(item.folhas || 0);
@@ -316,7 +339,6 @@ function renderFluxo() {
         else if (item.impressora === 'PB')      meses[m].pb     += pags;
     });
 
-    // KPIs do fluxo
     const mesesComDados = Object.values(meses);
     const totalAno   = mesesComDados.reduce((s, m) => s + m.totalPags, 0);
     const mediaMes   = mesesComDados.length ? Math.round(totalAno / mesesComDados.length) : 0;
@@ -336,7 +358,6 @@ function renderFluxo() {
     document.getElementById('fluxo-pico-val').textContent   = picoIdx !== undefined ? `${maxVal.toLocaleString('pt-BR')} págs` : 'sem dados';
     document.getElementById('fluxo-top-impressora').textContent = totalAno > 0 ? topImpressora : '—';
 
-    // Tabela
     const tbody = document.getElementById('fluxo-table-body');
     tbody.innerHTML = '';
 
@@ -354,7 +375,6 @@ function renderFluxo() {
         return;
     }
 
-    // Percorre todos os 12 meses; exibe apenas os que têm dados
     for (let m = 0; m < 12; m++) {
         if (!meses[m]) continue;
         const d = meses[m];
@@ -385,7 +405,6 @@ function renderFluxo() {
         tbody.appendChild(tr);
     }
 
-    // Linha de total
     const trTotal = document.createElement('tr');
     trTotal.className = "bg-eleve-light border-t-2 border-eleve-gray-light";
     const totalFolhasAno = mesesComDados.reduce((s,m) => s + m.totalFolhas, 0);
@@ -441,7 +460,6 @@ function updateDashboard() {
     const folhasNoMes = dadosNoMes.reduce((acc, curr) => acc + parseInt(curr.folhas || 0), 0);
     const paginasNoMes = dadosNoMes.reduce((acc, curr) => acc + parseInt(curr.totalPaginas || curr.folhas || 0), 0);
 
-    // Contagem por impressora (Mês Atual)
     let colorA = 0, colorB = 0, pb = 0;
     dadosNoMes.forEach(item => {
         const pgs = parseInt(item.totalPaginas || item.folhas || 0);
@@ -452,7 +470,6 @@ function updateDashboard() {
 
     const FRANQUIA = 20000;
 
-    // Label do mês nas franquias
     const mesFranquiaEl = document.getElementById('mes-franquia');
     if (mesFranquiaEl) mesFranquiaEl.textContent = new Date().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
 
@@ -477,10 +494,10 @@ function updateDashboard() {
 
     document.getElementById('kpi-total-paginas').textContent = totalPaginas.toLocaleString('pt-BR');
     document.getElementById('kpi-total-folhas-label').textContent = `${totalFolhas.toLocaleString('pt-BR')} folhas acumuladas`;
-    
+
     document.getElementById('kpi-mes-atual-paginas').textContent = paginasNoMes.toLocaleString('pt-BR');
     document.getElementById('kpi-mes-label').textContent = `${folhasNoMes.toLocaleString('pt-BR')} folhas neste mês`;
-    
+
     kpiTopDisciplina.textContent  = topDisciplina;
     kpiTotalRegistros.textContent = data.length.toLocaleString('pt-BR');
 }
@@ -489,7 +506,6 @@ function updateFranquia(key, usado, limite) {
     const pct      = Math.min(Math.round((usado / limite) * 100), 100);
     const restante = Math.max(limite - usado, 0);
 
-    // Cor da barra e badge conforme percentual
     let barColor, badgeClass, badgeText;
     if (pct >= 100) {
         barColor   = 'bg-red-500';
@@ -591,7 +607,6 @@ function renderTable() {
 }
 
 function openModal() {
-    // Pré-preenche com hoje
     const hoje = new Date().toISOString().split('T')[0];
     document.getElementById('data-lancamento').value = hoje;
     modal.classList.add('active');
@@ -603,12 +618,12 @@ function closeModal() {
     calculateTotal();
 }
 
-function handleFormSubmit(event) {
+async function handleFormSubmit(event) {
     event.preventDefault();
 
     const totalFolhas = parseInt(inputFolhasCalc.value) || 0;
     const totalPaginas = parseInt(document.getElementById('paginas_calculadas').value) || 0;
-    
+
     if (totalFolhas <= 0) {
         alert("Preencha a turma e as páginas corretamente para calcular o total de folhas.");
         return;
@@ -617,26 +632,50 @@ function handleFormSubmit(event) {
     const disc = selectDisciplina.value.trim();
     const turma = selectTurma.value.trim();
     const serieDerivada = getSerieFromTurma(disc, turma) || turma;
-
     const dataEscolhida = document.getElementById('data-lancamento').value;
 
     const novoRegistro = {
-        id:         crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).substr(2, 9),
-        data:       dataEscolhida ? new Date(dataEscolhida + 'T12:00:00').toISOString() : new Date().toISOString(),
-        disciplina: disc,
-        serie:      serieDerivada,
-        turma:      turma,
-        bimestre:   selectBimestre.value,
-        unidade:    selectUnidade.value.trim(),
-        tipo:       selectTipo.value,
-        impressora: selectImpressora.value,
-        paginas:    inputPaginas.value,
-        totalPaginas: totalPaginas,
-        folhas:     totalFolhas
+        data:          dataEscolhida ? new Date(dataEscolhida + 'T12:00:00').toISOString() : new Date().toISOString(),
+        disciplina:    disc,
+        serie:         serieDerivada,
+        turma:         turma,
+        bimestre:      selectBimestre.value,
+        unidade:       selectUnidade.value.trim(),
+        tipo:          selectTipo.value,
+        impressora:    selectImpressora.value,
+        paginas:       inputPaginas.value,
+        total_paginas: totalPaginas,
+        folhas:        totalFolhas,
     };
 
-    extratos.push(novoRegistro);
-    saveData();
+    const { data, error } = await db
+        .from('impressoes')
+        .insert(novoRegistro)
+        .select()
+        .single();
+
+    if (error) {
+        console.error('Erro ao salvar:', error);
+        alert('Erro ao salvar o registro. Tente novamente.');
+        return;
+    }
+
+    // Adiciona ao array local no formato do frontend
+    extratos.unshift({
+        id:           data.id,
+        data:         data.data,
+        disciplina:   data.disciplina,
+        serie:        data.serie,
+        turma:        data.turma,
+        bimestre:     data.bimestre,
+        unidade:      data.unidade,
+        tipo:         data.tipo,
+        impressora:   data.impressora,
+        paginas:      data.paginas,
+        totalPaginas: data.total_paginas,
+        folhas:       data.folhas,
+    });
+
     populateTurmaFilter();
     closeModal();
     updateDashboard();
@@ -644,17 +683,23 @@ function handleFormSubmit(event) {
     renderReports();
 }
 
-function deleteEntry(id) {
+async function deleteEntry(id) {
     if (confirm('Tem certeza que deseja excluir este registro de impressão?')) {
+        const { error } = await db
+            .from('impressoes')
+            .delete()
+            .eq('id', id);
+
+        if (error) {
+            console.error('Erro ao excluir:', error);
+            alert('Erro ao excluir o registro. Tente novamente.');
+            return;
+        }
+
         extratos = extratos.filter(item => item.id !== id);
-        saveData();
         populateTurmaFilter();
         updateDashboard();
         renderTable();
         renderReports();
     }
-}
-
-function saveData() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(extratos));
 }
