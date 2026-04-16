@@ -1,0 +1,54 @@
+/* Custom utilities not perfectly covered by generic Tailwind */
+
+/* Gradiente principal — títulos de destaque */
+.text-gradient-main {
+    background: linear-gradient(90deg, #FF6F3D, #8A2BE2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+  
+/* Gradiente suave — destaques secundários */
+.text-gradient-soft {
+    background: linear-gradient(90deg, #1AC2C2, #8A2BE2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+  
+/* Gradiente teal-orange */
+.text-gradient-warm {
+    background: linear-gradient(90deg, #FF6F3D, #1AC2C2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Modal activation classes */
+#entry-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#entry-modal.active > div {
+    transform: translateY(0);
+}
+
+/* Custom Scrollbar for better appearance */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F8F9FA; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #848484; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4A4A4A; 
+}

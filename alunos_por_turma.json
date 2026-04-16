@@ -1,0 +1,114 @@
+{
+  "total_alunos": 500,
+  "total_turmas": 27,
+  "turmas": [
+    {
+      "turma": "1° ANO A - KEN ( M) 2026",
+      "alunos": 22
+    },
+    {
+      "turma": "1° ANO B - KEN (T) 2026",
+      "alunos": 9
+    },
+    {
+      "turma": "1° SÉRIE A - KEN  2026",
+      "alunos": 39
+    },
+    {
+      "turma": "2° ANO A - KEN ( M) 2026",
+      "alunos": 17
+    },
+    {
+      "turma": "2° ANO B - KEN ( M) 2026",
+      "alunos": 15
+    },
+    {
+      "turma": "2° ANO C - KEN ( T ) 2026",
+      "alunos": 17
+    },
+    {
+      "turma": "2° SÉRIE A - KEN (I) 2026",
+      "alunos": 42
+    },
+    {
+      "turma": "3° ANO A - KEN ( M) 2026",
+      "alunos": 17
+    },
+    {
+      "turma": "3° ANO B - KEN ( M) 2026",
+      "alunos": 13
+    },
+    {
+      "turma": "3° ANO C - KEN ( T) 2026",
+      "alunos": 11
+    },
+    {
+      "turma": "3° SÉRIE A - KEN (I) 2026",
+      "alunos": 2
+    },
+    {
+      "turma": "4° ANO A  - KEN (M) 2026",
+      "alunos": 21
+    },
+    {
+      "turma": "4° ANO B - KEN ( T) 2026",
+      "alunos": 16
+    },
+    {
+      "turma": "5° ANO A - KEN (M) 2026",
+      "alunos": 17
+    },
+    {
+      "turma": "5° ANO B- KEN (M) 2026",
+      "alunos": 18
+    },
+    {
+      "turma": "5° ANO C- KEN (T) 2026",
+      "alunos": 9
+    },
+    {
+      "turma": "6° ANO A - KEN ( M) 2026",
+      "alunos": 26
+    },
+    {
+      "turma": "6º ANO B - KEN (M) 2026",
+      "alunos": 26
+    },
+    {
+      "turma": "7º ANO A - KEN (M) 2026",
+      "alunos": 25
+    },
+    {
+      "turma": "7º ANO B - KEN (M) 2026",
+      "alunos": 23
+    },
+    {
+      "turma": "8º ANO A - KEN (M) 2026",
+      "alunos": 22
+    },
+    {
+      "turma": "8º ANO B - KEN (M) 2026",
+      "alunos": 17
+    },
+    {
+      "turma": "9º ANO A - KEN (M) 2026",
+      "alunos": 34
+    },
+    {
+      "turma": "INFANTIL 4 A - KEN (M) 2026",
+      "alunos": 18
+    },
+    {
+      "turma": "INFANTIL 4 B -KEN (T) 2026",
+      "alunos": 3
+    },
+    {
+      "turma": "INFANTIL 5 A -KEN (M) 2026",
+      "alunos": 15
+    },
+    {
+      "turma": "INFANTIL 5 B -KEN (T) 2026",
+      "alunos": 6
+    }
+  ]
+}

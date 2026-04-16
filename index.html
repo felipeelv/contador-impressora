@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Impressões - Colégio Eleve</title>
+    <link rel="icon" type="image/x-icon" href="LOGOS_DOCS/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'eleve-orange':        '#FF6F3D',
+              'eleve-orange-light':  '#FFB09A',
+              'eleve-orange-dark':   '#D94E1F',
+              'eleve-teal':          '#1AC2C2',
+              'eleve-teal-light':    '#7DE8E8',
+              'eleve-teal-dark':     '#0F9494',
+              'eleve-purple':        '#8A2BE2',
+              'eleve-purple-light':  '#B57BE8',
+              'eleve-gray':          '#848484',
+              'eleve-gray-light':    '#F0F0F0',
+              'eleve-gray-dark':     '#4A4A4A',
+              'eleve-dark':          '#2D2D2D',
+              'eleve-light':         '#F8F9FA',
+            },
+            fontFamily: {
+              sans:    ['"DM Sans"', 'sans-serif'],
+              display: ['"DM Sans"', 'sans-serif'],
+            },
+            fontSize: {
+              'display': ['3.5rem', { lineHeight: '1.05', letterSpacing: '-0.03em', fontWeight: '800' }],
+              'h1':      ['2.5rem', { lineHeight: '1.1',  letterSpacing: '-0.02em', fontWeight: '700' }],
+              'h2':      ['2rem',   { lineHeight: '1.2',  letterSpacing: '-0.01em', fontWeight: '700' }],
+              'h3':      ['1.5rem', { lineHeight: '1.3',  fontWeight: '600' }],
+              'h4':      ['1.125rem',{ lineHeight: '1.4', fontWeight: '600' }],
+            },
+            borderRadius: {
+              'eleve':    '12px',
+              'eleve-sm': '8px',
+              'eleve-lg': '20px',
+            },
+            boxShadow: {
+              'eleve':      '0 4px 24px rgba(255, 111, 61, 0.15)',
+              'eleve-teal': '0 4px 24px rgba(26, 194, 194, 0.15)',
+              'card':       '0 2px 16px rgba(0, 0, 0, 0.08)',
+              'card-hover': '0 8px 32px rgba(0, 0, 0, 0.14)',
+              'btn':        '0 4px 14px rgba(255, 111, 61, 0.35)',
+              'btn-teal':   '0 4px 14px rgba(26, 194, 194, 0.35)',
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-eleve-light text-eleve-gray font-sans antialiased selection:bg-eleve-orange/20 selection:text-eleve-orange-dark">
+
+    <div class="flex h-screen overflow-hidden">
+
+        <!-- Sidebar -->
+        <aside class="w-[240px] bg-white border-r border-eleve-gray-light flex flex-col z-10 relative flex-shrink-0">
+            <!-- Brand -->
+            <div class="px-6 py-6 border-b border-eleve-gray-light flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity" onclick="showSection('dashboard')">
+                <img src="LOGOS_DOCS/logo.png" alt="Colégio Eleve" class="w-8 object-contain flex-shrink-0">
+                <div>
+                    <p class="text-xs font-bold text-eleve-dark leading-none">Colégio Eleve</p>
+                    <p class="text-xs text-eleve-gray leading-tight mt-0.5">Controle de Impressões</p>
+                </div>
+            </div>
+
+            <!-- Nav -->
+            <div class="px-4 py-6 flex-1">
+                <p class="text-xs font-semibold text-eleve-gray tracking-widest uppercase mb-3 px-2">Menu</p>
+                <nav class="flex flex-col gap-1">
+                    <a href="#" id="nav-dashboard" onclick="showSection('dashboard')" class="flex items-center gap-3 px-3 py-2.5 rounded-eleve bg-eleve-teal/10 text-eleve-teal-dark font-semibold text-sm transition-all">
+                        <i data-feather="grid" class="w-4 h-4 flex-shrink-0"></i> Dashboard
+                    </a>
+                    <a href="#history" id="nav-historico" onclick="showSection('history')" class="flex items-center gap-3 px-3 py-2.5 rounded-eleve text-eleve-gray hover:bg-eleve-gray-light/60 hover:text-eleve-dark font-medium text-sm transition-all">
+                        <i data-feather="clock" class="w-4 h-4 flex-shrink-0"></i> Histórico
+                    </a>
+                    <a href="#reports" id="nav-reports" onclick="showSection('reports')" class="flex items-center gap-3 px-3 py-2.5 rounded-eleve text-eleve-gray hover:bg-eleve-gray-light/60 hover:text-eleve-dark font-medium text-sm transition-all">
+                        <i data-feather="pie-chart" class="w-4 h-4 flex-shrink-0"></i> Controle Unidades
+                    </a>
+                    <a href="#fluxo" id="nav-fluxo" onclick="showSection('fluxo')" class="flex items-center gap-3 px-3 py-2.5 rounded-eleve text-eleve-gray hover:bg-eleve-gray-light/60 hover:text-eleve-dark font-medium text-sm transition-all">
+                        <i data-feather="bar-chart-2" class="w-4 h-4 flex-shrink-0"></i> Fluxo Mensal
+                    </a>
+                </nav>
+            </div>
+
+            <div class="px-6 py-5 border-t border-eleve-gray-light">
+                <p class="text-xs text-eleve-gray font-medium">© 2026 Colégio Eleve</p>
+                <p class="text-xs text-eleve-gray mt-0.5 uppercase tracking-wider" style="font-size: 10px;">Educação Além do Comum</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto bg-eleve-light">
+            <div class="p-8 max-w-7xl mx-auto">
+
+                <!-- Page Header -->
+                <header class="mb-8">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h1 id="page-title" class="text-3xl font-bold text-eleve-dark tracking-tight">Dashboard</h1>
+                            <p id="page-subtitle" class="text-base text-eleve-gray mt-1">Acompanhe os gastos em materiais didáticos</p>
+                        </div>
+                        <button class="bg-eleve-orange text-white font-semibold py-2.5 px-6 rounded-full shadow-btn hover:bg-eleve-orange-dark hover:scale-105 transition-all duration-300 flex items-center gap-2 text-sm" onclick="openModal()">
+                            <i data-feather="plus" class="w-4 h-4"></i> Lançar Impressão
+                        </button>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="flex items-center gap-6 mt-5">
+                        <div class="flex items-center gap-2">
+                            <label class="text-xs font-semibold text-eleve-gray uppercase tracking-wide">Bimestre</label>
+                            <select id="filter-bimestre" onchange="applyFilters()" class="text-sm text-eleve-dark font-medium bg-white border border-eleve-gray-light rounded-eleve px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-eleve-teal/40 focus:border-eleve-teal transition-all appearance-none cursor-pointer pr-7 relative">
+                                <option value="">Todos</option>
+                                <option value="1">1º Bimestre</option>
+                                <option value="2">2º Bimestre</option>
+                                <option value="3">3º Bimestre</option>
+                                <option value="4">4º Bimestre</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <label class="text-xs font-semibold text-eleve-gray uppercase tracking-wide">Turma</label>
+                            <select id="filter-turma" onchange="applyFilters()" class="text-sm text-eleve-dark font-medium bg-white border border-eleve-gray-light rounded-eleve px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-eleve-teal/40 focus:border-eleve-teal transition-all appearance-none cursor-pointer pr-7">
+                                <option value="">Todas</option>
+                            </select>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- KPIs — 4 colunas -->
+                <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+
+                    <!-- Volume Total -->
+                    <div class="bg-white rounded-eleve-lg shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-orange/10 text-eleve-orange flex-shrink-0">
+                                <i data-feather="trending-up" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">Volume Total</span>
+                        </div>
+                        <p class="text-3xl font-bold text-eleve-orange leading-none mb-1 flex items-baseline gap-1">
+                            <span id="kpi-total-paginas">0</span>
+                            <span class="text-sm font-medium text-eleve-gray lowercase">págs</span>
+                        </p>
+                        <p class="text-xs text-eleve-gray font-medium" id="kpi-total-folhas-label">0 folhas acumuladas</p>
+                    </div>
+
+                    <!-- Volume no Mês -->
+                    <div class="bg-white rounded-eleve-lg shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-teal/10 text-eleve-teal-dark flex-shrink-0">
+                                <i data-feather="calendar" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">Mês Atual</span>
+                        </div>
+                        <p class="text-3xl font-bold text-eleve-teal-dark leading-none mb-1 flex items-baseline gap-1">
+                            <span id="kpi-mes-atual-paginas">0</span>
+                            <span class="text-sm font-medium text-eleve-gray lowercase">págs</span>
+                        </p>
+                        <p class="text-xs text-eleve-gray font-medium" id="kpi-mes-label">0 folhas este mês</p>
+                    </div>
+
+                    <!-- Top Disciplina -->
+                    <div class="bg-white rounded-eleve-lg shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-purple/10 text-eleve-purple flex-shrink-0">
+                                <i data-feather="book-open" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">Top Disciplina</span>
+                        </div>
+                        <p class="text-xl font-bold text-eleve-dark leading-tight mb-1 line-clamp-1" id="kpi-top-disciplina">—</p>
+                        <p class="text-xs text-eleve-gray">maior volume de folhas</p>
+                    </div>
+
+                    <!-- Total de Registros -->
+                    <div class="bg-white rounded-eleve-lg shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 p-5">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-gray-light text-eleve-gray-dark flex-shrink-0">
+                                <i data-feather="hash" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">Registros</span>
+                        </div>
+                        <p class="text-3xl font-bold text-eleve-dark leading-none mb-1" id="kpi-total-registros">0</p>
+                        <p class="text-xs text-eleve-gray">lançamentos no período</p>
+                    </div>
+
+                </section>
+
+                <!-- Franquia Mensal por Impressora -->
+                <section class="mb-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-bold text-eleve-dark uppercase tracking-wide">Franquia Mensal — <span id="mes-franquia" class="text-eleve-teal-dark normal-case font-semibold"></span></h3>
+                        <span class="text-xs text-eleve-gray">Limite color: 20.000 cópias/mês</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                        <!-- Color A -->
+                        <div class="bg-white rounded-eleve-lg shadow-card p-5">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 flex-shrink-0">
+                                        <i data-feather="printer" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-eleve-gray font-bold uppercase tracking-wide">Color A</p>
+                                        <p class="text-xs text-eleve-gray font-medium">franquia 20.000 cópias</p>
+                                    </div>
+                                </div>
+                                <span id="badge-color-a" class="text-xs font-bold px-2.5 py-1 rounded-full"></span>
+                            </div>
+                            <div class="flex items-baseline gap-1.5 mb-3">
+                                <span class="text-3xl font-bold text-eleve-dark" id="kpi-color-a">0</span>
+                                <span class="text-sm text-eleve-gray font-medium">/ 20.000 págs</span>
+                            </div>
+                            <div class="w-full bg-eleve-gray-light rounded-full h-3 overflow-hidden mb-2">
+                                <div id="bar-color-a" class="h-3 rounded-full transition-all duration-700" style="width:0%"></div>
+                            </div>
+                            <div class="flex justify-between text-xs text-eleve-gray font-medium">
+                                <span id="pct-color-a">0% usado</span>
+                                <span id="rest-color-a">20.000 restantes</span>
+                            </div>
+                        </div>
+
+                        <!-- Color B -->
+                        <div class="bg-white rounded-eleve-lg shadow-card p-5">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-purple-500 flex-shrink-0">
+                                        <i data-feather="printer" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-eleve-gray font-bold uppercase tracking-wide">Color B</p>
+                                        <p class="text-xs text-eleve-gray font-medium">franquia 20.000 cópias</p>
+                                    </div>
+                                </div>
+                                <span id="badge-color-b" class="text-xs font-bold px-2.5 py-1 rounded-full"></span>
+                            </div>
+                            <div class="flex items-baseline gap-1.5 mb-3">
+                                <span class="text-3xl font-bold text-eleve-dark" id="kpi-color-b">0</span>
+                                <span class="text-sm text-eleve-gray font-medium">/ 20.000 págs</span>
+                            </div>
+                            <div class="w-full bg-eleve-gray-light rounded-full h-3 overflow-hidden mb-2">
+                                <div id="bar-color-b" class="h-3 rounded-full transition-all duration-700" style="width:0%"></div>
+                            </div>
+                            <div class="flex justify-between text-xs text-eleve-gray font-medium">
+                                <span id="pct-color-b">0% usado</span>
+                                <span id="rest-color-b">20.000 restantes</span>
+                            </div>
+                        </div>
+
+                        <!-- PB -->
+                        <div class="bg-white rounded-eleve-lg shadow-card p-5">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 flex-shrink-0">
+                                    <i data-feather="printer" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-eleve-gray font-bold uppercase tracking-wide">PB</p>
+                                    <p class="text-xs text-eleve-gray font-medium">preto e branco — sem franquia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-baseline gap-1.5 mb-3">
+                                <span class="text-3xl font-bold text-eleve-dark" id="kpi-pb">0</span>
+                                <span class="text-sm text-eleve-gray font-medium">págs no mês</span>
+                            </div>
+                            <div class="flex items-center gap-2 pt-2 border-t border-eleve-gray-light">
+                                <i data-feather="info" class="w-3.5 h-3.5 text-eleve-gray flex-shrink-0"></i>
+                                <span class="text-xs text-eleve-gray">Contagem livre — sem limite mensal</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Resumo por Unidade (Novo Relatório) -->
+                <section id="reports" class="bg-white rounded-eleve-lg shadow-card overflow-hidden mb-6 hidden">
+                    <div class="px-6 py-4 border-b border-eleve-gray-light flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-eleve-dark">Controle por Unidade</h3>
+                        <div class="flex gap-2">
+                            <select id="report-disciplina" onchange="renderReports()" class="text-sm border border-eleve-gray-light rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-eleve-teal/40">
+                                <option value="">Todas Disciplinas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w-full overflow-x-auto p-6">
+                        <div id="reports-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Fluxo Mensal -->
+                <section id="fluxo" class="hidden">
+
+                    <!-- KPIs do Fluxo -->
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                        <div class="bg-white rounded-eleve-lg shadow-card p-5">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-orange/10 text-eleve-orange flex-shrink-0">
+                                    <i data-feather="layers" class="w-4 h-4"></i>
+                                </div>
+                                <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">Total Ano</span>
+                            </div>
+                            <p class="text-3xl font-bold text-eleve-orange leading-none mb-1 flex items-baseline gap-1">
+                                <span id="fluxo-total-ano">0</span>
+                                <span class="text-sm font-medium text-eleve-gray lowercase">págs</span>
+                            </p>
+                            <p class="text-xs text-eleve-gray font-medium" id="fluxo-ano-label">acumulado no ano</p>
+                        </div>
+                        <div class="bg-white rounded-eleve-lg shadow-card p-5">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-teal/10 text-eleve-teal-dark flex-shrink-0">
+                                    <i data-feather="trending-up" class="w-4 h-4"></i>
+                                </div>
+                                <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">Média Mensal</span>
+                            </div>
+                            <p class="text-3xl font-bold text-eleve-teal-dark leading-none mb-1 flex items-baseline gap-1">
+                                <span id="fluxo-media">0</span>
+                                <span class="text-sm font-medium text-eleve-gray lowercase">págs</span>
+                            </p>
+                            <p class="text-xs text-eleve-gray font-medium">média por mês com dados</p>
+                        </div>
+                        <div class="bg-white rounded-eleve-lg shadow-card p-5">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-purple/10 text-eleve-purple flex-shrink-0">
+                                    <i data-feather="award" class="w-4 h-4"></i>
+                                </div>
+                                <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">Mês Pico</span>
+                            </div>
+                            <p class="text-xl font-bold text-eleve-dark leading-tight mb-1" id="fluxo-pico-mes">—</p>
+                            <p class="text-xs text-eleve-gray font-medium" id="fluxo-pico-val">maior volume registrado</p>
+                        </div>
+                        <div class="bg-white rounded-eleve-lg shadow-card p-5">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center bg-eleve-gray-light text-eleve-gray-dark flex-shrink-0">
+                                    <i data-feather="printer" class="w-4 h-4"></i>
+                                </div>
+                                <span class="text-sm text-eleve-gray font-bold uppercase tracking-wide">+ Usada</span>
+                            </div>
+                            <p class="text-xl font-bold text-eleve-dark leading-tight mb-1" id="fluxo-top-impressora">—</p>
+                            <p class="text-xs text-eleve-gray font-medium">impressora com mais volume</p>
+                        </div>
+                    </div>
+
+                    <!-- Tabela de Fluxo Mensal -->
+                    <div class="bg-white rounded-eleve-lg shadow-card overflow-hidden">
+                        <div class="px-6 py-4 border-b border-eleve-gray-light flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-eleve-dark">Fluxo por Mês</h3>
+                            <div class="flex items-center gap-2">
+                                <label class="text-xs font-semibold text-eleve-gray uppercase tracking-wide">Ano</label>
+                                <select id="fluxo-filter-ano" onchange="renderFluxo()" class="text-sm text-eleve-dark font-medium bg-white border border-eleve-gray-light rounded-eleve px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-eleve-teal/40 focus:border-eleve-teal appearance-none cursor-pointer">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left">
+                                <thead>
+                                    <tr class="border-b border-eleve-gray-light/60 bg-eleve-light/50">
+                                        <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Mês</th>
+                                        <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">
+                                            <div class="flex items-center gap-1.5">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-blue-400 inline-block"></span> Color A
+                                            </div>
+                                        </th>
+                                        <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">
+                                            <div class="flex items-center gap-1.5">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-purple-400 inline-block"></span> Color B
+                                            </div>
+                                        </th>
+                                        <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">
+                                            <div class="flex items-center gap-1.5">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-gray-400 inline-block"></span> PB
+                                            </div>
+                                        </th>
+                                        <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Total Págs</th>
+                                        <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Total Folhas</th>
+                                        <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Volume</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="fluxo-table-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- History Table -->
+                <section id="history" class="bg-white rounded-eleve-lg shadow-card overflow-hidden">
+                    <div class="px-6 py-4 border-b border-eleve-gray-light flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-eleve-dark">Últimos Lançamentos</h3>
+                        <div class="relative">
+                            <i data-feather="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-eleve-gray"></i>
+                            <input type="text" id="search-input" placeholder="Buscar disciplina ou turma..." class="pl-9 pr-4 py-2 rounded-full border border-eleve-gray-light bg-eleve-light text-sm focus:outline-none focus:ring-2 focus:ring-eleve-teal/50 focus:border-eleve-teal transition-all min-w-[240px]" onkeyup="renderTable()">
+                        </div>
+                    </div>
+                    <div class="w-full overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="border-b border-eleve-gray-light/60 bg-eleve-light/50">
+                                    <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Data</th>
+                                    <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Disciplina</th>
+                                    <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Turma</th>
+                                    <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Corte</th>
+                                    <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide">Qtd. Folhas</th>
+                                    <th class="py-3 px-6 text-xs font-semibold text-eleve-gray-dark uppercase tracking-wide text-right">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history-table-body">
+                                <!-- Data will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="entry-modal" class="fixed inset-0 bg-eleve-dark/40 backdrop-blur-sm flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+        <div class="bg-white w-full max-w-xl rounded-eleve-lg shadow-card-hover transform translate-y-8 transition-transform duration-300 relative">
+            <div class="px-6 py-5 border-b border-eleve-gray-light flex justify-between items-center">
+                <h2 class="text-base font-semibold text-eleve-dark">Registrar Impressão</h2>
+                <button class="w-8 h-8 flex items-center justify-center rounded-full text-eleve-gray hover:bg-eleve-gray-light hover:text-eleve-orange transition-colors" onclick="closeModal()">
+                    <i data-feather="x" class="w-4 h-4"></i>
+                </button>
+            </div>
+
+            <form id="entry-form" onsubmit="handleFormSubmit(event)" class="p-6">
+                <div class="mb-5">
+                    <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Data do Lançamento</label>
+                    <input type="date" id="data-lancamento" required
+                        class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark text-sm cursor-pointer">
+                </div>
+                <div class="grid grid-cols-2 gap-5 mb-5">
+                    <div>
+                        <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Disciplina</label>
+                        <select id="disciplina" required onchange="populateTurmas()" class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark appearance-none bg-white text-sm">
+                            <option value="">Selecione a Disciplina</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Turma</label>
+                        <select id="turma" required onchange="populateBimestres(); calculateTotal()" class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark appearance-none bg-white text-sm truncate">
+                            <option value="">Selecione a Turma</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-5 mb-5">
+                    <div>
+                        <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Bimestre</label>
+                        <select id="bimestre" required onchange="populateUnidades()" class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark appearance-none bg-white text-sm">
+                            <option value="">Selecione o Bimestre</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Unidade / Etapa</label>
+                        <select id="unidade" required class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark appearance-none bg-white text-sm truncate">
+                            <option value="">Selecione a Unidade</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-5 mb-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Tipo</label>
+                        <select id="tipo" required class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark appearance-none bg-white text-sm">
+                            <option value="">Selecione o Tipo</option>
+                            <option value="Atividades">Atividades</option>
+                            <option value="Caderno de Tarefas">Caderno de Tarefas</option>
+                            <option value="Conteúdo">Conteúdo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Impressora</label>
+                        <select id="impressora" required class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark appearance-none bg-white text-sm">
+                            <option value="">Selecione...</option>
+                            <option value="Color A">Color A</option>
+                            <option value="Color B">Color B</option>
+                            <option value="PB">PB (Preto e Branco)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-eleve-gray-dark mb-1.5 uppercase tracking-wide">Páginas/Aluno</label>
+                        <input type="number" id="paginas_por_aluno" min="1" placeholder="Ex: 4" required oninput="calculateTotal()" class="w-full px-4 py-2.5 rounded-eleve border border-eleve-gray-light focus:outline-none focus:ring-2 focus:ring-eleve-orange/30 focus:border-eleve-orange transition-all text-eleve-dark placeholder-eleve-gray/50 text-sm font-medium">
+                        <input type="hidden" id="paginas_calculadas" value="0">
+                        <input type="hidden" id="folhas_calculadas" value="0">
+                    </div>
+                </div>
+
+                <div class="flex justify-end gap-3 pt-5 border-t border-eleve-gray-light">
+                    <button type="button" class="px-5 py-2.5 rounded-full font-semibold text-sm text-eleve-gray hover:bg-eleve-gray-light transition-all" onclick="closeModal()">
+                        Cancelar
+                    </button>
+                    <button type="submit" class="bg-eleve-orange text-white font-semibold py-2.5 px-6 rounded-full shadow-btn hover:bg-eleve-orange-dark hover:scale-105 transition-all duration-300 text-sm">
+                        Salvar Lançamento
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

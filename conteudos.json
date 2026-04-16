@@ -1,0 +1,3787 @@
+{
+  "Português 1": {
+    "1º Ano": {
+      "1": {
+        "Unidade 1 - Consciência Fonológica": [
+          "Capítulo 1: Sons das Letras",
+          "Capítulo 2: Sílabas",
+          "Capítulo 3: Fonemas"
+        ],
+        "Unidade 2 - Alfabeto": [
+          "Capítulo 1: Reconhecimento das Letras",
+          "Capítulo 2: Organização Alfabética",
+          "Capítulo 3: Formas das Letras"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Relação Letra-Som": [
+          "Capítulo 1: Sistema Alfabético",
+          "Capítulo 2: Decodificação"
+        ],
+        "Unidade 4 - Manipulação Fonológica": [
+          "Capítulo 1: Manipulação de Fonemas",
+          "Capítulo 2: Comparação de Palavras",
+          "Capítulo 3: Relação Som-Escrita"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Direção da Escrita": [
+          "Capítulo 1: Direção e Alinhamento",
+          "Capítulo 2: Organização na Página"
+        ],
+        "Unidade 6 - Segmentação": [
+          "Capítulo 1: Espaçamento entre Palavras",
+          "Capítulo 2: Escrita Alfabética"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Ortografia Básica": [
+          "Capítulo 1: Escrita de Palavras",
+          "Capítulo 2: Uso de Maiúsculas"
+        ],
+        "Unidade 8 - Convenções da Escrita": [
+          "Capítulo 1: Sinais de Pontuação (Identificação)",
+          "Capítulo 2: Significados das Palavras"
+        ]
+      }
+    },
+    "2º Ano": {
+      "1": {
+        "Unidade 1 - Fluência e Segmentação": [
+          "Capítulo 1: Fluência na Leitura e Escrita",
+          "Capítulo 2: Segmentação de Palavras",
+          "Capítulo 3: Manipulação Silábica"
+        ],
+        "Unidade 2 - Estruturas Silábicas": [
+          "Capítulo 1: Tipos de Sílabas",
+          "Capítulo 2: Sílabas Complexas",
+          "Capítulo 3: Princípio Acrofônico"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Regularidades Diretas": [
+          "Capítulo 1: Correspondências Regulares Diretas",
+          "Capítulo 2: Uso de Maiúsculas e Minúsculas"
+        ],
+        "Unidade 4 - Regularidades Contextuais e Nasalidade": [
+          "Capítulo 1: Correspondências Contextuais",
+          "Capítulo 2: Marcas de Nasalidade"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Pontuação Simples": [
+          "Capítulo 1: Ponto Final",
+          "Capítulo 2: Ponto de Interrogação",
+          "Capítulo 3: Ponto de Exclamação"
+        ],
+        "Unidade 6 - Formas de Escrita": [
+          "Capítulo 1: Letra Imprensa e Cursiva",
+          "Capítulo 2: Escrita de Frases e Textos Curtos"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Aumentativo e Diminutivo": [
+          "Capítulo 1: Aumentativo com -ão",
+          "Capítulo 2: Diminutivo com -inho/-zinho"
+        ],
+        "Unidade 8 - Sinônimos e Antônimos": [
+          "Capítulo 1: Sinônimos",
+          "Capítulo 2: Antônimos"
+        ]
+      }
+    },
+    "3º Ano": {
+      "1": {
+        "Unidade 1 - Regularidades Contextuais": [
+          "Capítulo 1: C/QU e G/GU",
+          "Capítulo 2: R/RR e S/SS",
+          "Capítulo 3: Vogais Átonas Finais"
+        ],
+        "Unidade 2 - Estruturas Silábicas e Dígrafos": [
+          "Capítulo 1: Estruturas Silábicas Ampliadas",
+          "Capítulo 2: Dígrafos",
+          "Capítulo 3: Encontros Consonantais"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Classificação Silábica": [
+          "Capítulo 1: Separação Silábica",
+          "Capítulo 2: Classificação por Número de Sílabas",
+          "Capítulo 3: Sílaba Tônica"
+        ],
+        "Unidade 4 - Acentuação e Dicionário": [
+          "Capítulo 1: Acentuação Gráfica Básica",
+          "Capítulo 2: Uso do Dicionário"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Substantivos": [
+          "Capítulo 1: Tipos de Substantivos",
+          "Capítulo 2: Formação de Substantivos",
+          "Capítulo 3: Função do Substantivo na Oração"
+        ],
+        "Unidade 6 - Verbos e Adjetivos": [
+          "Capítulo 1: Verbos",
+          "Capítulo 2: Adjetivos"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Artigos, Pronomes e Formação de Palavras": [
+          "Capítulo 1: Artigos",
+          "Capítulo 2: Pronomes Pessoais",
+          "Capítulo 3: Prefixos e Sufixos"
+        ],
+        "Unidade 8 - Pontuação": [
+          "Capítulo 1: Pontuação Básica (Revisão)",
+          "Capítulo 2: Pontuação em Diálogos",
+          "Capítulo 3: Vírgula"
+        ]
+      }
+    },
+    "4º Ano": {
+      "1": {
+        "Unidade 1 - Regularidades Complexas I": [
+          "Capítulo 1: S/SS e Ç",
+          "Capítulo 2: X e CH",
+          "Capítulo 3: G e J"
+        ],
+        "Unidade 2 - Regularidades Complexas II e Dicionário": [
+          "Capítulo 1: Vogais Átonas",
+          "Capítulo 2: Ditongos Reduzidos",
+          "Capítulo 3: Uso do Dicionário"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Acentuação Gráfica": [
+          "Capítulo 1: Revisão: Oxítonas e Monossílabos",
+          "Capítulo 2: Acentuação de Paroxítonas"
+        ],
+        "Unidade 4 - Verbos": [
+          "Capítulo 1: Tempos Verbais do Indicativo",
+          "Capítulo 2: Concordância Verbal"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Classes Gramaticais": [
+          "Capítulo 1: Pronomes",
+          "Capítulo 2: Advérbios",
+          "Capítulo 3: Conjunções Básicas"
+        ],
+        "Unidade 6 - Pontuação Ampliada": [
+          "Capítulo 1: Pontuação Básica (Revisão)",
+          "Capítulo 2: Vírgula"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Formação de Palavras": [
+          "Capítulo 1: Prefixos",
+          "Capítulo 2: Sufixos Regulares"
+        ],
+        "Unidade 8 - Concordância e Estrutura Frasal": [
+          "Capítulo 1: Concordância Nominal",
+          "Capítulo 2: Frase, Oração e Período"
+        ]
+      }
+    },
+    "5º Ano": {
+      "1": {
+        "Unidade 1 - Ortografia Completa": [
+          "Capítulo 1: Regras Regulares e Contextuais",
+          "Capítulo 2: Regras Morfológicas",
+          "Capítulo 3: Correspondências Irregulares"
+        ],
+        "Unidade 2 - Homônimos, Parônimos e Polissemia": [
+          "Capítulo 1: Homônimos e Parônimos",
+          "Capítulo 2: Polissemia"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Acentuação Gráfica Completa": [
+          "Capítulo 1: Revisão: Oxítonas e Paroxítonas",
+          "Capítulo 2: Proparoxítonas",
+          "Capítulo 3: Uso do Hífen"
+        ],
+        "Unidade 4 - Preposições, Interjeições e Conjunções": [
+          "Capítulo 1: Preposições",
+          "Capítulo 2: Interjeições",
+          "Capítulo 3: Conjunções e Relações Semânticas"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Sujeito e Predicado": [
+          "Capítulo 1: Sujeito",
+          "Capítulo 2: Predicado",
+          "Capítulo 3: Concordância Verbal"
+        ],
+        "Unidade 6 - Complementos e Verbos": [
+          "Capítulo 1: Complementos Verbais",
+          "Capítulo 2: Tempos Verbais do Indicativo",
+          "Capítulo 3: Modos Verbais"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Pontuação Avançada": [
+          "Capítulo 1: Vírgula (Regras Principais)",
+          "Capítulo 2: Ponto e Vírgula e Dois-Pontos",
+          "Capítulo 3: Pontuação Expressiva"
+        ],
+        "Unidade 8 - Variação Linguística": [
+          "Capítulo 1: Modalidades da Língua",
+          "Capítulo 2: Registros Linguísticos",
+          "Capítulo 3: Variedades Regionais e Sociais"
+        ]
+      }
+    },
+    "6º Ano": {
+      "1": {
+        "Unidade 1 - Fonologia": [
+          "Capítulo 1: Fonema e Letra",
+          "Capítulo 2: Encontros Vocálicos e Consonantais",
+          "Capítulo 3: Dígrafos"
+        ],
+        "Unidade 2 - Semântica: Relações entre Palavras": [
+          "Capítulo 1: Sinonímia e Antonímia",
+          "Capítulo 2: Homonímia e Paronímia",
+          "Capítulo 3: Polissemia e Campo Semântico"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Substantivo e Artigo": [
+          "Capítulo 1: Substantivo Conceito e Classificação",
+          "Capítulo 2: Substantivo Flexões",
+          "Capítulo 3: Artigo"
+        ],
+        "Unidade 4 - Adjetivo, Numeral e Coesão": [
+          "Capítulo 1: Adjetivo",
+          "Capítulo 2: Numeral",
+          "Capítulo 3: Coesão Referencial"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Pronome": [
+          "Capítulo 1: Pronomes Pessoais",
+          "Capítulo 2: Pronomes Possessivos e Demonstrativos",
+          "Capítulo 3: Pronomes na Coesão Textual"
+        ],
+        "Unidade 6 - Verbo": [
+          "Capítulo 1: Conceito e Estrutura do Verbo",
+          "Capítulo 2: Flexões Verbais e Tempos do Indicativo",
+          "Capítulo 3: Modos Subjuntivo e Imperativo",
+          "Capítulo 4: Formas Nominais e Advérbio"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Sintaxe": [
+          "Capítulo 1: Frase, Oração e Período",
+          "Capítulo 2: Sintagmas Nominais e Verbais",
+          "Capítulo 3: Sujeito e Predicado",
+          "Capítulo 4: Período Composto e Concordância"
+        ],
+        "Unidade 8 - Ortografia e Pontuação": [
+          "Capítulo 1: Uso de S e Z",
+          "Capítulo 2: Uso de G/J e X/CH",
+          "Capítulo 3: Pontuação"
+        ]
+      }
+    },
+    "7º Ano": {
+      "1": {
+        "Unidade 1 - Ortografia e Acentuação": [
+          "Capítulo 1: Acentuação Gráfica Regras Gerais",
+          "Capítulo 2: Uso do Hífen",
+          "Capítulo 3: Formação de Palavras Derivação",
+          "Capítulo 4: Formação de Palavras Composição"
+        ],
+        "Unidade 2 - Classes Invariáveis": [
+          "Capítulo 1: Advérbio Estudo Aprofundado",
+          "Capítulo 2: Locução Adverbial",
+          "Capítulo 3: Preposição",
+          "Capítulo 4: Locução Prepositiva"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Variação Linguística": [
+          "Capítulo 1: Tipos de Variação",
+          "Capítulo 2: Norma-Padrão e Preconceito Linguístico"
+        ],
+        "Unidade 4 - Verbo: Classificação e Modos": [
+          "Capítulo 1: Conceito e Classificação dos Verbos",
+          "Capítulo 2: Verbos Auxiliares e Locuções Verbais",
+          "Capítulo 3: Modo Indicativo",
+          "Capítulo 4: Modo Subjuntivo e Imperativo"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Verbo: Formas e Vozes": [
+          "Capítulo 1: Formas Nominais do Verbo",
+          "Capítulo 2: Vozes Verbais",
+          "Capítulo 3: Voz Reflexiva e Concordância"
+        ],
+        "Unidade 6 - Coesão e Pontuação": [
+          "Capítulo 1: Coesão Textual",
+          "Capítulo 2: Coesão Sequencial",
+          "Capítulo 3: Coerência Textual",
+          "Capítulo 4: Sinais de Pontuação"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Figuras de Linguagem": [
+          "Capítulo 1: Figuras de Palavras",
+          "Capítulo 2: Figuras de Pensamento",
+          "Capítulo 3: Figuras de Sintaxe"
+        ],
+        "Unidade 8 - Sintaxe da Oração e Período Composto": [
+          "Capítulo 1: Termos Essenciais da Oração",
+          "Capítulo 2: Predicado",
+          "Capítulo 3: Período Simples e Composto",
+          "Capítulo 4: Orações Coordenadas"
+        ]
+      }
+    },
+    "8º Ano": {
+      "1": {
+        "Unidade 1 - Semântica: Sentido das Palavras": [
+          "Capítulo 1: Denotação e Conotação",
+          "Capítulo 2: Polissemia e Ambiguidade"
+        ],
+        "Unidade 2 - Semântica: Relações entre Palavras": [
+          "Capítulo 1: Sinonímia, Antonímia e Paronímia",
+          "Capítulo 2: Homonímia, Hiperonímia e Hiponímia"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Morfologia: Estrutura e Formação de Palavras": [
+          "Capítulo 1: Elementos Mórficos",
+          "Capítulo 2: Processos de Formação de Palavras"
+        ],
+        "Unidade 4 - Introdução à Sintaxe": [
+          "Capítulo 1: Frase, Oração e Período",
+          "Capítulo 2: Variação Linguística"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Termos Essenciais da Oração": [
+          "Capítulo 1: Sujeito",
+          "Capítulo 2: Predicado"
+        ],
+        "Unidade 6 - Concordância Verbal e Nominal": [
+          "Capítulo 1: Concordância Verbal",
+          "Capítulo 2: Concordância Nominal"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Termos Integrantes da Oração": [
+          "Capítulo 1: Complementos Verbais",
+          "Capítulo 2: Complemento Nominal e Agente da Passiva"
+        ],
+        "Unidade 8 - Termos Acessórios da Oração": [
+          "Capítulo 1: Adjuntos",
+          "Capítulo 2: Aposto e Vocativo"
+        ]
+      }
+    },
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Fonética e Fonologia": [
+          "Capítulo 1: Fonema e Letra",
+          "Capítulo 2: Classificação dos Fonemas",
+          "Capítulo 3: Encontros Vocálicos e Consonantais"
+        ],
+        "Unidade 2 - Ortografia e Variação Linguística": [
+          "Capítulo 1: Ortografia da Língua Portuguesa",
+          "Capítulo 2: Introdução à Variação Linguística"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Morfologia: Classes Gramaticais I": [
+          "Capítulo 1: Substantivo",
+          "Capítulo 2: Artigo e Numeral",
+          "Capítulo 3: Adjetivo"
+        ],
+        "Unidade 4 - Estrutura e Formação de Palavras": [
+          "Capítulo 1: Elementos Mórficos",
+          "Capítulo 2: Processos de Formação de Palavras"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Morfologia: Classes Gramaticais II": [
+          "Capítulo 1: Pronome",
+          "Capítulo 2: Verbo",
+          "Capítulo 3: Advérbio e Palavras Denotativas"
+        ],
+        "Unidade 6 - Sintaxe: Introdução e Termos Essenciais": [
+          "Capítulo 1: Frase, Oração e Período",
+          "Capítulo 2: Termos Essenciais da Oração"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Sintaxe: Termos Integrantes e Acessórios": [
+          "Capítulo 1: Termos Integrantes da Oração",
+          "Capítulo 2: Termos Acessórios da Oração"
+        ],
+        "Unidade 8 - Pontuação e Coesão Textual": [
+          "Capítulo 1: Pontuação",
+          "Capítulo 2: Introdução à Coesão e Coerência Textual"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Concordância Nominal": [
+          "Capítulo 1: Regra Geral e Casos Básicos",
+          "Capítulo 2: Casos Especiais de Concordância Nominal"
+        ],
+        "Unidade 2 - Concordância Verbal": [
+          "Capítulo 1: Sujeito Simples Regras e Casos Especiais",
+          "Capítulo 2: Sujeito Composto e Verbos Impessoais"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Regência Nominal e Verbal": [
+          "Capítulo 1: Regência Nominal",
+          "Capítulo 2: Regência Verbal"
+        ],
+        "Unidade 4 - Crase": [
+          "Capítulo 1: Conceito e Casos Obrigatórios",
+          "Capítulo 2: Casos Proibidos e Facultativos"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Colocação Pronominal": [
+          "Capítulo 1: Próclise, Mesóclise e Ênclise",
+          "Capítulo 2: Colocação nas Locuções Verbais"
+        ],
+        "Unidade 6 - Funções do QUE e do SE": [
+          "Capítulo 1: Funções do \"QUE\"",
+          "Capítulo 2: Funções do \"SE\""
+        ]
+      },
+      "4": {
+        "Unidade 7 - Conectivos e Operadores Argumentativos": [
+          "Capítulo 1: Conjunções Coordenativas e Subordinativas",
+          "Capítulo 2: Operadores Argumentativos"
+        ],
+        "Unidade 8 - Modalização e Análise Linguística de Textos Argumentativos": [
+          "Capítulo 1: Modalização Discursiva",
+          "Capítulo 2: Análise Linguística de Textos Argumentativos"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Período Composto por Coordenação": [
+          "Capítulo 1: Orações Coordenadas",
+          "Capítulo 2: Pontuação no Período Composto por Coordenação"
+        ],
+        "Unidade 2 - Período Composto por Subordinação: Orações Substantivas": [
+          "Capítulo 1: Orações Subordinadas Substantivas",
+          "Capítulo 2: Orações Substantivas Reduzidas"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Orações Subordinadas Adjetivas": [
+          "Capítulo 1: Classificação das Orações Adjetivas",
+          "Capítulo 2: Pronomes Relativos: Emprego e Funções Sintáticas"
+        ],
+        "Unidade 4 - Orações Subordinadas Adverbiais": [
+          "Capítulo 1: Classificação das Orações Adverbiais",
+          "Capítulo 2: Orações Adverbiais Reduzidas e Pontuação"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Semântica": [
+          "Capítulo 1: Relações de Sentido entre Palavras",
+          "Capítulo 2: Denotação, Conotação e Ambiguidade"
+        ],
+        "Unidade 6 - Figuras de Linguagem": [
+          "Capítulo 1: Figuras de Palavra e Figuras de Pensamento",
+          "Capítulo 2: Figuras de Sintaxe e Figuras de Som"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Funções da Linguagem e Análise Semiótica": [
+          "Capítulo 1: Funções da Linguagem",
+          "Capítulo 2: Análise Semiótica: Textos Multissemióticos"
+        ],
+        "Unidade 8 - Interpretação de Texto e Variação Linguística": [
+          "Capítulo 1: Estratégias de Interpretação de Texto",
+          "Capítulo 2: Variação Linguística: Aprofundamento",
+          "Capítulo 3: Revisão Integrada para ENEM e Vestibulares"
+        ]
+      }
+    }
+  },
+  "Matemática 1": {
+    "4º Ano": {
+      "1": {
+        "Unidade 1 - Sistema de Numeração e Geometria Plana": [
+          "Capítulo 1: Números Naturais até 10.000",
+          "Capítulo 2: Valor Posicional",
+          "Capítulo 3: Comparação e Ordenação de Números",
+          "Capítulo 4: Polígonos",
+          "Capítulo 5: Ângulos Retos e Não Retos",
+          "Capítulo 6: Quadriláteros"
+        ],
+        "Unidade 2 - Operações Fundamentais e Simetria": [
+          "Capítulo 1: Adição com Números Maiores",
+          "Capítulo 2: Subtração com Números Maiores",
+          "Capítulo 3: Relações entre Adição e Subtração",
+          "Capítulo 4: Simetria de Reflexão",
+          "Capítulo 5: Deslocamentos no Espaço",
+          "Capítulo 6: Representações Espaciais"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Multiplicação, Divisão e Sólidos Geométricos": [
+          "Capítulo 1: Multiplicação",
+          "Capítulo 2: Divisão",
+          "Capítulo 3: Relações entre Multiplicação e Divisão",
+          "Capítulo 4: Prismas",
+          "Capítulo 5: Pirâmides",
+          "Capítulo 6: Relações entre Sólidos e Planificações"
+        ],
+        "Unidade 4 - Frações, Decimais e Plano Cartesiano": [
+          "Capítulo 1: Propriedades das Operações",
+          "Capítulo 2: Frações Unitárias",
+          "Capítulo 3: Números Decimais",
+          "Capítulo 4: Malha Quadriculada",
+          "Capítulo 5: Introdução ao Plano Cartesiano",
+          "Capítulo 6: Representações e Trajetos"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Números Racionais e Medidas": [
+          "Capítulo 1: Frações Equivalentes",
+          "Capítulo 2: Comparação de Frações",
+          "Capítulo 3: Operações com Frações",
+          "Capítulo 4: Relação Fração-Decimal",
+          "Capítulo 5: Medidas de Comprimento",
+          "Capítulo 6: Medidas de Massa",
+          "Capítulo 7: Medidas de Capacidade"
+        ],
+        "Unidade 6 - Padrões Algébricos e Área": [
+          "Capítulo 1: Múltiplos de um Número",
+          "Capítulo 2: Divisores de um Número",
+          "Capítulo 3: Sequências Numéricas",
+          "Capítulo 4: Área de Figuras Planas",
+          "Capítulo 5: Medidas de Tempo",
+          "Capítulo 6: Temperatura"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Pensamento Algébrico e Educação Financeira": [
+          "Capítulo 1: Relações Inversas entre Operações",
+          "Capítulo 2: Propriedades da Igualdade",
+          "Capítulo 3: Sentenças Matemáticas",
+          "Capítulo 4: Sistema Monetário Brasileiro",
+          "Capítulo 5: Situações de Compra e Venda",
+          "Capítulo 6: Consumo Consciente"
+        ],
+        "Unidade 8 - Estatística, Probabilidade e Resolução de Problemas": [
+          "Capítulo 1: Noções de Probabilidade",
+          "Capítulo 2: Leitura e Interpretação de Dados",
+          "Capítulo 3: Pesquisa e Coleta de Dados",
+          "Capítulo 4: Análise e Comunicação de Dados",
+          "Capítulo 5: Problemas com Múltiplas Etapas",
+          "Capítulo 6: Problemas de Contagem",
+          "Capítulo 7: Problemas com Frações e Decimais",
+          "Capítulo 8: Estratégias Diversificadas de Resolução"
+        ]
+      }
+    },
+    "5º Ano": {
+      "1": {
+        "Unidade 1 - Sistema de Numeração e Polígonos": [
+          "Capítulo 1: Números Naturais",
+          "Capítulo 2: Números Decimais",
+          "Capítulo 3: Polígonos Reconhecimento e Elementos",
+          "Capítulo 4: Classificação de Triângulos"
+        ],
+        "Unidade 2 - Frações, Ângulos e Quadriláteros": [
+          "Capítulo 1: Representação de Frações",
+          "Capítulo 2: Frações Equivalentes e Comparação",
+          "Capítulo 3: Medição de Ângulos",
+          "Capítulo 4: Quadriláteros e Circunferência"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Operações e Medidas de Comprimento e Área": [
+          "Capítulo 1: Adição e Subtração com Naturais e Decimais",
+          "Capítulo 2: Multiplicação e Divisão",
+          "Capítulo 3: Medidas de Comprimento",
+          "Capítulo 4: Perímetro e Área de Figuras Planas"
+        ],
+        "Unidade 4 - Frações, Porcentagem e Sólidos Geométricos": [
+          "Capítulo 1: Operações com Frações",
+          "Capítulo 2: Porcentagem",
+          "Capítulo 3: Sólidos Geométricos e Planificações",
+          "Capítulo 4: Problemas de Contagem"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Pensamento Algébrico e Plano Cartesiano": [
+          "Capítulo 1: Equivalência",
+          "Capítulo 2: Igualdades com Termo Desconhecido",
+          "Capítulo 3: Padrões e Regularidades",
+          "Capítulo 4: Localização no Plano Cartesiano",
+          "Capítulo 5: Transformações Geométricas"
+        ],
+        "Unidade 6 - Proporcionalidade e Grandezas": [
+          "Capítulo 1: Grandezas Proporcionais",
+          "Capítulo 2: Aplicações de Proporcionalidade",
+          "Capítulo 3: Partilha em Partes Desiguais",
+          "Capítulo 4: Volume e Capacidade",
+          "Capítulo 5: Massa, Tempo e Temperatura"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Resolução de Problemas e Educação Financeira": [
+          "Capítulo 1: Problemas com Naturais, Decimais e Frações",
+          "Capítulo 2: Problemas com Proporcionalidade",
+          "Capítulo 3: Educação Financeira",
+          "Capítulo 4: Estratégias de Resolução"
+        ],
+        "Unidade 8 - Probabilidade e Estatística": [
+          "Capítulo 1: Probabilidade",
+          "Capítulo 2: Leitura e Interpretação de Dados",
+          "Capítulo 3: Pesquisa Estatística",
+          "Capítulo 4: Comunicação de Resultados",
+          "Capítulo 5: Problemas de Lógica e Integração"
+        ]
+      }
+    },
+    "6º Ano": {
+      "1": {
+        "Unidade 1 - Sistema de Numeração e Números Naturais": [
+          "Capítulo 1: Sistema de Numeração Decimal",
+          "Capítulo 2: Conjunto dos Números Naturais",
+          "Capítulo 3: Comparação e Ordenação"
+        ],
+        "Unidade 2 - Operações Fundamentais": [
+          "Capítulo 1: Adição e Subtração",
+          "Capítulo 2: Multiplicação e Divisão",
+          "Capítulo 3: Resolução de Problemas"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Potenciação, Radiciação e Expressões Numéricas": [
+          "Capítulo 1: Potenciação",
+          "Capítulo 2: Quadrados e Cubos Perfeitos",
+          "Capítulo 3: Radiciação",
+          "Capítulo 4: Expressões Numéricas"
+        ],
+        "Unidade 4 - Divisibilidade": [
+          "Capítulo 1: Múltiplos e Divisores",
+          "Capítulo 2: Números Primos e Compostos",
+          "Capítulo 3: MDC e MMC"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Números Racionais: Frações": [
+          "Capítulo 1: Conceito de Fração",
+          "Capítulo 2: Frações Equivalentes",
+          "Capítulo 3: Comparação e Ordenação de Frações",
+          "Capítulo 4: Operações com Frações"
+        ],
+        "Unidade 6 - Números Racionais: Decimais e Porcentagem": [
+          "Capítulo 1: Representação Decimal",
+          "Capítulo 2: Transformações e Comparações",
+          "Capítulo 3: Operações com Decimais",
+          "Capítulo 4: Porcentagem"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Introdução à Álgebra": [
+          "Capítulo 1: Expressões Algébricas",
+          "Capítulo 2: Linguagem Algébrica",
+          "Capítulo 3: Equações do 1º Grau Introdução",
+          "Capítulo 4: Sequências Numéricas"
+        ],
+        "Unidade 8 - Proporcionalidade e Educação Financeira": [
+          "Capítulo 1: Razão e Proporção",
+          "Capítulo 2: Grandezas Proporcionais",
+          "Capítulo 3: Educação Financeira"
+        ]
+      }
+    },
+    "7º Ano": {
+      "1": {
+        "Unidade 1 - Números Inteiros: Conceitos e Representação": [
+          "Capítulo 1: Introdução aos Números Inteiros",
+          "Capítulo 2: Reta Numérica",
+          "Capítulo 3: Números Opostos e Módulo",
+          "Capítulo 4: Comparação e Ordenação"
+        ],
+        "Unidade 2 - Operações com Números Inteiros": [
+          "Capítulo 1: Adição de Números Inteiros",
+          "Capítulo 2: Subtração de Números Inteiros",
+          "Capítulo 3: Multiplicação de Inteiros",
+          "Capítulo 4: Divisão de Inteiros"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Potenciação, Múltiplos e Divisores": [
+          "Capítulo 1: Potenciação com Base Inteira",
+          "Capítulo 2: Propriedades da Potenciação",
+          "Capítulo 3: Múltiplos e Divisores de Números Naturais",
+          "Capítulo 4: MDC e MMC"
+        ],
+        "Unidade 4 - Introdução à Álgebra": [
+          "Capítulo 1: Conceito de Variável e Expressões Algébricas",
+          "Capítulo 2: Monômios e Polinômios",
+          "Capítulo 3: Operações com Expressões Algébricas",
+          "Capítulo 4: Sequências Numéricas e Regularidades"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Números Racionais": [
+          "Capítulo 1: Conceito e Representação dos Racionais",
+          "Capítulo 2: Frações Equivalentes",
+          "Capítulo 3: Adição e Subtração de Frações",
+          "Capítulo 4: Multiplicação e Divisão de Frações"
+        ],
+        "Unidade 6 - Decimais, Potenciação e Radiciação de Racionais": [
+          "Capítulo 1: Operações com Decimais",
+          "Capítulo 2: Potenciação de Racionais",
+          "Capítulo 3: Raiz Quadrada",
+          "Capítulo 4: Razão e Proporção Introdução"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Equações e Inequações do 1º Grau": [
+          "Capítulo 1: Conceitos Fundamentais de Equações",
+          "Capítulo 2: Resolução de Equações do 1º Grau",
+          "Capítulo 3: Problemas com Equações",
+          "Capítulo 4: Inequações do 1º Grau"
+        ],
+        "Unidade 8 - Proporcionalidade e Porcentagem": [
+          "Capítulo 1: Grandezas Proporcionais",
+          "Capítulo 2: Regra de Três Simples",
+          "Capítulo 3: Regra de Três Composta",
+          "Capítulo 4: Porcentagem Avançada"
+        ]
+      }
+    },
+    "8º Ano": {
+      "1": {
+        "Unidade 1 - Potenciação, Radiciação e Notação Científica": [
+          "Capítulo 1: Potenciação com Expoentes Inteiros",
+          "Capítulo 2: Notação Científica",
+          "Capítulo 3: Radiciação"
+        ],
+        "Unidade 2 - Expressões Algébricas e Princípio Multiplicativo": [
+          "Capítulo 1: Conceitos Fundamentais de Álgebra",
+          "Capítulo 2: Operações com Polinômios",
+          "Capítulo 3: Princípio Multiplicativo"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Números Racionais e Irracionais": [
+          "Capítulo 1: Números Racionais Representação Decimal",
+          "Capítulo 2: Operações com Números Racionais",
+          "Capítulo 3: Números Irracionais Introdução"
+        ],
+        "Unidade 4 - Equações do 1º Grau e Representação Gráfica": [
+          "Capítulo 1: Equações do 1º Grau Aprofundamento",
+          "Capítulo 2: Equação Linear com Duas Incógnitas",
+          "Capítulo 3: Equação Linear e Reta no Plano Cartesiano"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Sistemas de Equações do 1º Grau": [
+          "Capítulo 1: Conceito de Sistema de Equações",
+          "Capítulo 2: Métodos de Resolução",
+          "Capítulo 3: Interpretação Gráfica de Sistemas",
+          "Capítulo 4: Problemas com Sistemas"
+        ],
+        "Unidade 6 - Equações do 2º Grau Incompletas": [
+          "Capítulo 1: Introdução às Equações do 2º Grau",
+          "Capítulo 2: Equações do Tipo ax² \\= 0",
+          "Capítulo 3: Equações do Tipo ax² \\+ c \\= 0",
+          "Capítulo 4: Equações do Tipo ax² \\+ bx \\= 0"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Sequências e Padrões": [
+          "Capítulo 1: Sequências Numéricas",
+          "Capítulo 2: Sequências Não Recursivas",
+          "Capítulo 3: Sequências Recursivas",
+          "Capítulo 4: Sequências Figurais"
+        ],
+        "Unidade 8 - Grandezas Proporcionais e Revisão Integrada": [
+          "Capítulo 1: Variação de Grandezas",
+          "Capítulo 2: Representação Algébrica e Gráfica",
+          "Capítulo 3: Problemas com Grandezas Proporcionais",
+          "Capítulo 4: Revisão Algébrica Integrada"
+        ]
+      }
+    },
+    "9º Ano": {
+      "1": {
+        "Unidade 1 - Números Reais e Potenciação": [
+          "Capítulo 1: Conjunto dos Números Reais",
+          "Capítulo 2: Intervalos e Aproximações",
+          "Capítulo 3: Potenciação",
+          "Capítulo 4: Notação Científica"
+        ],
+        "Unidade 2 - Radiciação e Proporcionalidade": [
+          "Capítulo 1: Radiciação",
+          "Capítulo 2: Razão e Proporção",
+          "Capítulo 3: Regra de Três e Aplicações",
+          "Capítulo 4: Percentuais Sucessivos"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Conceito de Função": [
+          "Capítulo 1: Relação entre Conjuntos",
+          "Capítulo 2: Definição de Função",
+          "Capítulo 3: Notação e Representações",
+          "Capítulo 4: Análise de Funções"
+        ],
+        "Unidade 4 - Função Afim": [
+          "Capítulo 1: Definição e Gráfico",
+          "Capítulo 2: Coeficientes e Comportamento",
+          "Capítulo 3: Zero e Estudo do Sinal",
+          "Capítulo 4: Casos Particulares e Aplicações"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Equações do 2º Grau": [
+          "Capítulo 1: Equações Incompletas",
+          "Capítulo 2: Fórmula de Bhaskara",
+          "Capítulo 3: Relações entre Coeficientes e Raízes",
+          "Capítulo 4: Fatoração e Produtos Notáveis"
+        ],
+        "Unidade 6 - Função Quadrática (Parte 1\\)": [
+          "Capítulo 1: Definição e Lei de Formação",
+          "Capítulo 2: Gráfico Parábola",
+          "Capítulo 3: Vértice e Eixo de Simetria",
+          "Capítulo 4: Raízes e Discriminante"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Função Quadrática (Parte 2\\)": [
+          "Capítulo 1: Imagem e Comportamento",
+          "Capítulo 2: Estudo do Sinal",
+          "Capítulo 3: Problemas de Otimização",
+          "Capítulo 4: Construção e Análise de Gráficos"
+        ],
+        "Unidade 8 - Sistemas de Equações": [
+          "Capítulo 1: Sistemas Lineares 2x2",
+          "Capítulo 2: Métodos de Resolução",
+          "Capítulo 3: Sistemas Lineares 3x3",
+          "Capítulo 4: Problemas Contextualizados"
+        ]
+      }
+    },
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Teoria dos Conjuntos": [
+          "Capítulo 1: Conceitos Fundamentais de Conjuntos",
+          "Capítulo 2: Subconjuntos e Relações"
+        ],
+        "Unidade 2 - Conjuntos Numéricos": [
+          "Capítulo 1: Os Conjuntos Numéricos",
+          "Capítulo 2: Números Reais"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Operações com Conjuntos": [
+          "Capítulo 1: Operações Básicas",
+          "Capítulo 2: Propriedades e Aplicações"
+        ],
+        "Unidade 4 - Introdução às Funções e Função Afim": [
+          "Capítulo 1: Conceito de Função",
+          "Capítulo 2: Função Afim"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Função Quadrática": [
+          "Capítulo 1: Definição e Elementos",
+          "Capítulo 2: Estudo Completo da Função Quadrática"
+        ],
+        "Unidade 6 - Inequações": [
+          "Capítulo 1: Inequações do 1º Grau",
+          "Capítulo 2: Inequações do 2º Grau e Sistemas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Função Exponencial": [
+          "Capítulo 1: Potenciação e Função Exponencial",
+          "Capítulo 2: Equações e Aplicações Exponenciais"
+        ],
+        "Unidade 8 - Introdução aos Logaritmos": [
+          "Capítulo 1: Conceito de Logaritmo",
+          "Capítulo 2: Propriedades dos Logaritmos"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Função Logarítmica Completa": [
+          "Capítulo 1: Revisão e Aprofundamento de Logaritmos",
+          "Capítulo 2: A Função Logarítmica"
+        ],
+        "Unidade 2 - Equações, Inequações Logarítmicas e Aplicações": [
+          "Capítulo 1: Equações e Inequações Logarítmicas",
+          "Capítulo 2: Aplicações de Logaritmos"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Matrizes": [
+          "Capítulo 1: Conceitos e Tipos de Matrizes",
+          "Capítulo 2: Operações com Matrizes"
+        ],
+        "Unidade 4 - Determinantes": [
+          "Capítulo 1: Cálculo de Determinantes",
+          "Capítulo 2: Propriedades e Aplicações dos Determinantes"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Sistemas Lineares": [
+          "Capítulo 1: Conceitos e Classificação",
+          "Capítulo 2: Métodos de Resolução"
+        ],
+        "Unidade 6 - Polinômios": [
+          "Capítulo 1: Conceitos Fundamentais",
+          "Capítulo 2: Operações com Polinômios"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Polinômios - Aprofundamento": [
+          "Capítulo 1: Fatoração e Raízes",
+          "Capítulo 2: Equações Polinomiais"
+        ],
+        "Unidade 8 - Números Complexos - Introdução": [
+          "Capítulo 1: Conceitos Básicos",
+          "Capítulo 2: Operações Básicas e Representação"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Sequências - PA e PG Completas": [
+          "Capítulo 1: Progressão Aritmética (PA)",
+          "Capítulo 2: Progressão Geométrica (PG)"
+        ],
+        "Unidade 2 - Números Complexos - Forma Algébrica Completa": [
+          "Capítulo 1: Revisão e Aprofundamento da Forma Algébrica",
+          "Capítulo 2: Operações Avançadas na Forma Algébrica"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Números Complexos - Forma Trigonométrica": [
+          "Capítulo 1: Forma Trigonométrica (Polar)",
+          "Capítulo 2: Operações na Forma Trigonométrica"
+        ],
+        "Unidade 4 - Raízes Complexas e Aplicações": [
+          "Capítulo 1: Raízes n-ésimas de Números Complexos",
+          "Capítulo 2: Aplicações dos Números Complexos"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Revisão Integrada - Funções": [
+          "Capítulo 1: Funções Elementares",
+          "Capítulo 2: Funções Transcendentes"
+        ],
+        "Unidade 6 - Revisão Integrada - Álgebra": [
+          "Capítulo 1: Matrizes, Determinantes e Sistemas",
+          "Capítulo 2: Polinômios e Sequências"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Números Complexos e Preparação para Vestibulares": [
+          "Capítulo 1: Números Complexos Revisão Completa",
+          "Capítulo 2: Tópicos Especiais para Vestibulares"
+        ],
+        "Unidade 8 - Revisão Final ENEM e Vestibulares": [
+          "Capítulo 1: Estratégias e Temas Recorrentes",
+          "Capítulo 2: Simulados e Provas Comentadas"
+        ]
+      }
+    }
+  },
+  "Física": {
+    "6º Ano": {
+      "1": {
+        "Unidade 1 - Introdução à Física e Grandezas": [
+          "Capítulo 1: O que é Física?",
+          "Capítulo 2: Grandezas Físicas"
+        ],
+        "Unidade 2 - Sistema Internacional de Unidades": [
+          "Capítulo 1: Padronização de Unidades",
+          "Capítulo 2: Comprimento",
+          "Capítulo 3: Massa e Tempo"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Movimento e Repouso": [
+          "Capítulo 1: Referencial",
+          "Capítulo 2: Trajetória e Tipos de Movimento"
+        ],
+        "Unidade 4 - Velocidade": [
+          "Capítulo 1: Conceito de Velocidade",
+          "Capítulo 2: Unidades de Velocidade"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Força": [
+          "Capítulo 1: Conceito de Força",
+          "Capítulo 2: Tipos de Força",
+          "Capítulo 3: Força Peso e Força de Atrito"
+        ],
+        "Unidade 6 - Estrutura da Terra": [
+          "Capítulo 1: Camadas Internas da Terra",
+          "Capítulo 2: Atmosfera",
+          "Capítulo 3: Rochas e Minerais",
+          "Capítulo 4: Fósseis"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Formas de Energia e Transformações": [
+          "Capítulo 1: Formas de Energia",
+          "Capítulo 2: Transformações de Energia",
+          "Capítulo 3: Fontes de Energia"
+        ],
+        "Unidade 8 - Terra no Espaço": [
+          "Capítulo 1: Esfericidade da Terra",
+          "Capítulo 2: Movimentos da Terra",
+          "Capítulo 3: Evidências dos Movimentos da Terra",
+          "Capítulo 4: Sistema Solar Básico"
+        ]
+      }
+    },
+    "7º Ano": {
+      "1": {
+        "Unidade 1 - Energia e Suas Formas": [
+          "Capítulo 1: Conceito e Formas de Energia",
+          "Capítulo 2: Transformações de Energia"
+        ],
+        "Unidade 2 - Fontes de Energia": [
+          "Capítulo 1: Fontes Renováveis e Não Renováveis",
+          "Capítulo 2: Energia e Sociedade"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Temperatura": [
+          "Capítulo 1: Conceito e Escalas Termométricas",
+          "Capítulo 2: Termômetros e Dilatação"
+        ],
+        "Unidade 4 - Calor e Equilíbrio Térmico": [
+          "Capítulo 1: Conceito e Propagação do Calor",
+          "Capítulo 2: Equilíbrio Térmico e Vida na Terra"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Fundamentos da Mecânica": [
+          "Capítulo 1: Movimento e Repouso",
+          "Capítulo 2: Força (Conceito Introdutório)"
+        ],
+        "Unidade 6 - Máquinas Simples": [
+          "Capítulo 1: Aplicações Cotidianas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Atmosfera e Fenômenos Atmosféricos": [
+          "Capítulo 1: Composição do Ar",
+          "Capítulo 2: Efeito Estufa e Camada de Ozônio"
+        ],
+        "Unidade 8 - Geologia e Fenômenos Naturais": [
+          "Capítulo 1: Estrutura Interna da Terra e Placas Tectônicas",
+          "Capítulo 2: Fenômenos Naturais Geológicos"
+        ]
+      }
+    },
+    "8º Ano": {
+      "1": {
+        "Unidade 1 - Energia: Conceitos Fundamentais": [
+          "Capítulo 1: O que é Energia?",
+          "Capítulo 2: Formas de Energia"
+        ],
+        "Unidade 2 - Transformações de Energia": [
+          "Capítulo 1: Conservação e Transformações",
+          "Capítulo 2: Eficiência e Perdas Energéticas"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Energia Elétrica": [
+          "Capítulo 1: Circuitos Elétricos",
+          "Capítulo 2: Consumo de Energia Elétrica"
+        ],
+        "Unidade 4 - Fontes e Sustentabilidade": [
+          "Capítulo 1: Fontes de Energia",
+          "Capítulo 2: Usinas de Geração de Energia",
+          "Capítulo 3: Uso Consciente de Energia"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Som e Luz": [
+          "Capítulo 1: Ondas (Introdução)",
+          "Capítulo 2: Som",
+          "Capítulo 3: Luz"
+        ],
+        "Unidade 6 - Sistema Sol-Terra-Lua": [
+          "Capítulo 1: O Sistema Sol-Terra-Lua",
+          "Capítulo 2: Movimentos da Terra",
+          "Capítulo 3: Movimentos da Lua"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Clima e Tempo": [
+          "Capítulo 1: Atmosfera Terrestre",
+          "Capítulo 2: Formação do Clima",
+          "Capítulo 3: Previsão do Tempo"
+        ],
+        "Unidade 8 - Mudanças Climáticas e Sustentabilidade": [
+          "Capítulo 1: Efeito Estufa",
+          "Capítulo 2: Mudanças Climáticas",
+          "Capítulo 3: Ações para o Equilíbrio Ambiental"
+        ]
+      }
+    },
+    "9º Ano": {
+      "1": {
+        "Unidade 1 - 1ª e 2ª Lei de Newton (Introdução)": [
+          "Capítulo 1: 1ª Lei de Newton Inércia",
+          "Capítulo 2: 2ª Lei de Newton F \\= m × a (Introdução)"
+        ],
+        "Unidade 2 - Forças Específicas": [
+          "Capítulo 1: Força Peso",
+          "Capítulo 2: Força Normal"
+        ]
+      },
+      "2": {
+        "Unidade 3 - 2ª e 3ª Lei de Newton": [
+          "Capítulo 1: 2ª Lei de Newton Aprofundamento",
+          "Capítulo 2: 3ª Lei de Newton Ação e Reação"
+        ],
+        "Unidade 4 - Gravitação Universal": [
+          "Capítulo 1: Lei da Gravitação Universal",
+          "Capítulo 2: Sistema Solar, Leis de Kepler e Vida no Universo",
+          "Capítulo 3: Ciclo Evolutivo do Sol"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Trabalho e Máquinas Simples": [
+          "Capítulo 1: Trabalho de uma Força",
+          "Capítulo 2: Máquinas Simples"
+        ],
+        "Unidade 6 - Energia Mecânica e Potência": [
+          "Capítulo 1: Energia Cinética",
+          "Capítulo 2: Energia Potencial",
+          "Capítulo 3: Conservação de Energia Mecânica",
+          "Capítulo 4: Potência"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Ondas e Luz": [
+          "Capítulo 1: Ondas Conceitos Fundamentais",
+          "Capítulo 2: Som",
+          "Capítulo 3: Luz",
+          "Capítulo 4: Espectro Eletromagnético"
+        ],
+        "Unidade 8 - Eletromagnetismo": [
+          "Capítulo 1: Eletricidade Básica",
+          "Capítulo 2: Circuitos Elétricos",
+          "Capítulo 3: Magnetismo e Eletromagnetismo",
+          "Capítulo 4: Proteção e Segurança Elétrica"
+        ]
+      }
+    },
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Introdução e Cinemática Escalar": [
+          "Capítulo 1: Fundamentos da Física",
+          "Capítulo 2: Movimento Uniforme (MU)"
+        ],
+        "Unidade 2 - Movimento Variado e Queda Livre": [
+          "Capítulo 3: Movimento Uniformemente Variado (MUV)",
+          "Capítulo 4: Movimento Vertical"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Vetores e Movimento Circular": [
+          "Capítulo 5: Vetores",
+          "Capítulo 6: Movimento Circular Uniforme (MCU)"
+        ],
+        "Unidade 4 - Cinemática Vetorial": [
+          "Capítulo 7: Movimentos Compostos"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Dinâmica: Leis de Newton": [
+          "Capítulo 8: Os Princípios da Dinâmica",
+          "Capítulo 9: Forças Mecânicas"
+        ],
+        "Unidade 6 - Aplicações da Dinâmica": [
+          "Capítulo 10: Atrito e Planos",
+          "Capítulo 11: Dinâmica Curvilínea"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Trabalho e Energia": [
+          "Capítulo 12: Trabalho e Potência",
+          "Capítulo 13: Energia Mecânica"
+        ],
+        "Unidade 8 - Tópicos Complementares": [
+          "Capítulo 14: Impulso e Quantidade de Movimento",
+          "Capítulo 15: Hidrostática"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 – Termometria e Dilatação": [
+          "Capítulo 1: Temperatura e Escalas",
+          "Capítulo 2: Dilatação Térmica"
+        ],
+        "Unidade 2 – Calorimetria e Propagação": [
+          "Capítulo 3: Medida do Calor",
+          "Capítulo 4: Transmissão de Calor"
+        ]
+      },
+      "2": {
+        "Unidade 3 – Estudo dos Gases": [
+          "Capítulo 5: Gases Perfeitos",
+          "Capítulo 6: Transformações Gasosas"
+        ],
+        "Unidade 4 – Termodinâmica": [
+          "Capítulo 7: Leis da Termodinâmica",
+          "Capítulo 8: Máquinas Térmicas"
+        ]
+      },
+      "3": {
+        "Unidade 5 – Reflexão da Luz": [
+          "Capítulo 9: Fundamentos da Óptica",
+          "Capítulo 10: Espelhos Esféricos"
+        ],
+        "Unidade 6 – Refração e Lentes": [
+          "Capítulo 11: Refração Luminosa",
+          "Capítulo 12: Lentes e Visão"
+        ]
+      },
+      "4": {
+        "Unidade 7 – Ondulatória": [
+          "Capítulo 13: Introdução às Ondas",
+          "Capítulo 14: Fenômenos Ondulatórios"
+        ],
+        "Unidade 8 – Acústica": [
+          "Capítulo 15: O Som"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Cargas e Campos": [
+          "Capítulo 1: Eletrostática Inicial",
+          "Capítulo 2: Campo Elétrico"
+        ],
+        "Unidade 2 - Potencial e Trabalho": [
+          "Capítulo 3: Energia e Potencial",
+          "Capítulo 4: Campo Uniforme"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Eletrodinâmica: Resistores": [
+          "Capítulo 5: Corrente e Leis de Ohm",
+          "Capítulo 6: Associação de Resistores"
+        ],
+        "Unidade 4 - Geradores e Circuitos": [
+          "Capítulo 7: Geradores e Receptores",
+          "Capítulo 8: Medidas Elétricas"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Magnetismo": [
+          "Capítulo 9: Fontes de Campo"
+        ],
+        "Unidade 6 - Eletromagnetismo": [
+          "Capítulo 10: Força Magnética",
+          "Capítulo 11: Indução Eletromagnética"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Física Moderna": [
+          "Capítulo 12: Relatividade Restrita",
+          "Capítulo 13: Introdução à Quântica"
+        ],
+        "Unidade 8 - Física Nuclear": [
+          "Capítulo 14: O Núcleo Atômico",
+          "Capítulo 15: Energia Nuclear"
+        ]
+      }
+    }
+  },
+  "Geografia": {
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Introdução à Geografia": [
+          "Capítulo 1: Fundamentos da Geografia",
+          "Capítulo 2: Divisões da Geografia"
+        ],
+        "Unidade 2 - Cartografia": [
+          "Capítulo 1: Fundamentos Cartográficos",
+          "Capítulo 2: Coordenadas Geográficas e Fusos Horários",
+          "Capítulo 3: Projeções Cartográficas",
+          "Capítulo 4: Cartografia Temática"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Geologia": [
+          "Capítulo 1: Estrutura Interna da Terra",
+          "Capítulo 2: Placas Tectônicas",
+          "Capítulo 3: Tipos de Rochas",
+          "Capítulo 4: Vulcanismo e Abalos Sísmicos",
+          "Capítulo 5: Agentes Modeladores do Relevo"
+        ],
+        "Unidade 4 - Relevo e Hidrosfera": [
+          "Capítulo 1: Formas de Relevo",
+          "Capítulo 2: Relevo Brasileiro",
+          "Capítulo 3: Relevo Submarino",
+          "Capítulo 4: Relevo e Ocupação Humana",
+          "Capítulo 5: Riscos Geológicos e Sociedade",
+          "Capítulo 6: Águas Subterrâneas",
+          "Capítulo 7: Lagos e Lagoas"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Clima": [
+          "Capítulo 1: Elementos do Clima",
+          "Capítulo 2: Fatores Climáticos",
+          "Capítulo 3: Tipos Climáticos Mundiais",
+          "Capítulo 4: Climas do Brasil",
+          "Capítulo 5: Fenômenos Climáticos",
+          "Capítulo 6: Clima e Atividades Humanas"
+        ],
+        "Unidade 6 - Hidrografia, Vegetação e Biomas": [
+          "Capítulo 1: Ciclo Hidrológico",
+          "Capítulo 2: Bacias Hidrográficas",
+          "Capítulo 3: Rios",
+          "Capítulo 4: Usos Múltiplos da Água",
+          "Capítulo 5: Principais Bacias Hidrográficas Brasileiras",
+          "Capítulo 6: Biomas Mundiais",
+          "Capítulo 7: Biomas Brasileiros",
+          "Capítulo 8: Populações Tradicionais e Biomas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Questões Socioambientais Contemporâneas": [
+          "Capítulo 1: Pressão Antrópica sobre Biomas",
+          "Capítulo 2: Desmatamento e Queimadas",
+          "Capítulo 3: Problemas Ambientais Globais",
+          "Capítulo 4: Poluição",
+          "Capítulo 5: Conflitos Socioambientais",
+          "Capítulo 6: Desenvolvimento Sustentável",
+          "Capítulo 7: Conferências Ambientais Internacionais"
+        ],
+        "Unidade 8 - População Mundial e Brasileira": [
+          "Capítulo 1: Conceitos Demográficos Básicos",
+          "Capítulo 2: Distribuição Populacional",
+          "Capítulo 3: Estrutura Populacional",
+          "Capítulo 4: Diversidade Cultural Brasileira"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Migrações Internacionais": [
+          "Capítulo 1: Conceitos e Tipologia das Migrações",
+          "Capítulo 2: Fluxos Migratórios Mundiais",
+          "Capítulo 3: Refugiados e Deslocados",
+          "Capítulo 4: Xenofobia e Direitos Humanos",
+          "Capítulo 5: Brasil como País Receptor",
+          "Capítulo 6: Migração e Identidade Cultural"
+        ],
+        "Unidade 2 - População Brasileira (Aprofundamento)": [
+          "Capítulo 1: Distribuição Populacional Brasileira",
+          "Capítulo 2: Migrações Internas no Brasil",
+          "Capítulo 3: Estrutura Etária e Envelhecimento",
+          "Capítulo 4: Desigualdades Regionais Brasileiras"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Urbanização Mundial e Brasileira": [
+          "Capítulo 1: Conceitos Básicos de Urbanização",
+          "Capítulo 2: Processo de Urbanização Mundial",
+          "Capítulo 3: Urbanização Brasileira",
+          "Capítulo 4: Regiões Metropolitanas Brasileiras",
+          "Capítulo 5: Cidades Médias",
+          "Capítulo 6: Problemas Urbanos Brasileiros",
+          "Capítulo 7: Planejamento Urbano"
+        ],
+        "Unidade 4 - Espaço Agrário e Conflitos": [
+          "Capítulo 1: Estrutura Fundiária Brasileira",
+          "Capítulo 2: Sistemas Agrícolas",
+          "Capítulo 3: Agricultura no Brasil",
+          "Capítulo 4: Pecuária",
+          "Capítulo 5: Questão Agrária e Conflitos"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Geopolítica Mundial": [
+          "Capítulo 1: Ordem Mundial",
+          "Capítulo 2: ONU e Organismos Internacionais",
+          "Capítulo 3: Conflitos Contemporâneos",
+          "Capítulo 4: Fronteiras e Territórios",
+          "Capítulo 5: Terrorismo",
+          "Capítulo 6: Potências Mundiais"
+        ],
+        "Unidade 6 - Comércio Internacional": [
+          "Capítulo 1: Fundamentos do Comércio Internacional",
+          "Capítulo 2: Comércio Exterior Brasileiro",
+          "Capítulo 3: OMC e Regulação do Comércio",
+          "Capítulo 4: Protecionismo vs Livre Comércio",
+          "Capítulo 5: Commodities",
+          "Capítulo 6: Integração Regional e Acordos Comerciais"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Indústria e Globalização": [
+          "Capítulo 1: Fatores Locacionais da Indústria",
+          "Capítulo 2: Revolução Industrial e Tipos de Indústria",
+          "Capítulo 3: Industrialização Brasileira",
+          "Capítulo 4: Globalização"
+        ],
+        "Unidade 8 - Energia, Transportes e Redes": [
+          "Capítulo 1: Fontes de Energia",
+          "Capítulo 2: Matriz Energética Brasileira",
+          "Capítulo 3: Questões Energéticas Contemporâneas",
+          "Capítulo 4: Transportes e Logística",
+          "Capítulo 5: Redes Geográficas"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Região Norte": [
+          "Capítulo 1: Aspectos Físicos da Região Norte",
+          "Capítulo 2: Formação Territorial e Ocupação",
+          "Capítulo 3: População da Região Norte",
+          "Capítulo 4: Economia da Região Norte",
+          "Capítulo 5: Questões Ambientais da Amazônia",
+          "Capítulo 6: Desafios da Região Norte"
+        ],
+        "Unidade 2 - Regiões Nordeste e Centro-Oeste": [
+          "Capítulo 1: Região Nordeste Aspectos Físicos",
+          "Capítulo 2: Nordeste Formação Territorial",
+          "Capítulo 3: Nordeste População e Migração",
+          "Capítulo 4: Nordeste Economia",
+          "Capítulo 5: Nordeste Questões Sociais",
+          "Capítulo 6: Região Centro-Oeste Caracterização",
+          "Capítulo 7: Centro-Oeste Ocupação e Economia",
+          "Capítulo 8: Centro-Oeste Questões Ambientais"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Regiões Sudeste e Sul": [
+          "Capítulo 1: Região Sudeste Caracterização",
+          "Capítulo 2: Sudeste Formação Territorial",
+          "Capítulo 3: Sudeste População",
+          "Capítulo 4: Sudeste Economia",
+          "Capítulo 5: Sudeste Problemas Urbanos",
+          "Capítulo 6: Sudeste Questões Ambientais",
+          "Capítulo 7: Região Sul Caracterização",
+          "Capítulo 8: Sul Formação Territorial e População",
+          "Capítulo 9: Sul Economia",
+          "Capítulo 10: Cidades Globais e Megacidades"
+        ],
+        "Unidade 4 - Desigualdades Regionais e Integração Nacional": [
+          "Capítulo 1: Complexos Regionais (Geoeconômicos)",
+          "Capítulo 2: Indicadores Regionais",
+          "Capítulo 3: Desigualdades Regionais Brasileiras",
+          "Capítulo 4: Políticas de Desenvolvimento Regional",
+          "Capítulo 5: Integração Nacional",
+          "Capítulo 6: Questões Indígenas no Brasil Contemporâneo",
+          "Capítulo 7: Geografia Cultural Brasileira"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Geopolítica do Brasil": [
+          "Capítulo 1: Posição Geopolítica do Brasil",
+          "Capítulo 2: Política Externa Brasileira",
+          "Capítulo 3: Relações Internacionais do Brasil",
+          "Capítulo 4: Integração Sul-Americana",
+          "Capítulo 5: Fronteiras e Soberania",
+          "Capítulo 6: Brasil no Cenário Global"
+        ],
+        "Unidade 6 - Desenvolvimento e Subdesenvolvimento": [
+          "Capítulo 1: Teorias do Desenvolvimento",
+          "Capítulo 2: Indicadores de Desenvolvimento",
+          "Capítulo 3: Classificações de Países",
+          "Capítulo 4: Desenvolvimento Sustentável (Aprofundamento)",
+          "Capítulo 5: Desigualdades Globais"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Ordem Mundial e Conflitos Atuais": [
+          "Capítulo 1: Ordem Mundial Contemporânea (Atualização)",
+          "Capítulo 2: Conflitos Atuais (Atualização)",
+          "Capítulo 3: Extremismo e Populismo",
+          "Capítulo 4: Crise dos Refugiados (Atualização)",
+          "Capítulo 5: Cibersegurança e Guerra Híbrida"
+        ],
+        "Unidade 8 - Questões Ambientais Globais e Desafios do Século XXI": [
+          "Capítulo 1: Mudanças Climáticas (Aprofundamento)",
+          "Capítulo 2: Crise Hídrica Global",
+          "Capítulo 3: Biodiversidade e Extinções",
+          "Capítulo 4: Pandemias e Saúde Global",
+          "Capítulo 5: Tecnologia e Sociedade",
+          "Capítulo 6: Geotecnologias",
+          "Capítulo 7: Segurança Alimentar",
+          "Capítulo 8: Desafios do Século XXI"
+        ]
+      }
+    }
+  },
+  "Química": {
+    "9º Ano": {
+      "1": {
+        "Unidade 1 - Estrutura da Matéria": [
+          "Capítulo 1: Estados Físicos da Matéria",
+          "Capítulo 2: Modelos Atômicos e Estrutura do Átomo"
+        ],
+        "Unidade 2 - Tabela Periódica e Ligações Químicas": [
+          "Capítulo 1: Tabela Periódica",
+          "Capítulo 2: Ligações Químicas"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Introdução às Reações Químicas": [
+          "Capítulo 1: Conceitos Fundamentais",
+          "Capítulo 2: Tipos de Reações Químicas"
+        ],
+        "Unidade 4 - Velocidade e Combustão": [
+          "Capítulo 1: Velocidade das Reações",
+          "Capítulo 2: Reações de Combustão"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Ácidos e Bases": [
+          "Capítulo 1: Ácidos",
+          "Capítulo 2: Bases"
+        ],
+        "Unidade 6 - Sais, Óxidos e Neutralização": [
+          "Capítulo 1: Sais",
+          "Capítulo 2: Óxidos",
+          "Capítulo 3: Reações de Neutralização"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Cálculos Químicos": [
+          "Capítulo 1: Massa Atômica, Molecular e Mol",
+          "Capítulo 2: Cálculos Estequiométricos",
+          "Capítulo 3: Soluções"
+        ],
+        "Unidade 8 - Revisão e Química no Cotidiano": [
+          "Capítulo 1: Revisão Geral",
+          "Capítulo 2: Química no Cotidiano"
+        ]
+      }
+    },
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Introdução à Química e Matéria": [
+          "Capítulo 1: A Química como Ciência",
+          "Capítulo 2: Matéria e Energia",
+          "Capítulo 3: Fenômenos Físicos e Químicos"
+        ],
+        "Unidade 2 - Substâncias e Misturas": [
+          "Capítulo 1: Classificação da Matéria",
+          "Capítulo 2: Separação de Misturas Heterogêneas",
+          "Capítulo 3: Separação de Misturas Homogêneas"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Estrutura Atômica": [
+          "Capítulo 1: Evolução dos Modelos Atômicos",
+          "Capítulo 2: Constituição do Átomo",
+          "Capítulo 3: Distribuição Eletrônica"
+        ],
+        "Unidade 4 - Grandezas Químicas Fundamentais": [
+          "Capítulo 1: Massa Atômica e Molecular",
+          "Capítulo 2: Quantidade de Matéria"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Tabela Periódica": [
+          "Capítulo 1: Organização da Tabela Periódica",
+          "Capítulo 2: Propriedades Periódicas"
+        ],
+        "Unidade 6 - Ligações Químicas": [
+          "Capítulo 1: Ligação Iônica",
+          "Capítulo 2: Ligação Covalente",
+          "Capítulo 3: Ligação Metálica",
+          "Capítulo 4: Funções Inorgânicas: Ácidos e Bases"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Funções Inorgânicas e Reações": [
+          "Capítulo 1: Sais",
+          "Capítulo 2: Óxidos",
+          "Capítulo 3: Reações Químicas"
+        ],
+        "Unidade 8 - Geometria, Polaridade e Interações": [
+          "Capítulo 1: Geometria Molecular",
+          "Capítulo 2: Polaridade",
+          "Capítulo 3: Forças Intermoleculares",
+          "Capítulo 4: Introdução à Estequiometria"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Soluções: Conceitos e Classificações": [
+          "Capítulo 1: Fundamentos de Soluções",
+          "Capítulo 2: Classificação das Soluções",
+          "Capítulo 3: Dispersões"
+        ],
+        "Unidade 2 - Concentração de Soluções": [
+          "Capítulo 1: Unidades de Concentração",
+          "Capítulo 2: Diluição de Soluções",
+          "Capítulo 3: Mistura de Soluções"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Termoquímica": [
+          "Capítulo 1: Energia nas Reações Químicas",
+          "Capítulo 2: Entalpia e Equações Termoquímicas",
+          "Capítulo 3: Tipos de Entalpia",
+          "Capítulo 4: Lei de Hess"
+        ],
+        "Unidade 4 - Cinética Química": [
+          "Capítulo 1: Velocidade das Reações",
+          "Capítulo 2: Fatores que Afetam a Velocidade",
+          "Capítulo 3: Teoria das Colisões",
+          "Capítulo 4: Lei da Velocidade e Catálise"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Equilíbrio Químico": [
+          "Capítulo 1: Conceitos Fundamentais de Equilíbrio",
+          "Capítulo 2: Constante de Equilíbrio",
+          "Capítulo 3: Deslocamento de Equilíbrio",
+          "Capítulo 4: Aplicações do Equilíbrio"
+        ],
+        "Unidade 6 - Equilíbrio Iônico": [
+          "Capítulo 1: Equilíbrio Iônico da Água",
+          "Capítulo 2: pH e pOH",
+          "Capítulo 3: Indicadores e Titulação"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Eletroquímica: Pilhas": [
+          "Capítulo 1: Reações de Oxirredução",
+          "Capítulo 2: Pilhas e Células Galvânicas",
+          "Capítulo 3: Potencial de Eletrodo"
+        ],
+        "Unidade 8 - Eletroquímica: Eletrólise e Corrosão": [
+          "Capítulo 1: Eletrólise",
+          "Capítulo 2: Aspectos Quantitativos da Eletrólise",
+          "Capítulo 3: Corrosão e Proteção de Metais",
+          "Capítulo 4: Química Verde e Sustentabilidade"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Introdução à Química Orgânica": [
+          "Capítulo 1: O Átomo de Carbono",
+          "Capítulo 2: Cadeias Carbônicas",
+          "Capítulo 3: Representação de Fórmulas Orgânicas"
+        ],
+        "Unidade 2 - Hidrocarbonetos": [
+          "Capítulo 1: Alcanos",
+          "Capítulo 2: Alcenos e Alcinos",
+          "Capítulo 3: Ciclanos e Aromáticos",
+          "Capítulo 4: Petróleo e Combustíveis"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Funções Oxigenadas": [
+          "Capítulo 1: Álcoois",
+          "Capítulo 2: Fenóis e Éteres",
+          "Capítulo 3: Aldeídos e Cetonas",
+          "Capítulo 4: Ácidos Carboxílicos",
+          "Capítulo 5: Ésteres"
+        ],
+        "Unidade 4 - Funções Nitrogenadas e Mistas": [
+          "Capítulo 1: Aminas",
+          "Capítulo 2: Amidas",
+          "Capítulo 3: Outras Funções"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Isomeria": [
+          "Capítulo 1: Isomeria Plana",
+          "Capítulo 2: Isomeria Espacial Geométrica",
+          "Capítulo 3: Isomeria Espacial Óptica"
+        ],
+        "Unidade 6 - Reações Orgânicas": [
+          "Capítulo 1: Reações de Substituição",
+          "Capítulo 2: Reações de Adição",
+          "Capítulo 3: Reações de Eliminação e Oxidação",
+          "Capítulo 4: Reações de Esterificação e Hidrólise"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Polímeros": [
+          "Capítulo 1: Introdução aos Polímeros",
+          "Capítulo 2: Polímeros de Adição",
+          "Capítulo 3: Polímeros de Condensação",
+          "Capítulo 4: Polímeros e Meio Ambiente"
+        ],
+        "Unidade 8 - Bioquímica e Revisão": [
+          "Capítulo 1: Carboidratos",
+          "Capítulo 2: Lipídeos",
+          "Capítulo 3: Proteínas e Ácidos Nucleicos",
+          "Capítulo 4: Revisão Integrada para ENEM e Vestibulares"
+        ]
+      }
+    }
+  },
+  "Ciências": {
+    "1º Ano": {
+      "1": {
+        "Unidade 1 - Materiais ao Nosso Redor": [
+          "Capítulo 1: Conhecendo os Materiais",
+          "Capítulo 2: Usando os Materiais"
+        ],
+        "Unidade 2 - Seres Vivos ao Nosso Redor": [
+          "Capítulo 1: O que são Seres Vivos",
+          "Capítulo 2: Animais que Conhecemos"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Nosso Corpo": [
+          "Capítulo 1: Conhecendo o Corpo Humano",
+          "Capítulo 2: Cuidando do Corpo"
+        ],
+        "Unidade 4 - Respeito e Diversidade": [
+          "Capítulo 1: Somos Diferentes",
+          "Capítulo 2: Rotinas Saudáveis"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Observando a Natureza": [
+          "Capítulo 1: Plantas ao Nosso Redor",
+          "Capítulo 2: Necessidades das Plantas"
+        ],
+        "Unidade 6 - Aprendendo a Observar": [
+          "Capítulo 1: Como os Cientistas Observam",
+          "Capítulo 2: Comparando o que Vemos"
+        ]
+      },
+      "4": {
+        "Unidade 7 - O Céu e o Tempo": [
+          "Capítulo 1: Dia e Noite",
+          "Capítulo 2: O Ritmo da Vida"
+        ],
+        "Unidade 8 - Nossa Terra": [
+          "Capítulo 1: O Planeta Terra",
+          "Capítulo 2: Animais e Seus Movimentos"
+        ]
+      }
+    },
+    "2º Ano": {
+      "1": {
+        "Unidade 1 - Materiais e Suas Propriedades": [
+          "Capítulo 1: Explorando Materiais",
+          "Capítulo 2: Propriedades dos Materiais"
+        ],
+        "Unidade 2 - Segurança em Casa": [
+          "Capítulo 1: Prevenção de Acidentes"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Animais e Plantas": [
+          "Capítulo 1: Observando Animais",
+          "Capítulo 2: Cuidando dos Animais",
+          "Capítulo 3: Plantas e Sua Vida"
+        ]
+      },
+      "3": {
+        "Unidade 4 - Crescimento das Plantas": [
+          "Capítulo 1: Como as Plantas Crescem",
+          "Capítulo 2: Vida das Plantas"
+        ],
+        "Unidade 5 - Água: Fonte de Vida": [
+          "Capítulo 1: A Água na Natureza",
+          "Capítulo 2: Cuidando da Água"
+        ]
+      },
+      "4": {
+        "Unidade 6 - O Sol e a Terra": [
+          "Capítulo 1: Observando o Sol",
+          "Capítulo 2: O Sol Como Fonte de Calor"
+        ],
+        "Unidade 7 - Cuidando do Ambiente": [
+          "Capítulo 1: Ambientes Naturais",
+          "Capítulo 2: Preservação"
+        ]
+      }
+    },
+    "3º Ano": {
+      "1": {
+        "Unidade 1 - Som ao Nosso Redor": [
+          "Capítulo 1: Produzindo Sons",
+          "Capítulo 2: Nossa Saúde Auditiva"
+        ],
+        "Unidade 2 - Luz e Visão": [
+          "Capítulo 1: A Luz e os Materiais",
+          "Capítulo 2: Nossa Saúde Visual"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Animais e Seu Desenvolvimento": [
+          "Capítulo 1: Como Vivem os Animais",
+          "Capítulo 2: Crescimento dos Animais",
+          "Capítulo 3: Organizando os Animais"
+        ],
+        "Unidade 4 - Classificação dos Seres Vivos": [
+          "Capítulo 1: Organizando a Vida",
+          "Capítulo 2: Adaptação e Preservação"
+        ]
+      },
+      "3": {
+        "Unidade 5 - O Solo": [
+          "Capítulo 1: Conhecendo o Solo",
+          "Capítulo 2: Importância do Solo"
+        ],
+        "Unidade 6 - Investigação Científica Básica": [
+          "Capítulo 1: Observando Como Cientistas",
+          "Capítulo 2: Experimentando"
+        ]
+      },
+      "4": {
+        "Unidade 7 - A Terra": [
+          "Capítulo 1: Características da Terra",
+          "Capítulo 2: Recursos Naturais"
+        ],
+        "Unidade 8 - Observando o Céu": [
+          "Capítulo 1: O Céu Durante o Dia e a Noite",
+          "Capítulo 2: Água no Planeta"
+        ]
+      }
+    },
+    "4º Ano": {
+      "1": {
+        "Unidade 1 - Misturas e Transformações": [
+          "Capítulo 1: Misturas no Dia a Dia",
+          "Capítulo 2: Mudanças nos Materiais",
+          "Capítulo 3: Separação de Misturas"
+        ],
+        "Unidade 2 - Experimentos Científicos": [
+          "Capítulo 1: Planejando Investigações",
+          "Capítulo 2: Fazendo Ciência"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Cadeias Alimentares": [
+          "Capítulo 1: Quem Come Quem",
+          "Capítulo 2: Energia dos Alimentos"
+        ],
+        "Unidade 4 - Microrganismos": [
+          "Capítulo 1: Fungos e Bactérias",
+          "Capítulo 2: Microrganismos Úteis",
+          "Capítulo 3: Prevenção de Doenças"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Ecossistemas": [
+          "Capítulo 1: O que é Ecossistema",
+          "Capítulo 2: Solo A Base da Vida",
+          "Capítulo 3: Ecossistemas Brasileiros",
+          "Capítulo 4: Impactos Ambientais"
+        ],
+        "Unidade 6 - Tecnologia e Ciência": [
+          "Capítulo 1: Invenções que Mudaram o Mundo",
+          "Capítulo 2: Resolvendo Problemas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Orientação no Espaço": [
+          "Capítulo 1: Pontos Cardeais",
+          "Capítulo 2: Usando a Bússola"
+        ],
+        "Unidade 8 - O Céu e os Astros": [
+          "Capítulo 1: Conhecendo o Sistema Solar",
+          "Capítulo 2: Movimentos da Terra e da Lua",
+          "Capítulo 3: Calendários e Estações",
+          "Capítulo 4: Observando o Céu"
+        ]
+      }
+    },
+    "5º Ano": {
+      "1": {
+        "Unidade 1 - Propriedades dos Materiais": [
+          "Capítulo 1: Explorando Propriedades Físicas",
+          "Capítulo 2: Mais Propriedades dos Materiais",
+          "Capítulo 3: Instrumentos Óticos"
+        ],
+        "Unidade 2 - Método Científico": [
+          "Capítulo 1: Investigação Científica",
+          "Capítulo 2: Analisando Dados",
+          "Capítulo 3: Comunicação Científica"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Água no Planeta": [
+          "Capítulo 1: Ciclo Hidrológico",
+          "Capítulo 2: Água, Vegetação e Ambiente"
+        ],
+        "Unidade 4 - Corpo Humano": [
+          "Capítulo 1: Nutrição do Organismo",
+          "Capítulo 2: Circulação e Distribuição",
+          "Capítulo 3: Sistema Imunológico",
+          "Capítulo 4: Reprodução Humana"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Alimentação e Saúde": [
+          "Capítulo 1: Grupos Alimentares",
+          "Capítulo 2: Saúde Integral"
+        ],
+        "Unidade 6 - Energia e Recursos": [
+          "Capítulo 1: Formas de Energia",
+          "Capítulo 2: Fontes de Energia",
+          "Capítulo 3: Consumo Consciente",
+          "Capítulo 4: Reciclagem e Reutilização"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Terra e Universo": [
+          "Capítulo 1: Constelações no Céu",
+          "Capítulo 2: Movimentos Celestes",
+          "Capítulo 3: Observando a Lua"
+        ],
+        "Unidade 8 - O Universo e Além": [
+          "Capítulo 1: Explorando o Sistema Solar",
+          "Capítulo 2: Galáxias e Estrelas",
+          "Capítulo 3: Instrumentos de Observação"
+        ],
+        "Unidade 9 - Ciência e Sociedade": [
+          "Capítulo 1: Problemas Ambientais",
+          "Capítulo 2: Desenvolvimento Sustentável",
+          "Capítulo 3: História e Ética na Ciência"
+        ]
+      }
+    },
+    "6º Ano": {
+      "1": {
+        "Unidade 1 - Método Científico e Introdução às Ciências": [
+          "Capítulo 1: Introdução ao Método Científico",
+          "Capítulo 2: O que é Química?",
+          "Capítulo 3: Matéria e suas Propriedades"
+        ],
+        "Unidade 2 - Estados Físicos e Mudanças de Estado": [
+          "Capítulo 1: Estados Físicos da Matéria",
+          "Capítulo 2: Mudanças de Estado Físico",
+          "Capítulo 3: Temperatura e Mudanças de Estado"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Substâncias e Misturas": [
+          "Capítulo 1: Substâncias Puras",
+          "Capítulo 2: Misturas",
+          "Capítulo 3: Separação de Misturas"
+        ],
+        "Unidade 4 - Transformações da Matéria": [
+          "Capítulo 1: Transformações Físicas e Químicas",
+          "Capítulo 2: Materiais Sintéticos",
+          "Capítulo 3: Impactos Ambientais e Sustentabilidade"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Células e Organização dos Seres Vivos": [
+          "Capítulo 1: Células: Unidade da Vida",
+          "Capítulo 2: Níveis de Organização Biológica"
+        ],
+        "Unidade 6 - Diversidade de Seres Vivos": [
+          "Capítulo 1: Classificação dos Seres Vivos",
+          "Capítulo 2: Biodiversidade"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Sistemas do Corpo Humano": [
+          "Capítulo 1: Sistema Digestório",
+          "Capítulo 2: Sistema Circulatório",
+          "Capítulo 3: Sistema Respiratório",
+          "Capítulo 4: Sistema Excretor",
+          "Capítulo 5: Sistema Locomotor",
+          "Capítulo 6: Sistema Visual"
+        ],
+        "Unidade 8 - Água, Tratamento e Sustentabilidade": [
+          "Capítulo 1: Água no Planeta",
+          "Capítulo 2: Tratamento de Água",
+          "Capítulo 3: Poluição e Sustentabilidade"
+        ]
+      }
+    },
+    "7º Ano": {
+      "1": {
+        "Unidade 1 - Introdução à Estrutura da Matéria": [
+          "Capítulo 1: Modelo de Partículas",
+          "Capítulo 2: Átomos e Moléculas",
+          "Capítulo 3: Propriedades Específicas da Matéria"
+        ],
+        "Unidade 2 - Transformações Químicas e Energia": [
+          "Capítulo 1: Reações Químicas",
+          "Capítulo 2: Combustão como Reação Química"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Energia nos Ecossistemas": [
+          "Capítulo 1: Fotossíntese: Base da Vida",
+          "Capítulo 2: Fluxo de Energia em Ecossistemas",
+          "Capítulo 3: Importância Ecológica da Fotossíntese"
+        ],
+        "Unidade 4 - Ecossistemas Brasileiros": [
+          "Capítulo 1: Biomas do Brasil",
+          "Capítulo 2: Adaptações e Biodiversidade"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Impactos Ambientais": [
+          "Capítulo 1: Fenômenos Naturais",
+          "Capítulo 2: Interferência Humana",
+          "Capítulo 3: Desenvolvimento Sustentável"
+        ],
+        "Unidade 6 - Saúde Coletiva": [
+          "Capítulo 1: Indicadores de Saúde Pública",
+          "Capítulo 2: Vacinação",
+          "Capítulo 3: Tecnologia na Saúde"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Poluição Ambiental": [
+          "Capítulo 1: Poluição do Ar",
+          "Capítulo 2: Poluição da Água",
+          "Capítulo 3: Poluição do Solo"
+        ],
+        "Unidade 8 - Mudanças Climáticas e Ciclos": [
+          "Capítulo 1: Aquecimento Global",
+          "Capítulo 2: Ciclo da Água",
+          "Capítulo 3: Ciclos do Carbono e Nitrogênio"
+        ]
+      }
+    },
+    "8º Ano": {
+      "1": {
+        "Unidade 1 - Organização do Corpo Humano": [
+          "Capítulo 1: Níveis de Organização",
+          "Capítulo 2: A Célula (Aprofundamento)"
+        ],
+        "Unidade 2 - Química: Tabela Periódica": [
+          "Capítulo 1: Organização da Tabela Periódica",
+          "Capítulo 2: Elementos no Cotidiano"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Tecidos e Divisão Celular": [
+          "Capítulo 1: Tecidos Epitelial e Conjuntivo",
+          "Capítulo 2: Tecidos Muscular e Nervoso",
+          "Capítulo 3: Divisão Celular"
+        ],
+        "Unidade 4 - Ligações Químicas": [
+          "Capítulo 1: Por que Átomos se Ligam",
+          "Capítulo 2: Ligação Iônica",
+          "Capítulo 3: Ligação Covalente",
+          "Capítulo 4: Ligação Metálica"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Reprodução e Desenvolvimento": [
+          "Capítulo 1: Tipos de Reprodução",
+          "Capítulo 2: Reprodução em Plantas",
+          "Capítulo 3: Reprodução em Animais"
+        ],
+        "Unidade 6 - Sistemas Integrados 1": [
+          "Capítulo 1: Sistema Digestório",
+          "Capítulo 2: Sistema Respiratório",
+          "Capítulo 3: Sistema Circulatório"
+        ],
+        "Unidade 7 - Reações Químicas": [
+          "Capítulo 1: Evidências e Exemplos",
+          "Capítulo 2: Equações Químicas",
+          "Capítulo 3: Lei de Lavoisier"
+        ]
+      },
+      "4": {
+        "Unidade 8 - Sistemas Integrados 2": [
+          "Capítulo 1: Sistema Excretor",
+          "Capítulo 2: Sistema Nervoso",
+          "Capítulo 3: Substâncias Psicoativas e Saúde Neurológica",
+          "Capítulo 4: Sistema Endócrino"
+        ],
+        "Unidade 9 - Reprodução Humana e Saúde Sexual": [
+          "Capítulo 1: Sistemas Reprodutores",
+          "Capítulo 2: Fecundação e Desenvolvimento",
+          "Capítulo 3: Puberdade",
+          "Capítulo 4: Métodos Contraceptivos e ISTs"
+        ]
+      }
+    }
+  },
+  "Biologia": {
+    "9º Ano": {
+      "1": {
+        "Unidade 1 - Ciclo Celular e Mitose": [
+          "Capítulo 1: Ciclo Celular",
+          "Capítulo 2: Mitose"
+        ],
+        "Unidade 2 - Meiose": [
+          "Capítulo 1: Meiose I (Divisão Reducional)",
+          "Capítulo 2: Meiose II (Divisão Equacional)",
+          "Capítulo 3: Comparação e Importância Biológica"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Fundamentos da Genética": [
+          "Capítulo 1: Conceitos Fundamentais",
+          "Capítulo 2: Primeira Lei de Mendel"
+        ],
+        "Unidade 4 - Genética Aplicada": [
+          "Capítulo 1: Segunda Lei de Mendel",
+          "Capítulo 2: Heredogramas e Genética Humana",
+          "Capítulo 3: Mutações"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Evidências da Evolução": [
+          "Capítulo 1: Evidências Evolutivas"
+        ],
+        "Unidade 6 - Teorias e Mecanismos Evolutivos": [
+          "Capítulo 1: Teorias Evolutivas",
+          "Capítulo 2: Mecanismos Evolutivos e Especiação"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Fundamentos de Ecologia": [
+          "Capítulo 1: Conceitos e Relações Ecológicas",
+          "Capítulo 2: Cadeias e Teias Alimentares",
+          "Capítulo 3: Ciclos Biogeoquímicos"
+        ],
+        "Unidade 8 - Biomas e Sustentabilidade": [
+          "Capítulo 1: Sucessão Ecológica e Biomas Brasileiros",
+          "Capítulo 2: Problemas Ambientais e Sustentabilidade"
+        ]
+      }
+    },
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Fundamentos da Biologia e Biodiversidade": [
+          "Capítulo 1: Introdução à Biologia",
+          "Capítulo 2: Biodiversidade e Classificação dos Seres Vivos",
+          "Capítulo 3: Teoria Celular e Evolução do Conceito de Célula"
+        ],
+        "Unidade 2 - Ecologia Básica": [
+          "Capítulo 1: Introdução à Ecologia",
+          "Capítulo 2: Cadeias e Teias Alimentares",
+          "Capítulo 3: Relações Ecológicas",
+          "Capítulo 4: Ciclos Biogeoquímicos",
+          "Capítulo 5: Impactos Ambientais e Conservação"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Bioquímica Celular I": [
+          "Capítulo 1: Água, Sais Minerais e Importância Biológica",
+          "Capítulo 2: Carboidratos Estrutura e Função",
+          "Capítulo 3: Lipídios Estrutura e Função",
+          "Capítulo 4: Vitaminas e Nutrição"
+        ],
+        "Unidade 4 - Bioquímica Celular II": [
+          "Capítulo 1: Proteínas Estrutura e Função",
+          "Capítulo 2: Enzimas Catalisadores Biológicos",
+          "Capítulo 3: Origem da Vida na Terra",
+          "Capítulo 4: Teorias Históricas sobre Origem da Vida"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Evolução Celular e Citologia": [
+          "Capítulo 1: Evolução Celular",
+          "Capítulo 2: Tipos Celulares",
+          "Capítulo 3: Membrana Plasmática",
+          "Capítulo 4: Citoplasma e Organelas Celulares"
+        ],
+        "Unidade 6 - Núcleo Celular e Metabolismo Energético": [
+          "Capítulo 1: Núcleo Celular",
+          "Capítulo 2: Respiração Celular",
+          "Capítulo 3: Fotossíntese",
+          "Capítulo 4: Relação entre Fotossíntese e Respiração"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Ácidos Nucleicos e Divisão Celular": [
+          "Capítulo 1: Ácidos Nucleicos",
+          "Capítulo 2: Ciclo Celular e Intérfase",
+          "Capítulo 3: Mitose",
+          "Capítulo 4: Meiose"
+        ],
+        "Unidade 8 - Histologia Animal": [
+          "Capítulo 1: Tecido Epitelial",
+          "Capítulo 2: Tecido Conjuntivo",
+          "Capítulo 3: Tecido Muscular",
+          "Capítulo 4: Tecido Nervoso"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Fisiologia I: Nutrição e Trocas Gasosas": [
+          "Capítulo 1: Sistema Digestório",
+          "Capítulo 2: Sistema Respiratório"
+        ],
+        "Unidade 2 - Fisiologia II: Transporte e Excreção": [
+          "Capítulo 1: Sistema Cardiovascular",
+          "Capítulo 2: Sistema Excretor",
+          "Capítulo 3: Homeostase"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Sistemas de Controle e Coordenação": [
+          "Capítulo 1: Sistema Nervoso",
+          "Capítulo 2: Sistema Endócrino"
+        ],
+        "Unidade 4 - Genética Mendeliana": [
+          "Capítulo 1: Conceitos Fundamentais",
+          "Capítulo 2: Primeira Lei de Mendel",
+          "Capítulo 3: Segunda Lei de Mendel"
+        ],
+        "Unidade 5 - Genética Molecular": [
+          "Capítulo 1: Estrutura dos Ácidos Nucleicos",
+          "Capítulo 2: Replicação do DNA",
+          "Capítulo 3: Transcrição e Tradução",
+          "Capítulo 4: Mutações Gênicas"
+        ]
+      },
+      "3": {
+        "Unidade 6 - Sistema Imunológico": [
+          "Capítulo 1: Barreiras e Imunidade Inata",
+          "Capítulo 2: Imunidade Adaptativa (Específica)",
+          "Capítulo 3: Vacinação e Soros"
+        ],
+        "Unidade 7 - Sistema Locomotor": [
+          "Capítulo 1: Sistema Esquelético",
+          "Capítulo 2: Sistema Muscular",
+          "Capítulo 3: Integração Esqueleto-Músculo-Nervoso"
+        ],
+        "Unidade 8 - Reprodução e Bioética": [
+          "Capítulo 1: Sistema Reprodutor Masculino",
+          "Capítulo 2: Sistema Reprodutor Feminino",
+          "Capítulo 3: Desenvolvimento Embrionário",
+          "Capítulo 4: Métodos Contraceptivos",
+          "Capítulo 5: Bioética em Reprodução Humana",
+          "Capítulo 6: ISTs (Infecções Sexualmente Transmissíveis)"
+        ]
+      },
+      "4": {
+        "Unidade 9 - Fisiologia Comparada": [
+          "Capítulo 1: Sistemas Respiratórios",
+          "Capítulo 2: Sistemas Circulatórios"
+        ],
+        "Unidade 10 - Saúde Pública": [
+          "Capítulo 1: Políticas Públicas e SUS",
+          "Capítulo 2: Vigilância e Promoção da Saúde",
+          "Capítulo 3: Projeto Comunitário (Aplicação)"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Revisão de Genética Mendeliana": [
+          "Capítulo 1: Fundamentos da Genética",
+          "Capítulo 2: Leis de Mendel (Revisão Sintética)"
+        ],
+        "Unidade 2 - Interações Gênicas": [
+          "Capítulo 1: Ausência de Dominância",
+          "Capítulo 2: Alelos Múltiplos",
+          "Capítulo 3: Epistasia",
+          "Capítulo 4: Herança Quantitativa (Poligênica)",
+          "Capítulo 5: Pleiotropia"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Ligação Gênica e Mapas Genéticos": [
+          "Capítulo 1: Linkage (Ligação Gênica)",
+          "Capítulo 2: Mapas Genéticos",
+          "Capítulo 3: Herança Ligada ao Sexo"
+        ],
+        "Unidade 4 - Genética Molecular Avançada": [
+          "Capítulo 1: Regulação da Expressão Gênica",
+          "Capítulo 2: Epigenética",
+          "Capítulo 3: Mutações e Variabilidade",
+          "Capítulo 4: Biotecnologia Básica"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Genética de Populações": [
+          "Capítulo 1: Conceitos Fundamentais",
+          "Capítulo 2: Equilíbrio de Hardy-Weinberg",
+          "Capítulo 3: Fatores Evolutivos"
+        ],
+        "Unidade 6 - Evolução Biológica": [
+          "Capítulo 1: Teorias Evolutivas",
+          "Capítulo 2: Evidências da Evolução",
+          "Capítulo 3: Evolução Humana",
+          "Capítulo 4: Especiação e Grandes Eventos Evolutivos"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Biotecnologia Moderna": [
+          "Capítulo 1: Engenharia Genética e Transgênicos",
+          "Capítulo 2: Edição Genômica: CRISPR-Cas9",
+          "Capítulo 3: Clonagem e Células-Tronco",
+          "Capítulo 4: Outras Biotecnologias e Bioética"
+        ],
+        "Unidade 8 - Ecologia": [
+          "Capítulo 1: Conceitos Fundamentais de Ecologia",
+          "Capítulo 2: Dinâmica de Populações",
+          "Capítulo 3: Relações Ecológicas",
+          "Capítulo 4: Fluxo de Energia e Cadeias Alimentares",
+          "Capítulo 5: Ciclos Biogeoquímicos",
+          "Capítulo 6: Biomas e Ecossistemas Brasileiros",
+          "Capítulo 7: Problemas Ambientais e Conservação"
+        ]
+      }
+    }
+  },
+  "Matemática 3": {
+    "6º Ano": {
+      "1": {
+        "Unidade 1 - Introdução à Estatística": [
+          "Capítulo 1: População e Amostra",
+          "Capítulo 2: Coleta e Organização de Dados",
+          "Capítulo 3: Tabelas Simples"
+        ],
+        "Unidade 2 - Introdução à Probabilidade": [
+          "Capítulo 1: Experimentos Aleatórios"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Gráficos Estatísticos": [
+          "Capítulo 1: Tipos de Gráficos",
+          "Capítulo 2: Construção de Gráficos",
+          "Capítulo 3: Interpretação de Gráficos"
+        ],
+        "Unidade 4 - Média Aritmética e Probabilidade": [
+          "Capítulo 1: Média Aritmética",
+          "Capítulo 2: Espaço Amostral e Eventos",
+          "Capítulo 3: Cálculo de Probabilidade"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Frequência e Representação de Dados": [
+          "Capítulo 1: Frequência Absoluta e Relativa",
+          "Capítulo 2: Tabelas e Gráficos de Frequência"
+        ],
+        "Unidade 6 - Probabilidade: Aplicações": [
+          "Capítulo 1: Problemas de Probabilidade",
+          "Capítulo 2: Probabilidade de Eventos Especiais"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Medidas de Tendência Central": [
+          "Capítulo 1: Média Aritmética Aprofundamento",
+          "Capítulo 2: Moda",
+          "Capítulo 3: Mediana",
+          "Capítulo 4: Comparação das Medidas"
+        ],
+        "Unidade 8 - Gráficos e Probabilidade: Consolidação": [
+          "Capítulo 1: Gráfico de Setores (Pizza)",
+          "Capítulo 2: Análise Crítica de Gráficos",
+          "Capítulo 3: Probabilidade Consolidação",
+          "Capítulo 4: Fluxogramas"
+        ]
+      }
+    },
+    "7º Ano": {
+      "1": {
+        "Unidade 1 - Introdução à Pesquisa Estatística": [
+          "Capítulo 1: Pesquisa Estatística",
+          "Capítulo 2: Variáveis Estatísticas",
+          "Capítulo 3: Coleta de Dados",
+          "Capítulo 4: Organização de Dados"
+        ],
+        "Unidade 2 - Porcentagem Aplicada": [
+          "Capítulo 1: Cálculo de Porcentagem",
+          "Capítulo 2: Desconto Simples",
+          "Capítulo 3: Aplicações no Cotidiano",
+          "Capítulo 4: Problemas Integrados de Porcentagem"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Representações Gráficas: Tipos e Construção": [
+          "Capítulo 1: Gráfico de Colunas",
+          "Capítulo 2: Gráfico de Barras",
+          "Capítulo 3: Gráfico de Linhas",
+          "Capítulo 4: Gráfico de Setores (Pizza)"
+        ],
+        "Unidade 4 - Construção e Interpretação de Gráficos": [
+          "Capítulo 1: Construção de Gráficos",
+          "Capítulo 2: Interpretação de Gráficos",
+          "Capítulo 3: Análise Crítica de Gráficos",
+          "Capítulo 4: Comunicação de Dados"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Medidas de Tendência Central": [
+          "Capítulo 1: Média Aritmética Simples",
+          "Capítulo 2: Média Ponderada",
+          "Capítulo 3: Moda e Mediana",
+          "Capítulo 4: Amplitude e Comparação das Medidas"
+        ],
+        "Unidade 6 - Plano Cartesiano e Transformações": [
+          "Capítulo 1: Sistema de Coordenadas Cartesianas",
+          "Capítulo 2: Transformações por Multiplicação de Coordenadas",
+          "Capítulo 3: Simetrias no Plano Cartesiano",
+          "Capítulo 4: Translação, Rotação e Reflexão"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Juros Simples": [
+          "Capítulo 1: Conceitos Fundamentais de Juros",
+          "Capítulo 2: Cálculo de Juros Simples",
+          "Capítulo 3: Aplicações Práticas de Juros",
+          "Capítulo 4: Educação Financeira e Tomada de Decisão"
+        ],
+        "Unidade 8 - Probabilidade": [
+          "Capítulo 1: Conceitos Básicos de Probabilidade",
+          "Capítulo 2: Probabilidade Clássica",
+          "Capítulo 3: Experimentos e Simulações",
+          "Capítulo 4: Probabilidade e Frequência"
+        ]
+      }
+    },
+    "8º Ano": {
+      "1": {
+        "Unidade 1 - Educação Financeira Básica": [
+          "Capítulo 1: Orçamento Pessoal e Familiar",
+          "Capítulo 2: Economia Doméstica",
+          "Capítulo 3: Sistema Financeiro Introdução"
+        ],
+        "Unidade 2 - Estatística Descritiva e Organização de Dados": [
+          "Capítulo 1: Medidas de Tendência Central",
+          "Capítulo 2: Medidas de Dispersão",
+          "Capítulo 3: Organização de Dados"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Porcentagem e Proporcionalidade": [
+          "Capítulo 1: Porcentagem Aprofundamento",
+          "Capítulo 2: Aumentos e Descontos",
+          "Capítulo 3: Grandezas Proporcionais Aplicações"
+        ],
+        "Unidade 4 - Escalas e Aplicações Práticas": [
+          "Capítulo 1: Escalas",
+          "Capítulo 2: Aplicações de Escalas",
+          "Capítulo 3: Juros Simples Introdução"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Probabilidade": [
+          "Capítulo 1: Espaço Amostral e Eventos",
+          "Capítulo 2: Cálculo de Probabilidades",
+          "Capítulo 3: Probabilidade com Múltiplos Eventos"
+        ],
+        "Unidade 6 - Gráficos Estatísticos": [
+          "Capítulo 1: Tipos de Gráficos",
+          "Capítulo 2: Escolha Adequada de Gráficos",
+          "Capítulo 3: Construção e Interpretação"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Pesquisa Estatística": [
+          "Capítulo 1: Pesquisa Censitária vs. Amostral",
+          "Capítulo 2: Técnicas de Amostragem",
+          "Capítulo 3: Variável Contínua e Classes",
+          "Capítulo 4: Planejamento e Execução de Pesquisa"
+        ],
+        "Unidade 8 - Educação Financeira Aplicada": [
+          "Capítulo 1: Juros Simples Aprofundamento",
+          "Capítulo 2: Aplicações Financeiras",
+          "Capítulo 3: Consumo Consciente",
+          "Capítulo 4: Projeto Integrador Pesquisa Financeira"
+        ]
+      }
+    },
+    "9º Ano": {
+      "1": {
+        "Unidade 1 - Educação Financeira: Orçamento e Planejamento": [
+          "Capítulo 1: Orçamento Familiar",
+          "Capítulo 2: Poupança e Objetivos",
+          "Capítulo 3: Consumo Consciente",
+          "Capítulo 4: Percentuais no Orçamento"
+        ],
+        "Unidade 2 - Estatística: Fundamentos": [
+          "Capítulo 1: Conceitos Básicos",
+          "Capítulo 2: Coleta e Organização de Dados",
+          "Capítulo 3: Tabelas de Frequência",
+          "Capítulo 4: Gráficos Estatísticos"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Probabilidade: Conceitos e Cálculos": [
+          "Capítulo 1: Experimentos Aleatórios",
+          "Capítulo 2: Cálculo de Probabilidades",
+          "Capítulo 3: Eventos Complementares",
+          "Capítulo 4: União e Intersecção de Eventos"
+        ],
+        "Unidade 4 - Educação Financeira: Crédito e Consumo": [
+          "Capítulo 1: Crédito e Empréstimos",
+          "Capítulo 2: Cartão de Crédito",
+          "Capítulo 3: Compras Parceladas",
+          "Capítulo 4: Tomada de Decisão Financeira"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Educação Financeira: Juros e Investimentos": [
+          "Capítulo 1: Juros Simples e Compostos",
+          "Capítulo 2: Cálculos com Juros Compostos",
+          "Capítulo 3: Inflação e Poder de Compra",
+          "Capítulo 4: Noções de Investimentos"
+        ],
+        "Unidade 6 - Probabilidade: Dependência e Independência": [
+          "Capítulo 1: Eventos Independentes",
+          "Capítulo 2: Eventos Dependentes",
+          "Capítulo 3: Aplicações de Probabilidade",
+          "Capítulo 4: Probabilidade e Estatística"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Medidas Estatísticas": [
+          "Capítulo 1: Medidas de Tendência Central",
+          "Capítulo 2: Escolha da Medida Adequada",
+          "Capítulo 3: Medidas de Dispersão",
+          "Capítulo 4: Construção de Gráficos"
+        ],
+        "Unidade 8 - Análise Crítica e Pesquisa": [
+          "Capítulo 1: Análise Crítica de Gráficos",
+          "Capítulo 2: Leitura Crítica de Estatísticas",
+          "Capítulo 3: Amostragem",
+          "Capítulo 4: Pesquisa Amostral"
+        ]
+      }
+    },
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Estatística Descritiva - Conceitos Básicos": [
+          "Capítulo 1: Introdução à Estatística",
+          "Capítulo 2: Variáveis e Organização de Dados"
+        ],
+        "Unidade 2 - Distribuição de Frequências e Educação Financeira Básica": [
+          "Capítulo 1: Distribuição de Frequências",
+          "Capítulo 2: Educação Financeira Conceitos Básicos"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Representação Gráfica": [
+          "Capítulo 1: Gráficos para Variáveis Qualitativas",
+          "Capítulo 2: Gráficos para Variáveis Quantitativas"
+        ],
+        "Unidade 4 - Medidas de Tendência Central e Educação Financeira": [
+          "Capítulo 1: Medidas de Tendência Central",
+          "Capítulo 2: Educação Financeira Proporcionalidade e Juros"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Medidas de Dispersão": [
+          "Capítulo 1: Amplitude e Desvios",
+          "Capítulo 2: Variância, Desvio Padrão e CV"
+        ],
+        "Unidade 6 - Introdução à Probabilidade e Educação Financeira": [
+          "Capítulo 1: Conceitos Fundamentais de Probabilidade",
+          "Capítulo 2: Educação Financeira Análise de Decisões"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Análise Combinatória - Introdução": [
+          "Capítulo 1: Princípio Fundamental da Contagem",
+          "Capítulo 2: Arranjos e Permutações Simples"
+        ],
+        "Unidade 8 - Educação Financeira - Planejamento": [
+          "Capítulo 1: Consumo e Economia",
+          "Capítulo 2: Planejamento Financeiro Básico"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Análise Combinatória - Fundamentos": [
+          "Capítulo 1: Revisão do PFC e Arranjos",
+          "Capítulo 2: Combinações"
+        ],
+        "Unidade 2 - Análise Combinatória - Aprofundamento": [
+          "Capítulo 1: Permutações Especiais",
+          "Capítulo 2: Problemas Combinatórios Diversos"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Binômio de Newton": [
+          "Capítulo 1: Desenvolvimento do Binômio",
+          "Capítulo 2: Termo Geral e Aplicações"
+        ],
+        "Unidade 4 - Educação Financeira - Juros Compostos": [
+          "Capítulo 1: Juros Compostos",
+          "Capítulo 2: Aplicações Financeiras"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Probabilidade - Aprofundamento": [
+          "Capítulo 1: Revisão e Extensão de Probabilidade",
+          "Capítulo 2: Probabilidade Condicional"
+        ],
+        "Unidade 6 - Educação Financeira - Crédito e Financiamentos": [
+          "Capítulo 1: Financiamentos e Empréstimos",
+          "Capítulo 2: Crédito e Endividamento"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Probabilidade - Consolidação": [
+          "Capítulo 1: Problemas de Probabilidade",
+          "Capítulo 2: Aplicações de Probabilidade"
+        ],
+        "Unidade 8 - Educação Financeira - Planejamento de Longo Prazo": [
+          "Capítulo 1: Planejamento Financeiro Pessoal",
+          "Capítulo 2: Aposentadoria e Projetos"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Estatística Avançada - Variáveis Aleatórias": [
+          "Capítulo 1: Variáveis Aleatórias",
+          "Capítulo 2: Distribuição Binomial"
+        ],
+        "Unidade 2 - Distribuição Normal": [
+          "Capítulo 1: A Curva Normal",
+          "Capítulo 2: Normal Padrão e Aplicações"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Matemática Financeira Avançada": [
+          "Capítulo 1: Taxas e Equivalências",
+          "Capítulo 2: Descontos"
+        ],
+        "Unidade 4 - Sistemas de Amortização e Análise de Investimentos": [
+          "Capítulo 1: Sistemas de Amortização",
+          "Capítulo 2: Análise de Investimentos"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Revisão Integrada - Estatística": [
+          "Capítulo 1: Estatística Descritiva Revisão",
+          "Capítulo 2: Análise Crítica de Dados"
+        ],
+        "Unidade 6 - Revisão Integrada - Probabilidade e Matemática Financeira": [
+          "Capítulo 1: Probabilidade Revisão Completa",
+          "Capítulo 2: Matemática Financeira Revisão Completa"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Revisão ENEM - Estatística e Probabilidade": [
+          "Capítulo 1: Temas Recorrentes no ENEM",
+          "Capítulo 2: Estratégias de Resolução ENEM"
+        ],
+        "Unidade 8 - Revisão Final Vestibulares": [
+          "Capítulo 1: Matemática Financeira no ENEM e Vestibulares",
+          "Capítulo 2: Simulados e Provas Comentadas"
+        ]
+      }
+    }
+  },
+  "Matemática 2": {
+    "6º Ano": {
+      "1": {
+        "Unidade 1 - Conceitos Fundamentais da Geometria": [
+          "Capítulo 1: Ponto, Reta e Plano",
+          "Capítulo 2: Segmentos de Reta",
+          "Capítulo 3: Retas Paralelas e Concorrentes"
+        ],
+        "Unidade 2 - Ângulos e Sistema de Medidas I": [
+          "Capítulo 1: Conceito e Elementos de Ângulos",
+          "Capítulo 2: Medida e Classificação de Ângulos",
+          "Capítulo 3: Medidas de Comprimento",
+          "Capítulo 4: Medidas de Massa"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Ângulos e Polígonos": [
+          "Capítulo 1: Ângulos Especiais",
+          "Capítulo 2: Polígonos",
+          "Capítulo 3: Perímetro de Polígonos"
+        ],
+        "Unidade 4 - Triângulos e Sistema de Medidas II": [
+          "Capítulo 1: Elementos dos Triângulos",
+          "Capítulo 2: Classificação dos Triângulos",
+          "Capítulo 3: Propriedades dos Triângulos",
+          "Capítulo 4: Medidas de Capacidade",
+          "Capítulo 5: Medidas de Tempo"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Quadriláteros e Circunferência": [
+          "Capítulo 1: Quadriláteros",
+          "Capítulo 2: Classificação dos Quadriláteros",
+          "Capítulo 3: Propriedades dos Paralelogramos",
+          "Capítulo 4: Circunferência e Círculo"
+        ],
+        "Unidade 6 - Área de Figuras Planas": [
+          "Capítulo 1: Conceito de Área",
+          "Capítulo 2: Área de Retângulos e Quadrados",
+          "Capítulo 3: Área de Triângulos e Paralelogramos",
+          "Capítulo 4: Área de Trapézios e Comparação de Áreas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Sólidos Geométricos e Volume": [
+          "Capítulo 1: Poliedros",
+          "Capítulo 2: Prismas e Pirâmides",
+          "Capítulo 3: Corpos Redondos",
+          "Capítulo 4: Planificações",
+          "Capítulo 5: Volume"
+        ],
+        "Unidade 8 - Plano Cartesiano": [
+          "Capítulo 1: Sistema de Coordenadas",
+          "Capítulo 2: Localização de Pontos",
+          "Capítulo 3: Distância entre Pontos"
+        ]
+      }
+    },
+    "7º Ano": {
+      "1": {
+        "Unidade 1 - Ângulos: Fundamentos e Classificação": [
+          "Capítulo 1: Conceito e Elementos de Ângulos",
+          "Capítulo 2: Medida de Ângulos",
+          "Capítulo 3: Classificação de Ângulos",
+          "Capítulo 4: Ângulos Congruentes"
+        ],
+        "Unidade 2 - Relações entre Ângulos e Retas Paralelas": [
+          "Capítulo 1: Ângulos Opostos pelo Vértice",
+          "Capítulo 2: Ângulos Complementares e Suplementares",
+          "Capítulo 3: Ângulos Adjacentes",
+          "Capítulo 4: Retas Paralelas Cortadas por Transversal"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Triângulos": [
+          "Capítulo 1: Classificação de Triângulos",
+          "Capítulo 2: Elementos e Construção de Triângulos",
+          "Capítulo 3: Propriedades dos Triângulos",
+          "Capítulo 4: Rigidez Geométrica dos Triângulos"
+        ],
+        "Unidade 4 - Quadriláteros e Polígonos Regulares": [
+          "Capítulo 1: Classificação de Quadriláteros",
+          "Capítulo 2: Propriedades dos Quadriláteros",
+          "Capítulo 3: Ângulos Internos de Polígonos Regulares",
+          "Capítulo 4: Construção de Polígonos Regulares"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Circunferência e Círculo": [
+          "Capítulo 1: Elementos da Circunferência",
+          "Capítulo 2: Construção com Compasso",
+          "Capítulo 3: Posições Relativas",
+          "Capítulo 4: Comprimento da Circunferência e o Número π"
+        ],
+        "Unidade 6 - Área e Perímetro": [
+          "Capítulo 1: Conceitos Fundamentais de Área e Perímetro",
+          "Capítulo 2: Área de Quadriláteros",
+          "Capítulo 3: Área de Triângulos",
+          "Capítulo 4: Área do Círculo e Figuras Compostas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Volume e Capacidade": [
+          "Capítulo 1: Conceitos Fundamentais de Volume",
+          "Capítulo 2: Conversões de Medidas",
+          "Capítulo 3: Volume de Blocos Retangulares",
+          "Capítulo 4: Problemas com Blocos Retangulares"
+        ],
+        "Unidade 8 - Aplicações de Medidas": [
+          "Capítulo 1: Problemas de Capacidade",
+          "Capítulo 2: Medidas em Contextos Diversos",
+          "Capítulo 3: Problemas Integrados de Área e Volume",
+          "Capítulo 4: Aplicações Práticas de Geometria"
+        ]
+      }
+    },
+    "8º Ano": {
+      "1": {
+        "Unidade 1 - Ângulos e Construções Geométricas Básicas": [
+          "Capítulo 1: Ângulos Fundamentos",
+          "Capítulo 2: Ângulos Formados por Retas Paralelas",
+          "Capítulo 3: Construções Geométricas Introdução",
+          "Capítulo 4: Construção de Ângulos Específicos"
+        ],
+        "Unidade 2 - Mediatriz, Bissetriz e Lugares Geométricos": [
+          "Capítulo 1: Mediatriz de um Segmento",
+          "Capítulo 2: Bissetriz de um Ângulo",
+          "Capítulo 3: Aplicações de Mediatriz e Bissetriz",
+          "Capítulo 4: Sistema de Medidas"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Triângulos e Congruência": [
+          "Capítulo 1: Triângulos Classificação e Propriedades",
+          "Capítulo 2: Congruência de Triângulos",
+          "Capítulo 3: Demonstrações com Congruência",
+          "Capítulo 4: Propriedades de Quadriláteros via Congruência"
+        ],
+        "Unidade 4 - Polígonos e Construção de Polígonos Regulares": [
+          "Capítulo 1: Polígonos Ângulos",
+          "Capítulo 2: Polígonos Regulares",
+          "Capítulo 3: Construção de Polígonos Regulares"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Transformações Geométricas": [
+          "Capítulo 1: Translação",
+          "Capítulo 2: Reflexão",
+          "Capítulo 3: Rotação",
+          "Capítulo 4: Composição de Transformações"
+        ],
+        "Unidade 6 - Áreas de Figuras Planas": [
+          "Capítulo 1: Áreas de Quadriláteros",
+          "Capítulo 2: Área do Triângulo",
+          "Capítulo 3: Composição e Decomposição de Figuras",
+          "Capítulo 4: Problemas de Área"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Grandezas e Medidas de Capacidade e Volume": [
+          "Capítulo 1: Relações entre Unidades de Capacidade e Volume",
+          "Capítulo 2: Sólidos Geométricos Introdução",
+          "Capítulo 3: Volume do Bloco Retangular",
+          "Capítulo 4: Problemas com Volume e Capacidade"
+        ],
+        "Unidade 8 - Plano Cartesiano e Problemas Integrados": [
+          "Capítulo 1: Plano Cartesiano Aprofundamento",
+          "Capítulo 2: Figuras no Plano Cartesiano",
+          "Capítulo 3: Transformações no Plano Cartesiano",
+          "Capítulo 4: Problemas Geométricos Integrados"
+        ]
+      }
+    },
+    "9º Ano": {
+      "1": {
+        "Unidade 1 - Ângulos e Retas": [
+          "Capítulo 1: Retas Paralelas e Transversais",
+          "Capítulo 2: Relações entre Ângulos",
+          "Capítulo 3: Demonstração de Relações",
+          "Capítulo 4: Teorema de Tales"
+        ],
+        "Unidade 2 - Semelhança de Triângulos": [
+          "Capítulo 1: Conceito de Semelhança",
+          "Capítulo 2: Casos de Semelhança",
+          "Capítulo 3: Aplicações da Semelhança",
+          "Capítulo 4: Teorema de Pitágoras"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Relações Métricas e Circunferência": [
+          "Capítulo 1: Relações Métricas no Triângulo Retângulo",
+          "Capítulo 2: Circunferência Elementos",
+          "Capítulo 3: Ângulos na Circunferência",
+          "Capítulo 4: Medidas na Circunferência"
+        ],
+        "Unidade 4 - Polígonos e Construções Geométricas": [
+          "Capítulo 1: Polígonos Regulares",
+          "Capítulo 2: Construção de Polígonos Regulares",
+          "Capítulo 3: Algoritmos de Construção",
+          "Capítulo 4: Geometria Analítica Básica"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Trigonometria no Triângulo Retângulo": [
+          "Capítulo 1: Razões Trigonométricas",
+          "Capítulo 2: Valores Notáveis",
+          "Capítulo 3: Relação Fundamental",
+          "Capítulo 4: Resolução de Triângulos"
+        ],
+        "Unidade 6 - Geometria Espacial e Representações": [
+          "Capítulo 1: Noções Básicas de Geometria Espacial",
+          "Capítulo 2: Vistas Ortogonais",
+          "Capítulo 3: Representações Técnicas",
+          "Capítulo 4: Sistema de Medidas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Prismas e Cilindros": [
+          "Capítulo 1: Prismas",
+          "Capítulo 2: Área e Volume de Prismas",
+          "Capítulo 3: Cilindros",
+          "Capítulo 4: Área e Volume de Cilindros"
+        ],
+        "Unidade 8 - Aplicações e Problemas Integrados": [
+          "Capítulo 1: Aplicações da Trigonometria",
+          "Capítulo 2: Aplicações de Áreas e Volumes",
+          "Capítulo 3: Problemas Integrados",
+          "Capítulo 4: Síntese e Revisão"
+        ]
+      }
+    },
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Conceitos Fundamentais da Geometria Plana": [
+          "Capítulo 1: Elementos Primitivos",
+          "Capítulo 2: Posições Relativas e Ângulos"
+        ],
+        "Unidade 2 - Polígonos": [
+          "Capítulo 1: Definição e Elementos",
+          "Capítulo 2: Propriedades dos Polígonos"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Triângulos": [
+          "Capítulo 1: Classificação e Elementos",
+          "Capítulo 2: Propriedades e Congruência"
+        ],
+        "Unidade 4 - Quadriláteros": [
+          "Capítulo 1: Classificação e Propriedades Gerais",
+          "Capítulo 2: Paralelogramos e Trapézios"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Circunferência": [
+          "Capítulo 1: Definição e Elementos",
+          "Capítulo 2: Ângulos e Propriedades"
+        ],
+        "Unidade 6 - Áreas de Figuras Planas": [
+          "Capítulo 1: Áreas de Triângulos e Quadriláteros",
+          "Capítulo 2: Áreas de Polígonos e Círculo"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Relações Métricas no Triângulo Retângulo": [
+          "Capítulo 1: Teorema de Pitágoras",
+          "Capítulo 2: Relações Métricas"
+        ],
+        "Unidade 8 - Trigonometria no Triângulo Retângulo": [
+          "Capítulo 1: Razões Trigonométricas",
+          "Capítulo 2: Ângulos Notáveis e Aplicações"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Geometria Espacial de Posição": [
+          "Capítulo 1: Elementos Fundamentais",
+          "Capítulo 2: Posições Relativas"
+        ],
+        "Unidade 2 - Paralelismo, Perpendicularismo e Poliedros": [
+          "Capítulo 1: Paralelismo e Perpendicularismo",
+          "Capítulo 2: Poliedros"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Prismas": [
+          "Capítulo 1: Elementos e Classificação",
+          "Capítulo 2: Áreas e Volumes de Prismas"
+        ],
+        "Unidade 4 - Pirâmides": [
+          "Capítulo 1: Elementos e Classificação",
+          "Capítulo 2: Áreas, Volumes e Tronco de Pirâmide"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Cilindros": [
+          "Capítulo 1: Elementos e Classificação",
+          "Capítulo 2: Áreas, Volumes e Secções"
+        ],
+        "Unidade 6 - Cones": [
+          "Capítulo 1: Elementos e Classificação",
+          "Capítulo 2: Áreas, Volumes e Tronco de Cone"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Esferas": [
+          "Capítulo 1: Elementos e Cálculos",
+          "Capítulo 2: Partes da Esfera e Secções"
+        ],
+        "Unidade 8 - Sólidos Semelhantes e Transformações": [
+          "Capítulo 1: Sólidos Semelhantes",
+          "Capítulo 2: Transformações Geométricas"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Geometria Analítica: O Ponto": [
+          "Capítulo 1: Plano Cartesiano",
+          "Capítulo 2: Ponto Médio e Baricentro"
+        ],
+        "Unidade 2 - Geometria Analítica: A Reta": [
+          "Capítulo 1: Equações da Reta",
+          "Capítulo 2: Posições Relativas e Distâncias"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Geometria Analítica: A Circunferência": [
+          "Capítulo 1: Equações da Circunferência",
+          "Capítulo 2: Posições Relativas com Circunferência"
+        ],
+        "Unidade 4 - Cônicas: Elipse": [
+          "Capítulo 1: Definição e Elementos da Elipse",
+          "Capítulo 2: Equações e Propriedades da Elipse"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Cônicas: Hipérbole": [
+          "Capítulo 1: Definição e Elementos da Hipérbole",
+          "Capítulo 2: Equações e Propriedades da Hipérbole"
+        ],
+        "Unidade 6 - Cônicas: Parábola e Reconhecimento": [
+          "Capítulo 1: Parábola",
+          "Capítulo 2: Reconhecimento de Cônicas"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Revisão Integrada de Geometria": [
+          "Capítulo 1: Geometria Plana Revisão",
+          "Capítulo 2: Geometria Espacial Revisão"
+        ],
+        "Unidade 8 - Revisão Final ENEM e Vestibulares": [
+          "Capítulo 1: Geometria Analítica Revisão",
+          "Capítulo 2: Estratégias e Simulados"
+        ]
+      }
+    }
+  },
+  "História": {
+    "1ª Série": {
+      "1": {
+        "UNIDADE 1: PRÉ-HISTÓRIA E PRIMEIRAS CIVILIZAÇÕES": [
+          "CAPÍTULO 1: PRÉ-HISTÓRIA",
+          "CAPÍTULO 2: POVOS INDÍGENAS BRASILEIROS"
+        ],
+        "UNIDADE 2: ANTIGUIDADE ORIENTAL": [
+          "CAPÍTULO 1: MESOPOTÂMIA",
+          "CAPÍTULO 2: EGITO ANTIGO",
+          "CAPÍTULO 3: OUTROS POVOS DA ANTIGUIDADE",
+          "CAPÍTULO 4: ÁFRICA ANTIGA ALÉM DO EGITO"
+        ]
+      },
+      "2": {
+        "UNIDADE 3: FORMAÇÃO DA CIVILIZAÇÃO GREGA": [
+          "CAPÍTULO 1: ORIGENS E PERÍODOS INICIAIS",
+          "CAPÍTULO 2: O PERÍODO ARCAICO"
+        ],
+        "UNIDADE 4: APOGEU E DECLÍNIO DA GRÉCIA CLÁSSICA": [
+          "CAPÍTULO 1: O PERÍODO CLÁSSICO",
+          "CAPÍTULO 2: O PERÍODO HELENÍSTICO",
+          "CAPÍTULO 3: CULTURA E LEGADOS DA GRÉCIA"
+        ]
+      },
+      "3": {
+        "UNIDADE 5: FORMAÇÃO E EXPANSÃO DE ROMA": [
+          "CAPÍTULO 1: ORIGENS E MONARQUIA",
+          "CAPÍTULO 2: A REPÚBLICA ROMANA",
+          "CAPÍTULO 3: A EXPANSÃO ROMANA"
+        ],
+        "UNIDADE 6: CRISE DA REPÚBLICA E IMPÉRIO ROMANO": [
+          "CAPÍTULO 1: A CRISE DA REPÚBLICA",
+          "CAPÍTULO 2: O ALTO IMPÉRIO ROMANO",
+          "CAPÍTULO 3: CRISE E QUEDA DO IMPÉRIO ROMANO DO OCIDENTE",
+          "CAPÍTULO 4: LEGADOS DA CIVILIZAÇÃO ROMANA"
+        ]
+      },
+      "4": {
+        "UNIDADE 7: IDADE MÉDIA": [
+          "CAPÍTULO 1: ALTA IDADE MÉDIA (SÉC. V-X)",
+          "CAPÍTULO 2: O FEUDALISMO",
+          "CAPÍTULO 3: BAIXA IDADE MÉDIA (SÉC. XI-XV)"
+        ],
+        "UNIDADE 8: IDADE MODERNA": [
+          "CAPÍTULO 1: RENASCIMENTO CULTURAL",
+          "CAPÍTULO 2: REFORMAS RELIGIOSAS",
+          "CAPÍTULO 3: O ABSOLUTISMO E O MERCANTILismo",
+          "CAPÍTULO 4: A EXPANSÃO MARÍTIMA EUROPEIA",
+          "CAPÍTULO 5: AS CIVILIZAÇÕES AMERICANAS"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "UNIDADE 1: ILUMINISMO E REVOLUÇÕES (SÉC. XVIII-XIX)": [
+          "CAPÍTULO 1: ILUMINISMO",
+          "CAPÍTULO 2: REVOLUÇÃO INDUSTRIAL",
+          "CAPÍTULO 3: REVOLUÇÃO FRANCESA",
+          "CAPÍTULO 4: ERA NAPOLEÔNICA"
+        ],
+        "UNIDADE 2: INDEPENDÊNCIAS NAS AMÉRICAS": [
+          "CAPÍTULO 1: INDEPENDÊNCIA DOS ESTADOS UNIDOS",
+          "CAPÍTULO 2: INDEPENDÊNCIA DO HAITI",
+          "CAPÍTULO 3: INDEPENDÊNCIAS NA AMÉRICA ESPANHOLA"
+        ]
+      },
+      "2": {
+        "UNIDADE 3: INDEPENDÊNCIA E PRIMEIRO REINADO": [
+          "CAPÍTULO 1: A VINDA DA FAMÍLIA REAL E O CONTEXTO COLONIAL",
+          "CAPÍTULO 2: INDEPENDÊNCIA DO BRASIL",
+          "CAPÍTULO 3: PRIMEIRO REINADO (1822-1831)"
+        ],
+        "UNIDADE 4: PERÍODO REGENCIAL E INÍCIO DO SEGUNDO REINADO": [
+          "CAPÍTULO 1: PERÍODO REGENCIAL (1831-1840)",
+          "CAPÍTULO 2: REVOLTAS REGENCIAIS",
+          "CAPÍTULO 3: O GOLPE DA MAIORIDADE"
+        ]
+      },
+      "3": {
+        "UNIDADE 5: ECONOMIA CAFEEIRA E POLÍTICA IMPERIAL": [
+          "CAPÍTULO 1: ORGANIZAÇÃO POLÍTICA DO SEGUNDO REINADO",
+          "CAPÍTULO 2: A ECONOMIA CAFEEIRA",
+          "CAPÍTULO 3: GUERRA DO PARAGUAI (1864-1870)"
+        ],
+        "UNIDADE 6: ESCRAVIDÃO, RESISTÊNCIAS E ABOLIÇÃO": [
+          "CAPÍTULO 1: A ESTRUTURA DA ESCRAVIDÃO NO BRASIL",
+          "CAPÍTULO 2: O FIM DO TRÁFICO E AS LEIS ABOLICIONISTAS",
+          "CAPÍTULO 3: A ABOLIÇÃO E SUAS CONSEQUÊNCIAS",
+          "CAPÍTULO 4: A CRISE DA MONARQUIA"
+        ]
+      },
+      "4": {
+        "UNIDADE 7: IMPERIALISMO E NEOCOLONIALISMO": [
+          "CAPÍTULO 1: CARACTERÍSTICAS DO IMPERIALISMO",
+          "CAPÍTULO 2: A PARTILHA DA ÁFRICA",
+          "CAPÍTULO 3: A PARTILHA DA ÁSIA",
+          "CAPÍTULO 4: O IMPERIALISMO NORTE-AMERICANO"
+        ],
+        "UNIDADE 8: PRIMEIRA REPÚBLICA NO BRASIL (1889-1930)": [
+          "CAPÍTULO 1: A PROCLAMAÇÃO DA REPÚBLICA E A REPÚBLICA DA ESPADA",
+          "CAPÍTULO 2: A REPÚBLICA OLIGÁRQUICA",
+          "CAPÍTULO 3: ECONOMIA E SOCIEDADE NA REPÚBLICA OLIGÁRQUICA",
+          "CAPÍTULO 4: AS REVOLTAS SOCIAIS",
+          "CAPÍTULO 5: A CRISE DA REPÚBLICA E A REVOLUÇÃO DE 1930"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Primeira Guerra Mundial e Revolução Russa": [
+          "Capítulo 1: Primeira Guerra Mundial (1914-1918)",
+          "Capítulo 2: Revolução Russa (1917)",
+          "Capítulo 3: Stalinismo (1928-1953)"
+        ],
+        "Unidade 2 - Período Entre-Guerras: Crise e Totalitarismos": [
+          "Capítulo 1: Crise de 1929 e Grande Depressão",
+          "Capítulo 2: Regimes Totalitários: Fascismo Italiano",
+          "Capítulo 3: Regimes Totalitários: Nazismo Alemão",
+          "Capítulo 4: Era Vargas no Brasil (1930-1945)"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Segunda Guerra Mundial (1939-1945)": [
+          "Capítulo 1: Causas e Início da Guerra",
+          "Capítulo 2: Fases da Guerra",
+          "Capítulo 3: Holocausto",
+          "Capítulo 4: Consequências da Segunda Guerra"
+        ],
+        "Unidade 4 - Guerra Fria e Descolonizações": [
+          "Capítulo 1: Guerra Fria: Conceito e Bipolarização",
+          "Capítulo 2: Principais Conflitos da Guerra Fria",
+          "Capítulo 3: Descolonização da Ásia",
+          "Capítulo 4: Descolonização da África (Lei 11.645/2008)"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Brasil Democrático: Populismo (1945-1964)": [
+          "Capítulo 1: Redemocratização e Governo Dutra (1946-1951)",
+          "Capítulo 2: Segundo Governo Vargas (1951-1954)",
+          "Capítulo 3: Juscelino Kubitschek (1956-1961)",
+          "Capítulo 4: Jânio Quadros e João Goulart"
+        ],
+        "Unidade 6 - Ditadura Militar (1964-1985)": [
+          "Capítulo 1: Governo Castelo Branco (1964-1967)",
+          "Capítulo 2: Costa e Silva (1967-1969) e AI-5",
+          "Capítulo 3: Médici (1969-1974): \"Anos de Chumbo\"",
+          "Capítulo 4: Geisel (1974-1979): Abertura \"Lenta, Gradual e Segura\"",
+          "Capítulo 5: Figueiredo (1979-1985): Abertura e Crise"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Nova República e Constituição de 1988": [
+          "Capítulo 1: Transição Democrática (1985-1989)",
+          "Capítulo 2: Governos Democráticos (1990-2002)",
+          "Capítulo 3: Governos Lula e Dilma (2003-2016)",
+          "Capítulo 4: Brasil Recente (2016-Presente)"
+        ],
+        "Unidade 8 - Mundo Contemporâneo (1991-Presente)": [
+          "Capítulo 1: Fim da Guerra Fria e Mundo Multipolar",
+          "Capítulo 2: Globalização e Neoliberalismo",
+          "Capítulo 3: Conflitos Contemporâneos",
+          "Capítulo 4: Desafios do Século XXI"
+        ]
+      }
+    }
+  },
+  "Estudos Sociais": {
+    "1º Ano": {
+      "1": {
+        "Unidade 1 - Quem Sou Eu": [
+          "Capítulo 1: Identidade Pessoal",
+          "Capítulo 2: História Pessoal"
+        ],
+        "Unidade 2 - O Tempo ao Meu Redor": [
+          "Capítulo 1: Tempo Cronológico",
+          "Capítulo 2: Ciclos Naturais"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Minha Família": [
+          "Capítulo 1: Família"
+        ],
+        "Unidade 4 - Convivendo em Família": [
+          "Capítulo 1: Convivência Familiar",
+          "Capítulo 2: Trabalho em Casa"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Minha Casa": [
+          "Capítulo 1: Espaço da Casa",
+          "Capítulo 2: Representação Espacial"
+        ],
+        "Unidade 6 - Minha Escola e Meu Caminho": [
+          "Capítulo 1: Espaço da Escola",
+          "Capítulo 2: Trajeto Casa-Escola"
+        ]
+      },
+      "4": {
+        "Unidade 7 - O Mundo do Trabalho": [
+          "Capítulo 1: Profissões"
+        ],
+        "Unidade 8 - A Natureza ao Nosso Redor": [
+          "Capítulo 1: Natureza"
+        ]
+      }
+    },
+    "2º Ano": {
+      "1": {
+        "Unidade 1 - História da Minha Família": [
+          "Capítulo 1: História Familiar",
+          "Capítulo 2: Fontes Históricas"
+        ],
+        "Unidade 2 - Medindo o Tempo": [
+          "Capítulo 1: Tempo Histórico",
+          "Capítulo 2: Medição do Tempo"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Conhecendo Meu Bairro": [
+          "Capítulo 1: Características do Bairro",
+          "Capítulo 2: Vizinhança e Comunidade"
+        ],
+        "Unidade 4 - O Que Tem no Bairro": [
+          "Capítulo 1: Comércio e Serviços",
+          "Capítulo 2: Localização no Bairro"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Trabalho no Bairro": [
+          "Capítulo 1: Trabalho Local"
+        ],
+        "Unidade 6 - Paisagens e Transformações": [
+          "Capítulo 1: Paisagem Natural",
+          "Capítulo 2: Paisagem Humanizada",
+          "Capítulo 3: Transformações e Preservação"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Nossa Cultura": [
+          "Capítulo 1: Cultura Local",
+          "Capítulo 2: Culturas Indígenas e Africanas"
+        ],
+        "Unidade 8 - Transporte, Comunicação e Mapas Digitais": [
+          "Capítulo 1: Meios de Transporte",
+          "Capítulo 2: Meios de Comunicação",
+          "Capítulo 3: Representação Digital"
+        ]
+      }
+    },
+    "3º Ano": {
+      "1": {
+        "Unidade 1 - Como a Cidade se Formou": [
+          "Capítulo 1: Formação das Cidades",
+          "Capítulo 2: Organização Espacial"
+        ],
+        "Unidade 2 - Vivendo na Cidade": [
+          "Capítulo 1: Serviços Urbanos",
+          "Capítulo 2: Problemas Urbanos",
+          "Capítulo 3: Cartografia da Cidade"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Campo e Cidade": [
+          "Capítulo 1: Rural e Urbano",
+          "Capítulo 2: Interdependência Campo-Cidade"
+        ],
+        "Unidade 4 - Organização do Município": [
+          "Capítulo 1: Município",
+          "Capítulo 2: Poder Público Municipal"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Primeiros Habitantes do Brasil": [
+          "Capítulo 1: Primeiros Habitantes",
+          "Capítulo 2: Modo de Vida Tradicional"
+        ],
+        "Unidade 6 - Cultura Indígena": [
+          "Capítulo 1: Cultura e Tradições",
+          "Capítulo 2: Indígenas Hoje"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Quilombolas e Cultura Africana": [
+          "Capítulo 1: Comunidades Quilombolas",
+          "Capítulo 2: Cultura Africana no Brasil",
+          "Capítulo 3: Povo Cigano"
+        ],
+        "Unidade 8 - Patrimônio e Memória": [
+          "Capítulo 1: Patrimônio Cultural",
+          "Capítulo 2: Tempo e Mudanças",
+          "Capítulo 3: Cartografia Básica"
+        ]
+      }
+    },
+    "4º Ano": {
+      "1": {
+        "Unidade 1 — O Brasil no Mundo": [
+          "Capítulo 1: Localização do Brasil",
+          "Capítulo 2: Divisão Territorial"
+        ],
+        "Unidade 2 — Relevo e Hidrografia": [
+          "Capítulo 1: Formas de Relevo",
+          "Capítulo 2: Rios e Bacias"
+        ]
+      },
+      "2": {
+        "Unidade 3 — O Município": [
+          "Capítulo 1: Organização Municipal",
+          "Capítulo 2: Campo e Cidade"
+        ],
+        "Unidade 4 — Representação do Espaço": [
+          "Capítulo 1: Tipos de Mapas",
+          "Capítulo 2: Orientação e Escala"
+        ]
+      },
+      "3": {
+        "Unidade 5 — Formação do Povo Brasileiro": [
+          "Capítulo 1: As Três Matrizes",
+          "Capítulo 2: Diversidade Cultural"
+        ],
+        "Unidade 6 — Identidade Nacional": [
+          "Capítulo 1: Símbolos Nacionais",
+          "Capítulo 2: Datas Comemorativas"
+        ]
+      },
+      "4": {
+        "Unidade 7 — Clima e Biomas": [
+          "Capítulo 1: Climas do Brasil",
+          "Capítulo 2: Biomas Brasileiros"
+        ],
+        "Unidade 8 — Circulação e Conexões": [
+          "Capítulo 1: Pessoas e Transportes",
+          "Capítulo 2: Produtos e Comunicação"
+        ]
+      }
+    },
+    "5º Ano": {
+      "1": {
+        "Unidade 1 — Regiões Norte, Nordeste e Centro-Oeste": [
+          "Capítulo 1: Região Norte",
+          "Capítulo 2: Região Nordeste",
+          "Capítulo 3: Região Centro-Oeste"
+        ],
+        "Unidade 2 — Regiões Sudeste e Sul": [
+          "Capítulo 1: Região Sudeste",
+          "Capítulo 2: Região Sul",
+          "Capítulo 3: Interdependência Regional"
+        ]
+      },
+      "2": {
+        "Unidade 3 — Brasil e América Latina": [
+          "Capítulo 1: América Latina",
+          "Capítulo 2: Brasil no Contexto Mundial"
+        ],
+        "Unidade 4 — População Brasileira": [
+          "Capítulo 1: Características Demográficas",
+          "Capítulo 2: Diversidade e Migrações"
+        ]
+      },
+      "3": {
+        "Unidade 5 — Império Brasileiro": [
+          "Capítulo 1: Segundo Reinado",
+          "Capítulo 2: Abolição da Escravatura"
+        ],
+        "Unidade 6 — República Brasileira": [
+          "Capítulo 1: Proclamação da República",
+          "Capítulo 2: República Velha"
+        ]
+      },
+      "4": {
+        "Unidade 7 — Economia e Trabalho": [
+          "Capítulo 1: Atividades Econômicas",
+          "Capítulo 2: Redes de Transporte e Comunicação"
+        ],
+        "Unidade 8 — Meio Ambiente e Cidadania": [
+          "Capítulo 1: Problemas Ambientais",
+          "Capítulo 2: Sustentabilidade",
+          "Capítulo 3: Cidadania e Democracia"
+        ]
+      }
+    },
+    "6º Ano": {
+      "1": {
+        "Unidade 1 — Espaço Geográfico e Cartografia": [
+          "Capítulo 1: Continentes e Oceanos",
+          "Capítulo 2: Espaço e Paisagem",
+          "Capítulo 3: Representação Cartográfica",
+          "Capítulo 4: Orientação Espacial"
+        ],
+        "Unidade 2 — Pré-História e Mesopotâmia": [
+          "Capítulo 1: Pré-História",
+          "Capítulo 2: Mesopotâmia"
+        ]
+      },
+      "2": {
+        "Unidade 3 — Coordenadas e Solo": [
+          "Capítulo 1: Coordenadas Geográficas",
+          "Capítulo 2: Solo"
+        ],
+        "Unidade 4 — Egito e Américas Antigas": [
+          "Capítulo 1: Egito Antigo",
+          "Capítulo 2: Maias, Astecas e Incas"
+        ]
+      },
+      "3": {
+        "Unidade 5 — Civilizações Orientais e Sistemas Terrestres": [
+          "Capítulo 1: Hebreus",
+          "Capítulo 2: Fenícios e Chineses",
+          "Capítulo 3: Relevo, Clima e Biomas",
+          "Capítulo 4: Questões Ambientais",
+          "Capítulo 5: Persas"
+        ],
+        "Unidade 6 — Roma Antiga": [
+          "Capítulo 1: Monarquia e República",
+          "Capítulo 2: Império Romano",
+          "Capítulo 3: Legados Romanos"
+        ]
+      },
+      "4": {
+        "Unidade 7 — Grécia Antiga": [
+          "Capítulo 1: Formação das Pólis",
+          "Capítulo 2: Atenas e Esparta",
+          "Capítulo 3: Cultura e Legados",
+          "Capítulo 4: Guerras e Expansão"
+        ],
+        "Unidade 8 — África Antiga e Patrimônio": [
+          "Capítulo 1: Reinos Africanos",
+          "Capítulo 2: Patrimônio Cultural"
+        ]
+      }
+    },
+    "7º Ano": {
+      "1": {
+        "Unidade 1 — Brasil: Território, População e Cultura": [
+          "Capítulo 1: Regiões Brasileiras",
+          "Capítulo 2: Formação da População",
+          "Capítulo 3: Diversidade Cultural",
+          "Capítulo 4: Fusos Horários"
+        ],
+        "Unidade 2 — Povos Indígenas e Europa Pós-Roma": [
+          "Capítulo 1: Territorialidades Indígenas e Chegada Portuguesa",
+          "Capítulo 2: Queda de Roma e Reinos Bárbaros",
+          "Capítulo 3: Império Bizantino"
+        ]
+      },
+      "2": {
+        "Unidade 3 — Relevo, Clima e Recursos Naturais": [
+          "Capítulo 1: Relevo e Hidrografia",
+          "Capítulo 2: Clima Brasileiro",
+          "Capítulo 3: Biomas",
+          "Capítulo 4: Recursos Naturais e Energia"
+        ],
+        "Unidade 4 — Feudalismo": [
+          "Capítulo 1: Império Carolíngio e Invasões",
+          "Capítulo 2: Estrutura do Feudalismo",
+          "Capítulo 3: Igreja Medieval e Cultura"
+        ]
+      },
+      "3": {
+        "Unidade 5 — Urbanização e Redes": [
+          "Capítulo 1: Urbanização Brasileira",
+          "Capítulo 2: Problemas Urbanos",
+          "Capítulo 3: Redes de Transporte e Comunicação"
+        ],
+        "Unidade 6 — Crise do Feudalismo e Modernidade": [
+          "Capítulo 1: Renascimento Comercial e Urbano",
+          "Capítulo 2: Islamismo e Cruzadas",
+          "Capítulo 3: Peste Negra e Crise Feudal",
+          "Capítulo 4: Estados Modernos, Renascimento e Reformas"
+        ]
+      },
+      "4": {
+        "Unidade 7 — Agricultura Brasileira": [
+          "Capítulo 1: Tipos de Agricultura",
+          "Capítulo 2: Questões Agrárias"
+        ],
+        "Unidade 8 — Colonização e Brasil Colonial": [
+          "Capítulo 1: Absolutismo, Mercantilismo e Navegações",
+          "Capítulo 2: Colonização da América",
+          "Capítulo 3: Administração e Economia Colonial",
+          "Capítulo 4: Escravidão e Resistências"
+        ]
+      }
+    },
+    "8º Ano": {
+      "1": {
+        "Unidade 1 — Cartografia e América": [
+          "Capítulo 1: Raciocínio Geográfico e Projeções",
+          "Capítulo 2: Escalas e Coordenadas Geográficas",
+          "Capítulo 3: América Regionalização e Aspectos Gerais"
+        ],
+        "Unidade 2 — Antigo Regime e Revoluções Políticas": [
+          "Capítulo 1: Antigo Regime e Revolução Inglesa",
+          "Capítulo 2: Iluminismo",
+          "Capítulo 3: Independência dos Estados Unidos"
+        ]
+      },
+      "2": {
+        "Unidade 3 — América Latina e Brasil": [
+          "Capítulo 1: América Latina Conceitos e Regionalização",
+          "Capítulo 2: Integração Regional e Blocos Econômicos",
+          "Capítulo 3: Brasil Formação Territorial e Diversidade",
+          "Capítulo 4: Brasil Dinâmicas Espaciais Contemporâneas"
+        ],
+        "Unidade 4 — Revoluções Industriais e Revoluções Políticas": [
+          "Capítulo 1: Revolução Industrial",
+          "Capítulo 2: Revolução Francesa",
+          "Capítulo 3: Era Napoleônica e Congresso de Viena",
+          "Capítulo 4: Movimentos Operários e Ideias Socialistas"
+        ]
+      },
+      "3": {
+        "Unidade 5 — Independências nas Américas": [
+          "Capítulo 1: Independência do Haiti",
+          "Capítulo 2: Independências na América Espanhola"
+        ],
+        "Unidade 6 — Brasil no Século XIX": [
+          "Capítulo 1: Família Real no Brasil e Processo de Independência",
+          "Capítulo 2: Primeiro Reinado e Período Regencial",
+          "Capítulo 3: Segundo Reinado Política e Economia",
+          "Capítulo 4: Abolição da Escravidão e Crise Monárquica"
+        ]
+      },
+      "4": {
+        "Unidade 7 — Imperialismo e Partilha do Mundo": [
+          "Capítulo 1: Imperialismo Conceito e Causas",
+          "Capítulo 2: Partilha da África",
+          "Capítulo 3: Resistências Africanas ao Imperialismo",
+          "Capítulo 4: Imperialismo na Ásia"
+        ],
+        "Unidade 8 — África e Globalização Contemporânea": [
+          "Capítulo 1: África Regionalização e Aspectos Físicos",
+          "Capítulo 2: África Economia, População e Desafios Contemporâneos",
+          "Capítulo 3: África no Sistema Mundial",
+          "Capítulo 4: Globalização"
+        ]
+      }
+    },
+    "9º Ano": {
+      "1": {
+        "Unidade 1 — Demografia, Migrações e Guerras": [
+          "Capítulo 1: Demografia e Teorias Populacionais",
+          "Capítulo 2: Migrações Globais",
+          "Capítulo 3: Primeira Guerra Mundial",
+          "Capítulo 4: Revolução Russa"
+        ],
+        "Unidade 2 — Urbanização e República Velha": [
+          "Capítulo 1: Urbanização Mundial",
+          "Capítulo 2: Problemas Urbanos",
+          "Capítulo 3: República Oligárquica",
+          "Capítulo 4: Revoltas e Crise da República Velha"
+        ]
+      },
+      "2": {
+        "Unidade 3 — América, Crise e Segunda Guerra": [
+          "Capítulo 1: América: Divisões e Características",
+          "Capítulo 2: Crise de 1929",
+          "Capítulo 3: Segunda Guerra Mundial",
+          "Capítulo 4: Holocausto e Nova Ordem"
+        ],
+        "Unidade 4 — Era Vargas e Guerra Fria": [
+          "Capítulo 1: Era Vargas",
+          "Capítulo 2: Guerra Fria",
+          "Capítulo 3: Descolonização da África e Ásia",
+          "Capítulo 4: Fim da Guerra Fria"
+        ]
+      },
+      "3": {
+        "Unidade 5 — Europa e Ásia": [
+          "Capítulo 1: Europa e União Europeia",
+          "Capítulo 2: Ásia: Aspectos Gerais",
+          "Capítulo 3: China e Potências Asiáticas",
+          "Capítulo 4: Oriente Médio"
+        ],
+        "Unidade 6 — África e Oceania": [
+          "Capítulo 1: África: Aspectos Gerais",
+          "Capítulo 2: África: Colonialismo e Desafios",
+          "Capítulo 3: Oceania"
+        ]
+      },
+      "4": {
+        "Unidade 7 — Brasil: Democracia e Ditadura": [
+          "Capítulo 1: Democracia Populista (1945-1964)",
+          "Capítulo 2: Golpe Militar e Anos de Chumbo",
+          "Capítulo 3: Abertura e Redemocratização",
+          "Capítulo 4: Nova República (1990-2002)"
+        ],
+        "Unidade 8 — Brasil Contemporâneo e Desafios Globais": [
+          "Capítulo 1: Brasil Século XXI",
+          "Capítulo 2: Desenvolvimento Sustentável e Recursos",
+          "Capítulo 3: Desafios Globais",
+          "Capítulo 4: Cidadania e Direitos Humanos"
+        ]
+      }
+    }
+  },
+  "Português 2": {
+    "1ª Série": {
+      "1": {
+        "Unidade 1 - Introdução à Literatura": [
+          "Capítulo 1: O que é Literatura?",
+          "Capítulo 2: Gêneros Literários",
+          "Capítulo 3: Figuras de Linguagem Básicas"
+        ],
+        "Unidade 2 - Produção Textual: Resumo e Fichamento": [
+          "Capítulo 1: Resumo",
+          "Capítulo 2: Fichamento"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Trovadorismo e Humanismo": [
+          "Capítulo 1: Trovadorismo (séc. XII-XV)",
+          "Capítulo 2: Humanismo (séc. XV-XVI)"
+        ],
+        "Unidade 4 - Produção Textual: Texto Narrativo": [
+          "Capítulo 1: Elementos da Narrativa",
+          "Capítulo 2: Produção de Textos Narrativos"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Classicismo e Quinhentismo": [
+          "Capítulo 1: Classicismo (séc. XVI)",
+          "Capítulo 2: Quinhentismo no Brasil (séc. XVI)"
+        ],
+        "Unidade 6 - Oralidade: Seminário": [
+          "Capítulo 1: Gênero Oral: Seminário",
+          "Capítulo 2: Técnicas de Apresentação Oral"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Barroco": [
+          "Capítulo 1: Barroco: Contexto e Características (séc. XVII)",
+          "Capítulo 2: Barroco em Portugal",
+          "Capítulo 3: Barroco no Brasil"
+        ],
+        "Unidade 8 - Produção Textual: Resenha Crítica": [
+          "Capítulo 1: Resenha Crítica",
+          "Capítulo 2: Produção de Resenha Crítica"
+        ]
+      }
+    },
+    "2ª Série": {
+      "1": {
+        "Unidade 1 - Romantismo: Contexto e Poesia (1ª e 2ª Gerações)": [
+          "Capítulo 1: Contexto Histórico e Características",
+          "Capítulo 2: 1ª Geração Nacionalista/Indianista",
+          "Capítulo 3: 2ª Geração Ultrarromântica/Byroniana"
+        ],
+        "Unidade 2 - Produção Textual: Análise Literária": [
+          "Capítulo 1: Análise de Texto Literário",
+          "Capítulo 2: Produção de Análise Literária"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Romantismo: Poesia (3ª Geração) e Prosa": [
+          "Capítulo 1: 3ª Geração Condoreira/Social",
+          "Capítulo 2: Prosa Romântica"
+        ],
+        "Unidade 4 - Oralidade: Debate Literário": [
+          "Capítulo 1: Gênero Oral Debate",
+          "Capítulo 2: Técnicas de Argumentação Oral"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Realismo e Naturalismo": [
+          "Capítulo 1: Contexto e Características do Realismo",
+          "Capítulo 2: Machado de Assis",
+          "Capítulo 3: Naturalismo"
+        ],
+        "Unidade 6 - Produção Textual: Dissertação (Introdução)": [
+          "Capítulo 1: Texto Dissertativo-Argumentativo Introdução",
+          "Capítulo 2: Construção da Introdução"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Parnasianismo e Simbolismo": [
+          "Capítulo 1: Parnasianismo",
+          "Capítulo 2: Simbolismo",
+          "Capítulo 3: Revisão Escolas Literárias do Século XIX"
+        ],
+        "Unidade 8 - Produção Textual: Dissertação (Desenvolvimento)": [
+          "Capítulo 1: Argumentação e Tipos de Argumento",
+          "Capítulo 2: Construção do Desenvolvimento"
+        ]
+      }
+    },
+    "3ª Série": {
+      "1": {
+        "Unidade 1 - Pré-Modernismo": [
+          "Capítulo 1: Contexto Histórico-Social",
+          "Capítulo 2: Euclides da Cunha",
+          "Capítulo 3: Lima Barreto",
+          "Capítulo 4: Monteiro Lobato"
+        ],
+        "Unidade 2 - Redação Dissertativo-Argumentativa: Estrutura Completa": [
+          "Capítulo 1: Estrutura da Dissertação",
+          "Capítulo 2: Proposta de Intervenção (ENEM)"
+        ]
+      },
+      "2": {
+        "Unidade 3 - Modernismo: 1ª e 2ª Gerações": [
+          "Capítulo 1: Modernismo — 1ª Geração (1922-1930)",
+          "Capítulo 2: Modernismo — 2ª Geração (1930-1945)",
+          "Capítulo 3: Prosa da 2ª Geração: Romance de 30"
+        ],
+        "Unidade 4 - Coesão, Coerência e Repertório": [
+          "Capítulo 1: Coesão e Coerência Textual",
+          "Capítulo 2: Repertório Sociocultural"
+        ]
+      },
+      "3": {
+        "Unidade 5 - Modernismo: 3ª Geração e Literatura Africana": [
+          "Capítulo 1: Modernismo — 3ª Geração (Geração de 45\\)",
+          "Capítulo 2: Poesia da 3ª Geração: João Cabral de Melo Neto",
+          "Capítulo 3: Prosa da 3ª Geração",
+          "Capítulo 4: Literatura Africana de Língua Portuguesa"
+        ],
+        "Unidade 6 - Redação ENEM: Competências": [
+          "Capítulo 1: Competências ENEM",
+          "Capítulo 2: Erros Comuns e Critérios de Avaliação"
+        ]
+      },
+      "4": {
+        "Unidade 7 - Literatura Contemporânea e Revisão Geral": [
+          "Capítulo 1: Literatura Contemporânea Brasileira (Pós-1960)",
+          "Capítulo 2: Revisão: Escolas Literárias",
+          "Capítulo 3: Literatura Africana: Revisão e Aprofundamento"
+        ],
+        "Unidade 8 - Redação: Treino Intensivo": [
+          "Capítulo 1: Análise de Temas Recorrentes",
+          "Capítulo 2: Prática e Autoavaliação",
+          "Capítulo 3: Simulados e Questões de Vestibulares"
+        ]
+      }
+    }
+  }
+}
